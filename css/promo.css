@@ -154,9 +154,11 @@
 /* Popup-city */
 
 .popup__city{
+    padding: 24px 24px 31px 24px;
     position: absolute;
     width: 745px;
     height: 578px;
+    border-radius: 32px;
     background-color: #fff;
     top: 50%;
     left: 50%;
@@ -172,16 +174,13 @@
     z-index: 10;
 }
 
-.popup__city-wrapper{
-    width: 697px;
-    margin: 0 auto;
+.popup__city-back {
+    cursor: pointer;
 }
 
 .popup__city-top{
-    padding-top: 24px;
     display: flex;
     gap: 16px;
-    height: 47px;
     align-items: center;
 }
 
@@ -209,23 +208,22 @@
 
 .popup__city-map{
     margin-top: 32px;
-}
-
-.popup-map{
     width: 697px;
     height: 300px;
 }
 
-.popup__citys-list{
-    margin-top: 24px;
+.popup-map {
+    width: inherit;
+    height: inherit;
 }
 
 .popup__city-list{
+    margin-top: 24px;
     display: flex;
     gap: 16px;
 }
 
-.city-list{
+.popup__city-list-item{
     padding: 10px 10px;
     height: 40px;
     border-radius: 8px;

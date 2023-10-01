@@ -11,7 +11,7 @@
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__block">
-                <a class="logo" href="#">
+                <a class="logo" href="index.html">
                     <img class="logo-image" src="img/common/header/logo.svg" alt="logo icon">
                     <p class="logo-title">напрокате</p>
                 </a>
@@ -46,7 +46,7 @@
                 <h2 class="promo-subtitle">Да, теперь это просто как никогда!</h2>
 
                 <div class="promo__cards-wrapper">
-                    <a class="promo__card" href="">
+                    <a class="promo__card" href="catalog.html">
                         <h3 class="promo__card-title">Спорт и отдых</h3>
                         <img class="promo__card-img" src="img/promo/item-1.png" alt="">
                     </a>
@@ -131,31 +131,25 @@
             </div>
         </div>
         <div class="popup__city">
-            <div class="popup__city-wrapper">
-                <div class="popup__city-top">
-                    <img src="/img/promo/arrow.svg" alt="arrow icon" class="popup__city-arrow">
-                    <h2 class="popup__city-title">Выберете ваш город</h2>
+            <div class="popup__city-top">
+                <img src="/img/promo/arrow.svg" alt="arrow icon" class="popup__city-back">
+                <h2 class="popup__city-title">Выберете ваш город</h2>
+            </div>
+            <div class="search__block search__block-popup">
+                <div class="input__block input__block-sity">
+                    <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
+                    <input class="search-input popup-input" type="text" placeholder="Санкт-Петербург.">
                 </div>
-                <div class="popup__city-search">
-                    <div class="search__block search__block-popup">
-                        <div class="input__block input__block-sity">
-                            <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
-                            <input class="search-input" type="text" placeholder="Санкт-Петербург.">
-                        </div>
-                        <button class="search-button search-button-popup">Поиск</button>
-                    </div>
-                </div>
-                <div class="popup__city-map">
-                    <iframe class="popup-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2429.671455606024!2d-1.8943149153279817!3d52.485084119092456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1696168897248!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="popup__citys-list">
-                    <div class="popup__city-list">
-                        <button class="city-list">Москва</button>
-                        <button class="city-list">Санкт-Петербург</button>
-                        <button class="city-list">Тверь</button>
-                        <button class="city-list">Смоленск</button>
-                    </div>
-                </div>
+                <button class="search-button search-button-popup">Поиск</button>
+            </div>
+            <div class="popup__city-map">
+                <iframe class="popup-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2429.671455606024!2d-1.8943149153279817!3d52.485084119092456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1696168897248!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="popup__city-list">
+                <button class="popup__city-list-item">Москва</button>
+                <button class="popup__city-list-item">Санкт-Петербург</button>
+                <button class="popup__city-list-item">Тверь</button>
+                <button class="popup__city-list-item">Смоленск</button>
             </div>
         </div>
     </main>
@@ -187,6 +181,7 @@
         </div>
     </footer>
 
-<script src="/js/promo.js"></script>
+    <script src="/js/promo.js"></script>
+    
 </body>
 </html>

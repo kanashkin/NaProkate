@@ -111,6 +111,7 @@ span {
 
 .search-input {
     width: 100%;
+    height: 100%;
     /* Input text */
     color: rgba(51, 51, 51, 0.60);
     font-size: 14px;
