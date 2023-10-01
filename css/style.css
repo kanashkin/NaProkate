@@ -1,0 +1,44 @@
+/* Base styles */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-flex;
+}
+
+li {
+    display: inline-flex;
+    list-style: none;
+}
+
+span {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1528px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
