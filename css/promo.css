@@ -30,6 +30,7 @@
 .promo__card {
     display: block;
     overflow: hidden;
+    position: relative;
     height: 170px;
     width: 234px;
     padding-top: 16px;
@@ -46,5 +47,30 @@
 }
 
 .promo__card-img {
+    display: block;
+    margin: 0 auto;
     margin-top: 24px;
+}
+
+.promo__card:nth-child(3) .promo__card-img {
+    margin: 24px 7px 0 46px;
+}
+
+.promo__card:nth-child(9) .promo__card-img {
+    margin: 24px 6px 0 21px;
+}
+
+.promo__card:nth-child(14) .promo__card-img {
+    margin: 24px 24px 0 0;
+}
+
+.promo__card:nth-child(15) .promo__card-img {
+    margin: 24px 0 0 26px;
+}
+
+.promo__card:last-child .promo__card-img {
+    position: absolute;
+    margin: 0;
+    top: 6px;
+    right: 5px;
 }
