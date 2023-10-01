@@ -1,33 +1,33 @@
 /* Form-login */
-.main{
+.main {
+    display: flex;
+    justify-content: center;
     height: 1130px;
-    position: relative;
 }
 
 .form{
     padding: 24px 24px 40px 24px;
     width: 538px;
-    display: flex;
     gap: 32px;
     flex-direction: column;
+    height: fit-content;
     border-radius: 15px;
     border: 1px solid rgba(15, 15, 15, 0.14);
     background: #FDFEFB;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    opacity: 0;
-    z-index: -1;
-    transition: .1s linear;
+    display: none;
 }
 
-.form-login.active {
-    opacity: 1;
-    z-index: 10;
+.form.active {
+    display: flex;
 }
 
+.form-login {
+    margin-top: 192px;
+}
+
+.form-registr {
+    margin-top: 80px;
+}
 
 .form-login-title{
     color: #3B4030;
@@ -42,27 +42,32 @@
 }
 
 .form-login-input{
-    padding: 16px 24px 16px 24px;
+    padding: 0 24px;
+    height: 51px;
     border-radius: 8px;
     background: #EEF1E8;
     width: 100%;
-    height: 100%;
-/* input-text */
+    /* input-text */
     font-size: 16px;
     font-weight: 400;
     cursor: pointer;
+    color: #A1B17E; 
 }
 
-.form-login-input::-webkit-input-placeholder {
+.input-hide {
+    display: none;
+}
+
+.form-login-input::placeholder {
     color: #A1B17E;   
 }
 
 .form-login-btn{
     border-radius: 8px;
     background: #A1B17E;
-    width: 490px;
-    padding: 16px 0px;
-/* button-text */
+    width: 100%;
+    height: 51px;
+    /* button-text */
     color: #FFF;
     font-size: 16px;
     font-weight: 600;
@@ -78,14 +83,4 @@
 
 .form-login-link{
     cursor: pointer;
-}
-
-.form-registr.active {
-    opacity: 1;
-    z-index: 10;
-}
-
-.form-admin-registr.active {
-    opacity: 1;
-    z-index: 10;
 }
