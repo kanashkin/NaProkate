@@ -58,3 +58,4 @@ const writeCity = (cityName) => {
 
     cityField.textContent = cityName
 }
+

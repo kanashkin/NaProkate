@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="index.html">
+                    <img class="logo-image" src="img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+                <div class="header__city">
+                    <img class="header__city-marker" src="img/common/header/marker.svg" alt="marker icon">
+                    <p class="header__city-name">Москва</p>
+                    <img class="header__city-trigger" src="img/common/header/arrow.svg" alt="arrow icon">
+                </div>
+            </div>
+            <div class="header__block">
+                <a class="basket" href="#">
+                    <img class="basket-img" src="img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="#">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="form form-login">
+            <h2 class="form-login-title">Войти в аккаунт</h2>
+            <div class="form-login-content">
+                <input class="form-login-input" required type="text" placeholder="Почта или номер телефона"></input>
+                <input class="form-login-input" required type="text" placeholder="Пароль"></input>
+                <a href="#"><button class="form-login-btn">Войти</button></a>
+            </div>
+            <p class="form-login-text">Нет аккаунта? <span class="form-login-link">Зарегестрируйтесь</span></p>
+        </div>
+
+        <div class="form form-registr">
+            <h2 class="form-login-title">Регистрация</h2>
+            <div class="form-login-content">
+                <input class="form-login-input" required type="text" placeholder="Ваше имя"></input>
+                <input class="form-login-input" required type="text" placeholder="Ваша фамилия"></input>
+                <input class="form-login-input" required type="text" placeholder="Укажите почту"></input>
+                <input class="form-login-input" required type="text" placeholder="Укажите номер телефона"></input>
+                <input class="form-login-input" required type="text" placeholder="Придумайте пароль"></input>
+                <a href="#"><button class="form-login-btn">Регистрация</button></a>
+            </div>
+            <p class="form-login-text">Есть аккаунт? <span class="form-login-link">Войдите</span></p>
+        </div>
+
+        <div class="form form-admin-registr">
+            <h2 class="form-login-title">Регистрация</h2>
+            <div class="form-login-content">
+                <input class="form-login-input" required type="text" placeholder="Ваше имя"></input>
+                <input class="form-login-input" required type="text" placeholder="Ваша фамилия"></input>
+                <input class="form-login-input" required type="text" placeholder="Укажите почту"></input>
+                <input class="form-login-input" required type="text" placeholder="Укажите номер телефона"></input>
+                <input class="form-login-input" required type="text" placeholder="Придумайте пароль"></input>
+                <input class="form-login-input" required type="text" placeholder="Компания*"></input>
+                <input class="form-login-input" required type="text" placeholder="Адрес регистрации*"></input>
+                <a href="#"><button class="form-login-btn">Регистрация</button></a>
+            </div>
+            <p class="form-login-text">Есть аккаунт? <span class="form-login-link">Войдите</span></p>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#">Для прокатчика</a></li>
+                    <li class="footer__list-item footer__list-item-admin"><a href="#">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="#">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+<script src="/js/forms.js"></script>
+</body>
+</html>
