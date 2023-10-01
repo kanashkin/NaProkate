@@ -1,15 +1,18 @@
-const popUp = document.querySelector('.popup'),
-    popUpClose = document.querySelectorAll('.popup__button'),
-    active = document.querySelector('.active')   
+const closePromoPopup = () => {
+    const popUp = document.querySelector('.popup'),
+    popUpCloseBtns = document.querySelectorAll('.popup__button'),
+    blurBlock = document.querySelector('.promo')
 
-popUpClose.forEach(closeBtn => {
-    closeBtn.addEventListener('click', () => {
-        function yes(e) {
-            e.popUpClose.getAttribute('data-button')
-        }
-        
-        if('yes') {
-            active.classList.remove('active')
-        }
+    popUpCloseBtns.forEach(closeBtn => {
+        closeBtn.addEventListener('click', () => {
+            if (closeBtn.getAttribute('data-button') === 'yes') {
+                popUp.classList.remove('active')
+                blurBlock.classList.remove('active')
+            } else if (closeBtn.getAttribute('data-button') === 'no') {
+                
+            }
+        })
     })
-})
+}
+
+closePromoPopup()
