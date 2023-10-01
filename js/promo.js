@@ -3,6 +3,9 @@ const closePromoPopup = () => {
         popUpCloseBtns = document.querySelectorAll('.popup__button'),
         blurBlock = document.querySelector('.promo')
 
+    popUp.classList.add('active')
+    blurBlock.classList.add('active')
+
     popUpCloseBtns.forEach(closeBtn => {
         closeBtn.addEventListener('click', () => {
 
