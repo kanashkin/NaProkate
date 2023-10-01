@@ -1,0 +1,50 @@
+/* Promo */
+.promo {
+    padding: 172px 0 70px;
+}
+
+.promo-title {
+    color: #3B4030;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 46.8px;
+}
+
+.promo-subtitle {
+    margin-top: 16px;
+    color: rgba(59, 64, 48, 0.50);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.promo__cards-wrapper {
+    margin-top: 32px;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.promo__card {
+    display: block;
+    overflow: hidden;
+    height: 170px;
+    width: 234px;
+    padding-top: 16px;
+    border-radius: 20px;
+    background: linear-gradient(0deg, #F6F3EA 0%, #F6F3EA 100%), lightgray 50% / cover no-repeat;
+}
+
+.promo__card-title {
+    color: #64562E;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: center;
+}
+
+.promo__card-img {
+    margin-top: 24px;
+}
