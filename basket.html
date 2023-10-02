@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Basket</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/basket.css">
 </head>
 <body>
-
     <header class="header">
         <div class="container header__wrapper">
             <div class="header__block">
@@ -23,8 +22,18 @@
                 </div>
             </div>
             <div class="header__block">
-                <a class="basket" href="basket.html">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="#">
                     <img class="basket-img" src="img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="catalog.html">
+                    <button class="sign-in sign-in-catalog">Каталог</button>
                 </a>
                 <a class="sign-in-link" href="login.html">
                     <button class="sign-in">Войти</button>
@@ -34,39 +43,46 @@
     </header>
 
     <main class="main">
-        <form class="form form-login" action="">
-            <h2 class="form-login-title">Войти в аккаунт</h2>
-            <div class="form-login-content">
-                <input class="form-login-input" required type="text" placeholder="Почта или номер телефона"></input>
-                <input class="form-login-input" required type="text" placeholder="Пароль"></input>
-                <a href="#"><button type="submit" class="form-login-btn">Войти</button></a>
+        <div class="container basket-content-wrapper">
+            <div class="basket-back-to-catalog">
+                <a href="catalog.html">
+                    <img src="img/common/basket-arrow.svg" alt="arrow icon" class="basket-back-arrow">
+                </a>
+                <p class="basket-back-text">Велосипеды CROSS ElectroBike</p>
             </div>
-            <p class="form-login-text">Нет аккаунта?<span class="form-login-link form-registr-link">&nbsp;Зарегестрируйтесь</span></p>
-        </form>
-
-        <form class="form form-registr" action="">
-            <h2 class="form-login-title">Регистрация</h2>
-            <div class="form-login-content">
-                <input class="form-login-input" required type="text" placeholder="Ваше имя"></input>
-                <input class="form-login-input" required type="text" placeholder="Ваша фамилия"></input>
-                <input class="form-login-input" required type="text" placeholder="Укажите почту"></input>
-                <input class="form-login-input" required type="text" placeholder="Укажите номер телефона"></input>
-                <input class="form-login-input" required type="text" placeholder="Придумайте пароль"></input>
-                <input class="form-login-input" required type="text" placeholder="Компания*"></input>
-                <input class="form-login-input" required type="text" placeholder="Адрес регистрации*"></input>
-                <a href="#"><button type="submit" class="form-login-btn">Регистрация</button></a>
+            <div class="basket-text-content">
+                <h2 class="basket-title">Моя корзина</h2>
+                <div class="basket-line"></div>
             </div>
-            <div class="prof-click-wrapper">
-                <div class="prof-click">
-                    <input type="checkbox" class="custom-checkbox" id="checkbox" name="checkbox">
-                    <label for="checkbox"></label>
+            <div class="basket-content-item">
+                <img src="img/common/bike.png" alt="bike icon" class="basket-item-img">
+                <div class="basket-item-name-wrapper">
+                    <h3 class="basket-item-name">Велосипед CROSS ElectroBike</h3>
+                    <p class="basket-item-date">05.08.2023–06.08.2023</p>
+                    <p class="basket-item-delete">Удалить товар</p>
                 </div>
-                <p class="checkbox-text">Зарегестрироваться как профессионал</p>
+                <div class="basket-item-text">
+                    <p class="basket-item-text-content">Московский пр., 22Т <br> каждый день, 10:00–22:00.</p>
+                    <p class="basket-item-text-number">
+                        <a href="tell:+7 996 925-18-25">+7 996 925-18-25</a> <br> каждый день, 10:00–22:00
+                    </p>
+                </div>
+                <div class="basket-item-calc">
+                    <p class="basket-item-number">2 500 ₽</p>
+                    <input class="basket-num" max="50" type="number">
+                    <p class="basket-item-number basket-item-final-number">7 500 ₽</p>
+                </div>
+                <button class="basket-item-arrage">Оформить</button>
             </div>
-            <p class="form-login-text">Есть аккаунт?<span class="form-login-link form-login-link">&nbsp;Войдите</span></p>
-        </form>
-
+            <a class="basket-add-item-link" href="catalog.html">
+                <div class="basket-add-item">
+                    <p class="basket-add-item-text">Добавить товар</p>
+                    <img src="img/common/basket-plus.svg" alt="+ icon" class="basket-add-item-img">
+                </div>
+            </a>
+        </div>
     </main>
+    
 
     <footer class="footer">
         <div class="container footer__wrapper">
@@ -95,7 +111,6 @@
         </div>
     </footer>
 
-
-<script src="js/login.js"></script>
+    <script src="js/basket.js"></script>
 </body>
 </html>

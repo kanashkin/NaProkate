@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="32" height="32" fill="#292929"/>
+<g id="Desktop - Busket" clip-path="url(#clip0_0_1)">
+<rect width="1728" height="1232" transform="translate(-120 -146)" fill="white"/>
+<g id="Basket">
+<g id="HeroiconsOutlineArrowLongLeft 1">
+<path id="Vector" d="M9 21L4 16M4 16L9 11M4 16H28" stroke="#3B4030" stroke-opacity="0.7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_0_1">
+<rect width="1728" height="1232" fill="white" transform="translate(-120 -146)"/>
+</clipPath>
+</defs>
+</svg>
