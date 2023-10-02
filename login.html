@@ -57,7 +57,6 @@
             </div>
             <p class="form-login-text">Есть аккаунт?<span class="form-login-link form-login-link">&nbsp;Войдите</span></p>
         </form>
-
     </main>
 
     <footer class="footer">
@@ -87,7 +86,42 @@
         </div>
     </footer>
 
+    <div class="overlay">
+        <div class="popup">
+            <div class="popup-wrapper">
+                <h2 class="popup-title">Ваш город Москва?</h2>
+                <div class="popup__buttons-wrapper">
+                    <button class="popup__button" data-button="no">Нет</button>
+                    <button class="popup__button" data-button="yes">Да</button>
+                </div>
+            </div>
+        </div>
+        <div class="popup__city">
+            <div class="popup__city-top">
+                <img src="img/promo/arrow.svg" alt="arrow icon" class="popup__city-back">
+                <h2 class="popup__city-title">Выберете ваш город</h2>
+            </div>
+            <div class="search__block search__block-popup">
+                <div class="input__block input__block-sity">
+                    <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
+                    <input class="search-input popup-input" type="text" placeholder="Санкт-Петербург.">
+                </div>
+                <button class="search-button search-button-popup">Поиск</button>
+            </div>
+            <div class="popup__city-map">
+                <iframe class="popup-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2429.671455606024!2d-1.8943149153279817!3d52.485084119092456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1696168897248!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="popup__city-list">
+                <button class="popup__city-list-item">Москва</button>
+                <button class="popup__city-list-item">Санкт-Петербург</button>
+                <button class="popup__city-list-item">Тверь</button>
+                <button class="popup__city-list-item">Смоленск</button>
+            </div>
+        </div>
+    </div>
 
-<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/app.js"></script>
+
 </body>
 </html>
