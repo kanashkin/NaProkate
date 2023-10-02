@@ -14,6 +14,8 @@ const selectMoscow = () => {
             popUpMoscow.classList.remove('active')
 
             if (closeBtn.getAttribute('data-button') === 'yes') {
+                localStorage.setItem('city', 'Москва')
+
                 blurBlock.classList.remove('active')
                 overlay.classList.remove('active')
             } else if (closeBtn.getAttribute('data-button') === 'no') {
@@ -44,6 +46,8 @@ const selectCity = () => {
         popupTabs.forEach(item => {
             item.addEventListener('click', () => {
                 const currentCity = item.textContent
+                localStorage.setItem('city', `${currentCity}`)
+
                 popUpCity.classList.remove('active')
                 blurBlock.classList.remove('active')
                 overlay.classList.remove('active')
@@ -56,7 +60,9 @@ const selectCity = () => {
 }
 
 if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-    selectMoscow()
+    if (localStorage.getItem('city') === null) {
+        selectMoscow()
+    }
 }
 
 const selectCityTrigger = document.querySelector('.header__city-trigger')
