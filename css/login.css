@@ -84,3 +84,44 @@
 .form-login-link{
     cursor: pointer;
 }
+
+.prof-click-wrapper{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-text{
+    color: #6C7064;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.prof-click{
+    text-align: center;
+    position: relative;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+
+  .custom-checkbox+label::before {
+    content: '';
+    display: flex;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #A1B17E;
+    border-radius: 0.25em;
+  }
+
+  .custom-checkbox:checked+label::before {
+    border-color: #A1B17E;
+    background: url('/img/common/check-mark.svg') center center / cover no-repeat;
+    background-size: 50%;
+  }
