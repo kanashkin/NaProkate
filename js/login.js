@@ -45,7 +45,7 @@ const login = () => {
     formLogin.addEventListener('submit', (e) => {
         e.preventDefault()
         localStorage.setItem('logined', 'login')
-        window.location.href = '../index.html';
+        window.location.href = 'index.html';
     })
 }
 

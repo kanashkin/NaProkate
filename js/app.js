@@ -75,7 +75,9 @@ selectCityTrigger.addEventListener('click', () => {
 
 const writeCity = () => {
     const cityField = document.querySelector('.header__city-name')
-    cityField.textContent = localStorage.getItem('city')
+    if (localStorage.getItem('city') != null) {
+        cityField.textContent = localStorage.getItem('city')
+    }
 }
 
 writeCity()
