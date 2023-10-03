@@ -319,10 +319,20 @@ span {
 .block-after-login{
     display: flex;
     gap: 32px;
+}
 
+.block-after-login.active{
+    display: flex;
+    gap: 32px;
+    display: none;
+}
 
+.block-after-login-active{
+    display: none;
+}
 
-    
+.block-after-login-active.active{
+    display: flex;
 }
 
 .favorites-button{

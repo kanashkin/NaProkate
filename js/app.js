@@ -70,5 +70,3 @@ const selectCityTrigger = document.querySelector('.header__city-trigger')
 selectCityTrigger.addEventListener('click', () => {
     selectMoscow()
 })
-
-
