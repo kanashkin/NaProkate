@@ -15,6 +15,7 @@ const selectMoscow = () => {
 
             if (closeBtn.getAttribute('data-button') === 'yes') {
                 localStorage.setItem('city', 'Москва')
+                writeCity()
 
                 blurBlock.classList.remove('active')
                 overlay.classList.remove('active')
@@ -47,6 +48,7 @@ const selectCity = () => {
             item.addEventListener('click', () => {
                 const currentCity = item.textContent
                 localStorage.setItem('city', `${currentCity}`)
+                writeCity()
 
                 popUpCity.classList.remove('active')
                 blurBlock.classList.remove('active')
@@ -70,3 +72,10 @@ const selectCityTrigger = document.querySelector('.header__city-trigger')
 selectCityTrigger.addEventListener('click', () => {
     selectMoscow()
 })
+
+const writeCity = () => {
+    const cityField = document.querySelector('.header__city-name')
+    cityField.textContent = localStorage.getItem('city')
+}
+
+writeCity()
