@@ -79,3 +79,21 @@ const writeCity = () => {
 }
 
 writeCity()
+
+
+const checkLogin = () => {
+    const signUpBtn = document.querySelector('.sign-in-link')
+    const userBlock = document.querySelector('.block-after-login')
+
+    console.log(localStorage.getItem('logined'));
+
+    if (localStorage.getItem('logined') === 'login') {
+        signUpBtn.classList.add('unactive')
+        userBlock.classList.add('active')
+    } else if (localStorage.getItem('logined') === 'unlogin') {
+        signUpBtn.classList.remove('unactive')
+        userBlock.classList.remove('active')
+    }
+}
+
+checkLogin()
