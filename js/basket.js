@@ -23,3 +23,14 @@ const calc = () => {
 }
 calc()
 removeItem()
+
+const openPopup = document.querySelectorAll('.basket-item-arrage'),
+    overlay = document.querySelector('.overlay'),
+    popupBasket = document.querySelector('.popup__basket')
+
+openPopup.forEach(item => {
+    item.addEventListener('click', () => {
+        overlay.classList.add('active')
+        popupBasket.classList.add('active')
+    })
+})
