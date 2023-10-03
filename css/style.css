@@ -316,6 +316,38 @@ span {
     font-weight: 600;
 }
 
+.block-after-login{
+    display: flex;
+    gap: 32px;
+
+
+
+    
+}
+
+.favorites-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 9px;
+    background: #F0F2EB;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user-block-after-login{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-name{
+    color: #3B4030;
+    font-size: 14px;
+    font-weight: 500;
+}
+
 /* Footer */
 .footer {
     padding-top: 32px;
