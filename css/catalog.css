@@ -63,3 +63,136 @@
     background: #9EB175;
     color: #fff;
 }
+
+.catalog__items {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 111px;
+}
+
+.catalog__item {
+    display: block;
+    max-width: 287px;
+    width: 100%;
+}
+
+.catalog__item__preview {
+    background: #FFF;
+    box-shadow: 0px 2px 18px 10px rgba(116, 130, 89, 0.04);
+    height: 323px;
+    position: relative;
+    border-radius: 28px 28px 0 0;
+}
+
+.catalog__item-like {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    top: 16px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: #F3F6ED;
+}
+
+.catalog__item-like.active svg,
+.catalog__item-like.active svg path {
+    fill: #FE584D;
+    stroke: #FE584D;
+}
+
+.catalog__item-rating {
+    position: absolute;
+    bottom: 12px;
+    left: 8px;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    background: #F3F6ED;
+}
+
+.catalog__item-rating-number {
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.catalog__item__info {
+    padding: 16px;
+    background: #F3F6ED;
+    border-radius: 0 0 24px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.catalog__item-price {
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.catalog__item-name {
+    color: #3B4030;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 133.333%;
+}
+
+.catalog__item-descr {
+    color: rgba(59, 64, 48, 0.60);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.catalog__item__char {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #3B4030;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.add__block {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.add__block-btn {
+    width: 91px;
+    height: 31px;
+    border-radius: 22px;
+    background: #9EB175;
+    /* Button text */
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.add__block-amount {
+    padding: 8px 2px;
+    text-align: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+    border: 1px solid #B0BE93;
+    background: #F9F9F9;
+}
+
+.add__block-delete {
+    display: inline-flex;
+}

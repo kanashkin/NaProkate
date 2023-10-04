@@ -13,4 +13,21 @@ const catalogCategories = () => {
     })
 }
 
+const addLikeItem = () => {
+    const triggerBtn = document.querySelectorAll('.catalog__item-like')
+
+    triggerBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active')
+        })
+    })
+}
+
+const stopHref = () => {
+}
+
+stopHref()
+
+addLikeItem()
+
 catalogCategories()
