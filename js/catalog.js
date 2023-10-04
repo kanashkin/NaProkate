@@ -24,6 +24,20 @@ const addLikeItem = () => {
 }
 
 const stopHref = () => {
+    const catalogItems = document.querySelectorAll('.catalog__item')
+
+    catalogItems.forEach(item => {
+        item.addEventListener('click', (e) => {
+            e.preventDefault()
+            const itemHref = item.getAttribute('href')
+            
+            if (e.target.classList.contains('stop-href') || e.target.closest('div.stop-href')) {
+                
+            } else {
+                window.location.href = itemHref
+            }
+        })
+    })
 }
 
 stopHref()

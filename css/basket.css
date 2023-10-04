@@ -128,11 +128,6 @@
     font-size: 16px;
     font-weight: 600;
 }
- 
-.basket-num[type="number"]::-webkit-outer-spin-button,
-.basket-num[type="number"]::-webkit-inner-spin-button {
-	display: none;
-}
 
 .basket-add-item-link{
     margin-top: 24px;
