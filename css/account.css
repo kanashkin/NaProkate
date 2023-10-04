@@ -277,3 +277,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.order__table-link{
+    cursor: pointer;
+}
