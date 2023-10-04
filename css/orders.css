@@ -55,7 +55,7 @@
 
 .oreder__main-table{
     padding: 8px 32px;
-    width: 886px;
+    width: 58%;
     border-spacing: 0 24px;
     border-radius: 15px;
     border: 1px solid rgba(15, 15, 15, 0.21);
@@ -89,7 +89,7 @@
 }
 
 .oreder__main-block{
-    width: 570px;
+    width: 37.3%;
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -157,4 +157,119 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+}
+
+
+.oredr__main-card{
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 15px;
+    border: 1px solid rgba(15, 15, 15, 0.21);
+    background: #FDFEFB;
+    width: 58%;
+    height: fit-content;
+}
+
+.order__main-card-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__card-item{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+    align-items: center;
+}
+
+.order__card-title{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.order__card-rent{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.order__card-status{
+    text-align: right;
+    margin-top: 20px;
+}
+
+.order__card-status-name{
+    color: rgba(15, 15, 15, 0.50);
+}
+
+.order__card-status{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order__card-block{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.order__card-block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.order__card-block-name{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.order__card-block-text{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.order__card-price{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order__card-days{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.order__card-total-price{
+    color: rgba(15, 15, 15, 0.80);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.order__card-btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 18px;
+    background: #A1B17E;
+    color: #FFF;
+}
+
+.order__card-btn-blue{
+    background: #4CA9E9;
+}
+
+.order__card-btn-black{
+    background: #333333;
+}
+
+.order__card-buttons{
+    display: flex;
+    justify-content: space-between;
 }
