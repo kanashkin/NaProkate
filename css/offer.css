@@ -1,0 +1,66 @@
+/*  Header */
+.header__account-list{
+    display: flex;
+    gap: 24px;
+}
+
+.header__list{
+    color: #0F0F0F;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__account-button{
+    width: 107px;
+    height: 40px;
+    border-radius: 18px;
+    background: #A1B17E;
+/* Button text */
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.header__account-btn{
+    background: #333;
+}
+
+/* Main */
+
+.offer__main-title{
+    margin-top: 144px;
+}
+
+.offer__title{
+    color: #0F0F0F;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.offer__line{
+    margin-top: 16px;
+    height: 1px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.20);
+}
+
+.offer__main-content{
+    margin-top: 100px;
+}
+
+.offer__main-content-text{
+    color: #000;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.offer__main-content{
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+
+.offer__main-content-text-wrapper{
+    margin-bottom: 204px;
+}
