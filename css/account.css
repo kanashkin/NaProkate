@@ -1,6 +1,6 @@
 /* Header */
 
-.header__order-list{
+.header__account-list{
     display: flex;
     gap: 24px;
 }
@@ -11,12 +11,12 @@
     font-weight: 500;
 }
 
-.header__order-buttons{
+.header__account-buttons{
     display: flex;
     gap: 8px;
 }
 
-.header__order-button{
+.header__account-button{
     width: 107px;
     height: 40px;
     border-radius: 18px;
@@ -27,26 +27,28 @@
     font-weight: 500;
 }
 
-.header__order-btn{
+.header__account-btn{
     background: #333;
 }
 
-.order__main-wrapper{
+.account__main-wrapper{
     padding-top: 144px;
     padding-bottom: 352px;
 }
 
-.order__title{
+.account__title{
     color: #0F0F0F;
     font-size: 36px;
     font-weight: 900;
 }
 
-.order__main-content{
+.account__main-content{
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.order-line{
+.account-line{
     margin-top: 16px;
     height: 1px;
     width: 100%;
@@ -88,7 +90,7 @@
     color: #0E87DE;
 }
 
-.oreder__main-block{
+.account__main-block{
     width: 37.3%;
     padding: 32px;
     display: flex;
@@ -99,60 +101,63 @@
     background: #FDFEFB;
 }
 
-.order__block-name{
+.account__block-name{
     color: rgba(15, 15, 15, 0.80);
     font-size: 24px;
     font-weight: 600;
 }
 
-.order__block-info{
+.account__block-info{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 400;
 }
 
-.order__block-info-wrapper{
+.account__block-info-wrapper{
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.order__main-order-text{
+.account__main-order-text{
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.order__main-links, .order__main-operations-content{
+.account__main-links, .order__main-operations-content{
     display: flex;
     gap: 16px;
     flex-direction: column;
 }
 
-.order__main-link{
+.account__main-link{
     color: #0E87DE;
     font-size: 16px;
     font-weight: 400;
     text-decoration-line: underline;
 }
 
-.order__main-operations-item{
+.account__main-operations-item{
     display: flex;
     justify-content: space-between;
 }
 
-.order__main-operations-content{
+.account__main-operations-content{
     margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-.order__main-operations-link{
+.account__main-operations-link{
     color: #0E87DE;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
 }
 
-.order__main-price{
+.account__main-price{
     color: #3F3F3E;
     font-size: 16px;
     font-weight: 400;
@@ -160,7 +165,7 @@
 }
 
 
-.oredr__main-card{
+.account__main-card{
     padding: 32px;
     display: flex;
     flex-direction: column;
@@ -172,88 +177,87 @@
     height: fit-content;
 }
 
-.order__main-card-text{
+.account__main-card-text{
     display: flex;
     justify-content: space-between;
 }
 
-.order__card-item{
+.account__card-item{
     display: flex;
     justify-content: space-between;
     gap: 75px;
     align-items: center;
 }
 
-.order__card-title{
+.account__card-title{
     color: rgba(15, 15, 15, 0.80);
     font-size: 32px;
     font-weight: 800;
 }
-
-.order__card-rent{
+.account__card-rent{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 400;
 }
 
-.order__card-status{
+.account__card-status{
     text-align: right;
     margin-top: 20px;
 }
 
-.order__card-status-name{
+.account__card-status-name{
     color: rgba(15, 15, 15, 0.50);
 }
 
-.order__card-status{
+.account__card-status{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 500;
 }
 
-.order__card-block{
+.account__card-block{
     display: flex;
     align-items: center;
     gap: 24px;
 }
 
-.order__card-block-text{
+.account__card-block-text{
     display: flex;
     flex-direction: column;
     gap: 4px;
 }
 
-.order__card-block-name{
+.account__card-block-name{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 700;
 }
 
-.order__card-block-text{
+.account__card-block-text{
     color: rgba(15, 15, 15, 0.80);
     font-size: 12px;
     font-weight: 500;
 }
 
-.order__card-price{
+.account__card-price{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 500;
 }
 
-.order__card-days{
+.account__card-days{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 500;
 }
 
-.order__card-total-price{
+.account__card-total-price{
     color: rgba(15, 15, 15, 0.80);
     font-size: 16px;
     font-weight: 700;
 }
 
-.order__card-btn{
+.account__card-btn{
     width: 130px;
     height: 40px;
     border-radius: 18px;
@@ -261,15 +265,15 @@
     color: #FFF;
 }
 
-.order__card-btn-blue{
+.account__card-btn-blue{
     background: #4CA9E9;
 }
 
-.order__card-btn-black{
+.account__card-btn-black{
     background: #333333;
 }
 
-.order__card-buttons{
+.account__card-buttons{
     display: flex;
     justify-content: space-between;
 }
