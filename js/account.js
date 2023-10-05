@@ -9,3 +9,15 @@ const openLink = () => {
 }
 
 openLink()
+
+const active = () => {
+    const activeBtn = document.querySelectorAll('.header__list')
+
+    activeBtn.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active')
+        })
+    })
+}
+
+active()

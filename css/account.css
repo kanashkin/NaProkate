@@ -281,3 +281,7 @@
 .order__table-link{
     cursor: pointer;
 }
+
+.header__block-hide{
+    display: none;
+}
