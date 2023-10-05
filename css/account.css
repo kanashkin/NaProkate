@@ -291,3 +291,132 @@ li.header__account__list-item.active {
 .header__block-hide{
     display: none;
 }
+
+/* Statistic */
+
+.account__statistic-wrapper{
+    padding-top: 144px;
+    padding-bottom: 352px;
+}
+
+.account__statistic-top-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+}
+
+.account__statistic-top-content-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account__statistic-top-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.account__statistic-settings{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.account__statistic-top-button{
+    display: flex;
+    width: 93px;
+    height: 44px;
+    justify-content: center;
+    border-radius: 36px;
+    border: 1px solid rgba(59, 64, 48, 0.50);
+    align-items: center;
+    gap: 8px;
+/* Button text */
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.account__statistic-content{
+    padding: 32px;
+    border-radius: 15px;
+    width: 33%;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+}
+
+.account__statistic-main-content{
+    display: flex;
+    gap: 17px;
+    margin-top: 24px;
+}
+
+.account__statistic-content-title{
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.graphic{
+    margin-top: 32px;
+    display: flex;
+    gap: 68px;
+    flex-direction: column;
+    position: relative;
+}
+
+.graphic-img{
+    position: absolute;
+    bottom: 0;
+    left: -2px;
+}
+
+.graphic-line{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(15, 15, 15, 0.30);
+}
+
+.graphic-line-content{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.graphic-underline-text{
+    color: rgba(59, 64, 48, 0.80); 
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.graphic-text{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.statistic-content-table{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.statistic-content-table-left{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.statistic-content-table-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-content-table-left-img{
+    width: 16px;
+    height: 16px;
+}
