@@ -70,6 +70,7 @@
     align-items: center;
     flex-wrap: wrap;
     width: 61%;
+    margin-left: 5%;
 }
 
 .catalog__item {
