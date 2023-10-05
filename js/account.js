@@ -10,14 +10,31 @@ const openLink = () => {
 
 openLink()
 
-const active = () => {
-    const activeBtn = document.querySelectorAll('.header__list')
+const accountTabs = () => {
+    const tabBtns = document.querySelectorAll('.header__account__list-item')
+    const accountBlocks = document.querySelectorAll('.account-content')
 
-    activeBtn.forEach(item => {
+    accountBlocks.forEach(item => {
+        item.style.display = 'none'
+    })
+
+    accountBlocks[0].style.display = ''
+
+    tabBtns.forEach(item => {
         item.addEventListener('click', () => {
-            item.classList.toggle('active')
+            tabBtns.forEach(item => {
+                item.classList.remove('active')
+            })
+            accountBlocks.forEach(item => {
+                item.style.display = 'none'
+            })
+
+            item.classList.add('active')
+            let itemContentId = item.getAttribute('data-content')
+            let contentBlock = document.querySelector(itemContentId)
+            contentBlock.style.display = 'block'
         })
     })
 }
 
-active()
+accountTabs()

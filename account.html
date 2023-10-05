@@ -16,33 +16,18 @@
                     <img class="logo-image" src="img/common/header/logo.svg" alt="logo icon">
                     <p class="logo-title">напрокате</p>
                 </a>
-                <div class="header__city">
-                    <img class="header__city-marker" src="img/common/header/marker.svg" alt="marker icon">
-                    <p class="header__city-name">Москва</p>
-                    <img class="header__city-trigger" src="img/common/header/arrow.svg" alt="arrow icon">
-                </div>
             </div>
             <div class="header__block">
-                <ul class="header__account-list">
-                    <a href="#" class="header__list-link">
-                        <li class="header__list">Арендаторы</li>
-                    </a>
-                    <a href="#" class="header__list-link">
-                        <li class="header__list">Заказы</li>
-                    </a>
-                    <a href="#" class="header__list-link">
-                        <li class="header__list">Товары</li>
-                    </a>
-                    <a href="#" class="header__list-link">
-                        <li class="header__list">Статистика</li>
-                    </a>
-                    <a href="distributor.html" class="header__list-link">
-                        <li class="header__list">Прокатчик</li>
-                    </a>
+                <ul class="header__account__list">
+                    <li class="header__account__list-item" data-content="#tenants">Арендаторы</li>
+                    <li class="header__account__list-item" data-content="#orders">Заказы</li>
+                    <li class="header__account__list-item" data-content="#product">Товары</li>
+                    <li class="header__account__list-item" data-content="#statistics">Статистика</li>
+                    <li class="header__account__list-item" data-content="#rental">Прокатчик</li>
                 </ul>
                 <div class="header__account-buttons">
                     <a href="index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
-                    <button class="header__account-button">Иван И.</button>
+                    <button class="header__account-button header__account__list-item" data-content="#main">Иван И.</button>
                 </div>
             </div>
             <div class="header__block header__block-hide">
@@ -73,169 +58,171 @@
     </header>
 
     <main class="main">
-        <div class="container account__main-wrapper">
-            <h2 class="account__title">Мои заказы</h2>
-            <div class="account-line"></div>
-            <div class="account__main-content">
-                <table class="oreder__main-table">
-                    <tr class="order__table-title-line">
-                        <th class="order__table-title">Заказ</th>
-                        <th class="order__table-title">Период аренды</th>
-                        <th class="order__table-title">Стоимость</th>
-                        <th class="order__table-title">Прокатчик</th>
-                        <th class="order__table-title">Состояние</th>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">235687–96</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">235687–97</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">235687–88</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">235687–74</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">235687–72</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                    <tr class="order__table-content">
-                        <td class="order__table-info order__table-link">345642–35</td>
-                        <td class="order__table-info">6–8 авг, пн-вт</td>
-                        <td class="order__table-info">6 424 ₽</td>
-                        <td class="order__table-info">Имя компании</td>
-                        <td class="order__table-info">Выполнен</td>
-                    </tr>
-                </table>
-                <div class="account__main-block">
-                    <div class="account__main-order-text">
-                        <h2 class="account__block-name">Иван Иванов</h2>
-                        <div class="account__block-info-wrapper">
-                            <p class="account__block-info">Почта: ivanivanov@gmail.com</p>
-                            <p class="account__block-info">Телефон: ivanivanov@gmail.com</p>
+        <div class="container">
+            <div class="account__main-wrapper account-content" id="main">
+                <h2 class="account__title">Мои заказы</h2>
+                <div class="account-line"></div>
+                <div class="account__main-content">
+                    <table class="oreder__main-table">
+                        <tr class="order__table-title-line">
+                            <th class="order__table-title">Заказ</th>
+                            <th class="order__table-title">Период аренды</th>
+                            <th class="order__table-title">Стоимость</th>
+                            <th class="order__table-title">Прокатчик</th>
+                            <th class="order__table-title">Состояние</th>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">235687–96</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">235687–97</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">235687–88</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">235687–74</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">235687–72</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                        <tr class="order__table-content">
+                            <td class="order__table-info order__table-link">345642–35</td>
+                            <td class="order__table-info">6–8 авг, пн-вт</td>
+                            <td class="order__table-info">6 424 ₽</td>
+                            <td class="order__table-info">Имя компании</td>
+                            <td class="order__table-info">Выполнен</td>
+                        </tr>
+                    </table>
+                    <div class="account__main-block">
+                        <div class="account__main-order-text">
+                            <h2 class="account__block-name">Иван Иванов</h2>
+                            <div class="account__block-info-wrapper">
+                                <p class="account__block-info">Почта: ivanivanov@gmail.com</p>
+                                <p class="account__block-info">Телефон: ivanivanov@gmail.com</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="account__main-links">
-                        <a href="#"><p class="account__main-link">Мои заказы</p></a>
-                        <a href="#"><p class="account__main-link">Мои данные</p></a>
-                    </div>
-                    <div class="account__main-operations">
-                        <h2 class="account__main-operation-title">Мои заказы</h2>
-                        <ul class="account__main-operations-content">
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                            <li class="account__main-operations-item">
-                                <a href="#" class="account__main-operations-link">Имя компании</a>
-                                <div class="account__main-price">2 500 ₽</div>
-                            </li>
-                        </ul>
+                        <div class="account__main-links">
+                            <a href="#"><p class="account__main-link">Мои заказы</p></a>
+                            <a href="#"><p class="account__main-link">Мои данные</p></a>
+                        </div>
+                        <div class="account__main-operations">
+                            <h2 class="account__main-operation-title">Мои заказы</h2>
+                            <ul class="account__main-operations-content">
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                                <li class="account__main-operations-item">
+                                    <a href="#" class="account__main-operations-link">Имя компании</a>
+                                    <div class="account__main-price">2 500 ₽</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -269,41 +256,6 @@
         </div>
     </footer>
 
-    <div class="overlay">
-        <div class="popup">
-            <div class="popup-wrapper">
-                <h2 class="popup-title">Ваш город Москва?</h2>
-                <div class="popup__buttons-wrapper">
-                    <button class="popup__button" data-button="no">Нет</button>
-                    <button class="popup__button" data-button="yes">Да</button>
-                </div>
-            </div>
-        </div>
-        <div class="popup__city">
-            <div class="popup__city-top">
-                <img src="img/promo/arrow.svg" alt="arrow icon" class="popup__city-back">
-                <h2 class="popup__city-title">Выберете ваш город</h2>
-            </div>
-            <div class="search__block search__block-popup">
-                <div class="input__block input__block-sity">
-                    <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
-                    <input class="search-input popup-input" type="text" placeholder="Санкт-Петербург.">
-                </div>
-                <button class="search-button search-button-popup">Поиск</button>
-            </div>
-            <div class="popup__city-map">
-                <iframe class="popup-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2429.671455606024!2d-1.8943149153279817!3d52.485084119092456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1696168897248!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="popup__city-list">
-                <button class="popup__city-list-item">Москва</button>
-                <button class="popup__city-list-item">Санкт-Петербург</button>
-                <button class="popup__city-list-item">Тверь</button>
-                <button class="popup__city-list-item">Смоленск</button>
-            </div>
-        </div>
-    </div>
-
-<script src="js/app.js"></script>
-<script src="js/account.js"></script>
+    <script src="js/account.js"></script>
 </body>
 </html>

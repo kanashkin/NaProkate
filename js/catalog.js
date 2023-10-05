@@ -31,7 +31,7 @@ const stopHref = () => {
             e.preventDefault()
             const itemHref = item.getAttribute('href')
             
-            if (e.target.classList.contains('stop-href') || e.target.closest('div.stop-href')) {
+            if (e.target.classList.contains('stop-href') || e.target.closest('.stop-href')) {
                 
             } else {
                 window.location.href = itemHref
