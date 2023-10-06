@@ -592,14 +592,6 @@ li.header__account__list-item.active {
 
 .account__products-wrapper-second-page{
     display: none;
-}
-
-.account__products-wrapper-second-page.active{
-    display: flex;
     flex-direction: column;
     gap: 40px;
-}
-
-.account__products-content.remove{
-    display: none;
 }

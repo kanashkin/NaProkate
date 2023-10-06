@@ -27,6 +27,13 @@ const accountTabs = () => {
             })
             accountBlocks.forEach(item => {
                 item.style.display = 'none'
+                let mainBlockInItem = item.querySelector('.main-block')
+                if (mainBlockInItem) {
+                    mainBlockInItem.style.display = ''
+                    item.querySelectorAll('.other-block').forEach(item => {
+                        item.style.display = 'none'
+                    })
+                }
             })
 
             item.classList.add('active')
@@ -46,8 +53,8 @@ const openSecondPage = () => {
 
     openLink.forEach(item => {
         item.addEventListener('click', () => {
-            openBlock.classList.add('active')
-            closeBlock.classList.add('remove')
+            openBlock.style.display = 'flex'
+            closeBlock.style.display = 'none'
         })
     })
 }
