@@ -432,6 +432,7 @@ li.header__account__list-item.active {
 .account__products-wrapper{
     padding-top: 144px;
     padding-bottom: 410px;  
+    position: relative;
 }
 
 .account__products-top-content{
@@ -500,6 +501,7 @@ li.header__account__list-item.active {
 
 .account__table-text-blue{
     color: #0E87DE;
+    cursor: pointer;
 }
 
 .account__products-wrapper-middle{
@@ -594,4 +596,130 @@ li.header__account__list-item.active {
     display: none;
     flex-direction: column;
     gap: 40px;
+}
+
+.account__table-text-link{
+    cursor: pointer;
+}
+
+.account__popup{
+    border-radius: 20px;
+    background: #FFF;
+    width: 1119px;
+    height: 688px;
+    padding: 56px;
+    position: absolute;
+    display: none;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s linear;
+}
+
+.account__popup-title{
+    color: #202318;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.account__popup-city{
+    color: rgba(32, 35, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.account__popup-top{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+}
+
+.account__popup-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.account__popup-content{
+    display: flex;
+    gap: 60px;
+}
+
+.account__popup-text{
+    color: #202318;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px; /* 150% */
+}
+
+.account__popup-text-number{
+    color: rgba(32, 35, 24, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+.account__table-popup{
+    border-spacing: 0;
+}
+
+.account__popup-table-content{
+    width: 120px;
+    height: 36px;
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #B9B9B9;
+    display: inline-flex;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.account__popup-table-content-yellow{
+    background-color: rgba(255, 241, 116, 0.35);
+}
+
+.account__popup-table-content-header{
+    background-color: rgba(0, 0, 0, 0.06);
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.account__close-popup{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    position: absolute;
+    top: -22px;
+    right: -22px;
+}
+
+.main__account.active{
+    filter: blur(10px);
+    opacity: 0.7;
+}
+
+.overlay__account{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+    opacity: 0;
+    transition: .4s linear;
+
+}
+
+.overlay__account.active{
+    opacity: 1;
+    z-index: 10;
+
 }

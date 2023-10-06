@@ -47,7 +47,7 @@ const accountTabs = () => {
 accountTabs()
 
 const openSecondPage = () => {
-    const openLink = document.querySelectorAll('.account__table-text-link'),
+    const openLink = document.querySelectorAll('.account__table-text-blue'),
     closeBlock = document.querySelector('.account__products-content'),
     openBlock = document.querySelector('.account__products-wrapper-second-page')
 
@@ -60,3 +60,27 @@ const openSecondPage = () => {
 }
 
 openSecondPage()
+
+const accountPopup = () => {
+    const openPopup = document.querySelectorAll('.account__table-text-link'),
+    accPopup = document.querySelector('.account__popup'),
+    closePopup = document.querySelector('.account__close-popup'),
+    blurBlock = document.querySelector('.main__account'),
+    accOverlay = document.querySelector('.overlay__account')
+
+    openPopup.forEach(item => {
+        item.addEventListener('click', () => {
+            accPopup.style.display = 'block'
+            blurBlock.classList.add('active')
+            accOverlay.classList.add('active')
+            
+            closePopup.addEventListener('click', () => {
+                accPopup.style.display = 'none'
+                blurBlock.classList.remove('active')
+                accOverlay.classList.remove('active')
+            })
+        })
+    })
+}
+
+accountPopup()
