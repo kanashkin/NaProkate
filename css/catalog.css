@@ -245,6 +245,47 @@
     display: inline-flex;
 }
 
+.calendar__body {
+    margin-top: 15px;
+}
+
+.calendar__weekdays {
+    display: flex;
+    justify-content: space-between;
+}
+
+.calendar__weekdays-item {
+    padding: 3.73px;
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 9.315px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.calendar__days {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 15px;
+}
+
+.calendar__days-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    transition: .2s all;
+}
+
+.calendar__days-item.active {
+    border-radius: 37.259px;
+    background: #9EB175;
+    color: #fff;
+}
+
+
 /* Filters */
 
 .catalog__filters {
