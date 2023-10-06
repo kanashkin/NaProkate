@@ -252,6 +252,7 @@
 .calendar__weekdays {
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
 }
 
 .calendar__weekdays-item {
