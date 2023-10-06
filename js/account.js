@@ -38,3 +38,18 @@ const accountTabs = () => {
 }
 
 accountTabs()
+
+const openSecondPage = () => {
+    const openLink = document.querySelectorAll('.account__table-text-link'),
+    closeBlock = document.querySelector('.account__products-content'),
+    openBlock = document.querySelector('.account__products-wrapper-second-page')
+
+    openLink.forEach(item => {
+        item.addEventListener('click', () => {
+            openBlock.classList.add('active')
+            closeBlock.classList.add('remove')
+        })
+    })
+}
+
+openSecondPage()
