@@ -510,35 +510,6 @@ li.header__account__list-item.active {
     gap: 36px;
 }
 
-.account__products-wrapper-second-page{
-    margin-top: 100px;
-    display: none;
-}
-
-.account__product-second-page-list{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.account__product-second-page-text{
-    display: flex;
-    gap: 124px;
-}
-
-.account__product-second-page-text-left{
-    color: #333;
-    font-size: 16px;
-    width: 192px;
-    font-weight: 500;
-}
-
-.account__product-second-page-text-right{
-    color: #007FDB;
-    font-size: 16px;
-    font-weight: 500;
-}
-
 .account__products-middle{
     display: flex;
     gap: 36px;
@@ -590,12 +561,6 @@ li.header__account__list-item.active {
     color: #333;
     font-size: 16px;
     font-weight: 500;
-}
-
-.account__products-wrapper-second-page{
-    display: none;
-    flex-direction: column;
-    gap: 40px;
 }
 
 .account__table-text-link{
@@ -672,13 +637,28 @@ li.header__account__list-item.active {
     height: 36px;
     padding: 10px 12px;
     text-align: left;
-    border: 1px solid #B9B9B9;
     display: inline-flex;
     align-items: center;
     color: #000;
     font-size: 12px;
     font-weight: 400;
+    border-style: solid;
+    border-color: #B9B9B9;
 }
+
+.account__table-popup th, td {
+    border-width: 1px 0 0 1px;
+}
+
+.account__table-popup th:last-child,
+.account__table-popup td:last-child {
+    border-right-width: 1px;
+}
+
+.account__table-popup tr:last-child td {
+    border-bottom-width: 1px;
+}
+
 
 .account__popup-table-content-yellow{
     background-color: rgba(255, 241, 116, 0.35);

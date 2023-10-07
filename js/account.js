@@ -46,20 +46,6 @@ const accountTabs = () => {
 
 accountTabs()
 
-const openSecondPage = () => {
-    const openLink = document.querySelectorAll('.account__table-text-blue'),
-    closeBlock = document.querySelector('.account__products-content'),
-    openBlock = document.querySelector('.account__products-wrapper-second-page')
-
-    openLink.forEach(item => {
-        item.addEventListener('click', () => {
-            openBlock.style.display = 'flex'
-            closeBlock.style.display = 'none'
-        })
-    })
-}
-
-openSecondPage()
 
 const accountPopup = () => {
     const openPopup = document.querySelectorAll('.account__table-text-link'),

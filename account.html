@@ -505,7 +505,7 @@
             <div class="account__products-wrapper account-content" id="product">
                 <h2 class="account__title">Товары</h2>
                 <div class="account-line"></div>
-                <div class="account__products-content main-block">
+                <div class="account__products-content">
                     <div class="account__products-top-content">
                         <p class="account__products-text">В списке 345 товаров</p>
                         <div class="account__products-buttons">
@@ -622,53 +622,6 @@
                         </table>
                     </div>
                 </div>
-                <div class="account__products-wrapper-second-page other-block">
-                    <div class="account__products-wrapper-top">
-                        <div class="account__product-second-page-text-wrapper">
-                            <ul class="account__product-second-page-list">
-                                <li class="account__product-second-page-text">
-                                    <p class="account__product-second-page-text-left">Название</p>
-                                    <p class="account__product-second-page-text-right">Велосипед «CROSS» Electrobike, электро</p>
-                                </li>
-                                <li class="account__product-second-page-text">
-                                    <p class="account__product-second-page-text-left">Категория</p>
-                                    <p class="account__product-second-page-text-right">Стойки</p>
-                                </li>
-                                <li class="account__product-second-page-text">
-                                    <p class="account__product-second-page-text-left">Стоимость</p>
-                                    <p class="account__product-second-page-text-right">2 500 ₽</p>
-                                </li>
-                                <li class="account__product-second-page-text">
-                                    <p class="account__product-second-page-text-left">Компенсация за потерю</p>
-                                    <p class="account__product-second-page-text-right">23 000 ₽</p>
-                                </li>
-                                <li class="account__product-second-page-text">
-                                    <p class="account__product-second-page-text-left">Цвет</p>
-                                    <p class="account__product-second-page-text-right">Белый</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="account__products-wrapper-middle">
-                        <h2 class="account__products-page-title">Размеры</h2>
-                        <div class="account__products-middle-text">
-                            <ul class="account__products-middle-content-wrapper">
-                                <li class="account__products-middle-content">
-                                    <p class="account__products-middle-content-left">Диаметр</p>
-                                    <p class="account__products-middle-content-right">99см</p>
-                                </li>
-                                <li class="account__products-middle-content">
-                                    <p class="account__products-middle-content-left">Высота</p>
-                                    <p class="account__products-middle-content-right">72см</p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="account__products-wrapper-bottom">
-                        <h2 class="account__products-bottom-title">Фотографии</h2>
-                        <p class="account__products-bottom-text">Нет фото</p>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
@@ -690,8 +643,8 @@
                     <li class="footer__list-item"><a href="#">О нас</a></li>
                 </ul>
                 <ul class="footer__list">
-                    <li class="footer__list-item"><a href="login.html">Для прокатчика</a></li>
-                    <li class="footer__list-item footer__list-item-admin"><a href="login-admin.html">Для администратора</a></li>
+                    <li class="footer__list-item footer-login"><a href="login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="login-admin.html">Для администратора</a></li>
                 </ul>
                 <ul class="footer__list">
                     <li class="footer__list-item"><a href="offer.html">Оферта</a></li>
@@ -722,7 +675,7 @@
                             <th class="account__popup-table-content account__popup-table-content-header">На складе</th>
                         </tr>
                         <tr class="account__popup-table-rows">
-                            <td class="account__popup-table-content">22 августа, сб</td>
+                            <td class="account__popup-table-content">22 августа, сб</td>
                             <td class="account__popup-table-content">0</td>
                             <td class="account__popup-table-content"></td>
                             <td class="account__popup-table-content">5 шт.</td>
@@ -794,5 +747,6 @@
     </div>
 
     <script src="js/account.js"></script>
+    <script src="js/checkLogin.js"></script>
 </body>
 </html>

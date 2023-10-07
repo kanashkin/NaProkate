@@ -3,7 +3,7 @@ const removeItem = () => {
     
     removeBtn.forEach(item => {
         item.addEventListener('click', () => {
-            item.parentNode.parentNode.remove()
+            item.parentNode.parentNode.parentNode.remove()
         })
     })
 }

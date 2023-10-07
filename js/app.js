@@ -92,6 +92,8 @@ const checkLogin = () => {
     } else if (localStorage.getItem('logined') === 'unlogin') {
         signUpBtn.classList.remove('unactive')
         userBlock.classList.remove('active')
+    } else {
+        localStorage.setItem('logined', 'unlogin')
     }
 }
 
