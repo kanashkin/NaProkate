@@ -7,7 +7,7 @@ const checkFooterLogin = () => {
             const itemHref = item.querySelector('a').getAttribute('href')
 
             if (localStorage.getItem('logined') === 'login') {
-                window.location.href = '/account.html'
+                window.location.href = 'account.html'
             } else if (localStorage.getItem('logined') === 'unlogin') {
                 window.location.href = itemHref
             }
