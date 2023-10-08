@@ -3,12 +3,14 @@
 }
 
 .product__header {
-    margin-top: 24px;
+    margin: 24px 0 32px 0;
     padding: 8px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+    position: relative;
+    z-index: 1;
 }
 
 .product__header .add__block {
@@ -38,6 +40,7 @@
     width: 100%;
     max-height: 40px;
     position: absolute;
+    z-index: 4;
     overflow: hidden;
     transition: .3s linear;
 }
@@ -45,7 +48,7 @@
 .days-price,
 .days-dropdown {
     border-radius: 32px;
-    background: rgba(152, 166, 123, 0.12);
+    background: rgb(238 241 230);
 }
 
 .days-price {
@@ -98,4 +101,59 @@
 
 .days-dropdown-item:first-child:hover {
     opacity: 1;
+}
+
+/* Product main */
+.product-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__left__block {
+    display: flex;
+    gap: 24px;
+}
+
+.product__photo__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.product__photo-item {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #F9F9F9;
+    transition: .2s all;
+    border: 2px solid #F9F9F9;
+    cursor: pointer;
+}
+
+.product__photo-item img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.product__photo-item.active {
+    border-radius: 20px;
+    border: 2px solid #A1B17E;
+}
+
+.product__photo {
+    width: 671px;
+    height: 472px;
+    border-radius: 20px;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product__photo img {
+    width: 59.61%;
+    height: 95.34%;
 }
