@@ -107,6 +107,7 @@
 .product-main {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 382px;
 }
 
 .product__left__block {
