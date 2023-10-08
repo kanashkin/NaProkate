@@ -93,3 +93,22 @@ const openPageOrder = () => {
 }
 
 openPageOrder()
+
+const tabs = () => {
+    const activeTabs = document.querySelectorAll('.account__tabs')
+
+    activeTabs[0].classList.add('active')
+
+    activeTabs.forEach(item => {
+        item.addEventListener('click', () => {
+
+            activeTabs.forEach(actTabs => {
+                actTabs.classList.remove('active')
+            })
+
+            item.classList.add('active')
+        })
+    })
+}
+
+tabs()
