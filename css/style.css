@@ -413,3 +413,51 @@ input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
 	display: none;
 }
+
+/* For catalog and items */
+
+.add__block {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.add__block-btn {
+    width: 91px;
+    height: 31px;
+    border-radius: 22px;
+    background: #9EB175;
+    /* Button text */
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.add__block-amount {
+    padding: 8px 2px;
+    text-align: center;
+    width: 31px;
+    height: 31px;
+    border-radius: 8px;
+    border: 1px solid #B0BE93;
+    background: #F9F9F9;
+}
+
+.add__block-delete {
+    display: inline-flex;
+}
+
+/* bread crumbs */
+
+.bread-crumbs{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.bread-crumbs-text {
+    color: rgba(59, 64, 48, 0.70);
+    font-size: 16px;
+    font-weight: 500;
+}

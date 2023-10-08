@@ -7,18 +7,6 @@
     margin-bottom: 410px;
 }
 
-.basket-back-to-catalog{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-}
-
-.basket-back-text{
-    color: rgba(59, 64, 48, 0.70);
-    font-size: 16px;
-    font-weight: 500;
-}
-
 .basket-text-content{
     display: flex;
     flex-direction: column;

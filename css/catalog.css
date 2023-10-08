@@ -165,38 +165,6 @@
     font-weight: 500;
 }
 
-.add__block {
-    margin-top: 16px;
-    display: flex;
-    align-items: center;
-    gap: 16px;
-}
-
-.add__block-btn {
-    width: 91px;
-    height: 31px;
-    border-radius: 22px;
-    background: #9EB175;
-    /* Button text */
-    color: #FFF;
-    font-size: 12px;
-    font-weight: 700;
-}
-
-.add__block-amount {
-    padding: 8px 2px;
-    text-align: center;
-    width: 31px;
-    height: 31px;
-    border-radius: 8px;
-    border: 1px solid #B0BE93;
-    background: #F9F9F9;
-}
-
-.add__block-delete {
-    display: inline-flex;
-}
-
 .catalog__right {
     width: 19.3%;
     display: flex;
