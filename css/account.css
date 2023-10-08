@@ -471,9 +471,6 @@ li.header__account__list-item.active {
 
 .account__main-table{
     text-align: left;
-}
-
-.account__main-table{
     border-radius: 15px;
     padding: 8px 32px;
     border: 1px solid rgba(59, 64, 48, 0.21);
@@ -703,3 +700,116 @@ li.header__account__list-item.active {
     z-index: 10;
 
 }
+
+/* tenants */
+
+.account__tenants-wrapper{
+    margin-top: 144px;
+    margin-bottom: 410px;
+}
+
+.account__tenants-top-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account__tenants-left-content{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.account__tenants-top-left-button{
+    width: 232px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.account__tenants-top-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account__tenants-left-button-text{
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account__tenants-right-content{
+    display: flex;
+    gap: 28px;
+}
+
+.account__tenants-buttons{
+    border-radius: 36px;
+    border: 1px solid rgba(59, 64, 48, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.account__tenants-right-btn{
+    width: 104px;
+    height: 44px;
+}
+
+.account__tenants-button-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account__tenants-right-button{
+    width: 85px;
+    height: 44px;
+}
+
+.account__tenants-right-buttons-wrapper{
+    display: flex;
+    gap: 16px;
+}
+
+.account__tenants-main-content{
+    margin-top: 32px;
+}
+
+.accout__tenants-main-table{
+    text-align: left;
+    border-radius: 15px;
+    padding: 8px 32px;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+    border-spacing: 0 24px;
+}
+
+.account__table-tenants-title{
+    padding-right: 101px;
+    white-space: nowrap;
+    color: rgba(59, 64, 48, 0.80);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.account__table-tenants-title:last-child{
+    padding-right: 0;
+}
+
+.account__table-tenants{
+    color: rgba(59, 64, 48, 0.80);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account__table-tenants-blue{
+    color: #0E87DE;
+}
+
