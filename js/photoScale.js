@@ -15,11 +15,16 @@ const photoScale = () => {
                 })
                 item.classList.add('active')
                 let photo = item.querySelector('img')
+                let prevPhoto = mainItemBlock.querySelector('img')
                 if (photo) {
-                    mainItemBlock.querySelector('img').remove()
+                    if (prevPhoto) {
+                        prevPhoto.remove()
+                    }
                     let photoClone = photo.cloneNode()
                     mainItemBlock.appendChild(photoClone)
-                } 
+                } else {
+                    prevPhoto.remove()
+                }
             }
         })
     })
