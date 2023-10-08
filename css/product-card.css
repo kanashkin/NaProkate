@@ -1,0 +1,101 @@
+.product {
+    padding-top: 72px;
+}
+
+.product__header {
+    margin-top: 24px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.20);
+}
+
+.product__header .add__block {
+    margin-top: 0;
+}
+
+.product__header__block {
+    display: flex;
+    gap: 24px;
+}
+
+.product__header-days {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.days-dropdown-wrapper {
+    position: relative;
+    height: 40px;
+    width: 123px;
+}
+
+.days-dropdown {
+    min-width: 123px;
+    height: fit-content;
+    width: 100%;
+    max-height: 40px;
+    position: absolute;
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+.days-price,
+.days-dropdown {
+    border-radius: 32px;
+    background: rgba(152, 166, 123, 0.12);
+}
+
+.days-price {
+    padding: 0 24px;
+    height: 40px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.days-price-value {
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.days-dropdown.active {
+    max-height: 450px;
+}
+
+.days-dropdown-item,
+.days-dropdown-select,
+.days-price-value {
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.days-dropdown-item {
+    align-items: center;
+    display: flex;
+    padding-left: 24px;
+    width: 100%;
+    gap: 8px;
+    height: 40px;
+    border-top: 1px solid #1437661f;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.days-dropdown-item:hover {
+    opacity: .7;
+}
+
+.days-dropdown-item:first-child {
+    border-top: none;
+}
+
+.days-dropdown-item:first-child:hover {
+    opacity: 1;
+}

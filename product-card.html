@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Велосипед CROSS ElectroBike</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product-card.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="index.html">
+                    <img class="logo-image" src="img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+                <div class="header__city">
+                    <img class="header__city-marker" src="img/common/header/marker.svg" alt="marker icon">
+                    <p class="header__city-name">Москва</p>
+                    <img class="header__city-trigger" src="img/common/header/arrow.svg" alt="arrow icon">
+                </div>
+            </div>
+            <div class="header__block">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="basket.html">
+                    <img class="basket-img" src="img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+                <div class="block-after-login">
+                    <div class="favorites-button">
+                        <img src="img/common/header/like.svg" alt="heart icon" class="favorites-img">
+                    </div>
+                    <div class="user-block-after-login">
+                        <p class="user-name">Иван И.</p>
+                        <a href="account.html"><img src="img/common/header/pp-after-login.png" alt="profile picture" class="user-pp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="product">
+            <div class="container">
+                <div class="bread-crumbs">
+                    <a href="catalog.html">
+                        <img src="img/common/basket-arrow.svg" alt="arrow icon" class="basket-back-arrow">
+                    </a>
+                    <p class="bread-crumbs-text">Велосипеды</p>
+                </div>
+                <div class="product__header">
+                    <div class="product__header__block">
+                        <h1 class="product__header-title">Велосипед CROSS ElectroBike</h1>
+                        <div class="add__block">
+                            <button class="add__block-btn">Добавить</button>
+                            <input class="add__block-amount" type="number">
+                            <button class="add__block-delete">
+                                <img src="img/catalog/item/delete.svg" alt="delete icon">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="product__header-days">
+                        <div class="days-dropdown-wrapper">
+                            <ul class="days-dropdown">
+                                <li class="days-dropdown-item days-dropdown-trigger">
+                                    <p class="days-dropdown-select">1 день</p>
+                                    <img class="days-dropdown-arrow" src="img/product/header/arrow.svg" alt="arrow icon">
+                                </li>
+                                <li class="days-dropdown-item">1 день</li>
+                                <li class="days-dropdown-item">2 дня</li>
+                                <li class="days-dropdown-item">3 дня</li>
+                                <li class="days-dropdown-item">4 дня</li>
+                                <li class="days-dropdown-item">5 дней</li>
+                            </ul>
+                        </div>
+                        <div class="days-price">
+                            <img src="img/product/header/tag.svg" alt="tag icon">
+                            <p class="days-price-value">2500 рублей</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/dropdown.js"></script>
+    
+</body>
+</html>

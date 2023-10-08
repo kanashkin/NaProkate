@@ -145,7 +145,8 @@ span {
     display: none;
 }
 
-.header-btn {
+.header-btn,
+.sign-in {
     height: 40px;
     width: 94px;
     border-radius: 18px;
