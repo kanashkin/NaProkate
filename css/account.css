@@ -299,47 +299,6 @@ li.header__account__list-item.active {
     padding-bottom: 352px;
 }
 
-.account__statistic-top-content{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    height: 45px;
-    align-items: center;
-}
-
-.account__statistic-top-content-text{
-    color: rgba(59, 64, 48, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.account__statistic-top-buttons{
-    display: flex;
-    gap: 20px;
-}
-
-.account__statistic-settings{
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    cursor: pointer;
-}
-
-.account__statistic-top-button{
-    display: flex;
-    width: 93px;
-    height: 44px;
-    justify-content: center;
-    border-radius: 36px;
-    border: 1px solid rgba(59, 64, 48, 0.50);
-    align-items: center;
-    gap: 8px;
-/* Button text */
-    color: rgba(59, 64, 48, 0.50);
-    font-size: 16px;
-    font-weight: 600;
-}
-
 .account__statistic-main-content__wrapper {
     margin-top: 24px;
     display: flex;
@@ -422,49 +381,6 @@ li.header__account__list-item.active {
     justify-content: space-between;
 }
 
-.statistic-content-table-left-img{
-    width: 16px;
-    height: 16px;
-}
-
-/* Products */
-
-.account__products-wrapper{
-    padding-top: 144px;
-    padding-bottom: 410px;  
-    position: relative;
-}
-
-.account__products-top-content{
-    margin-top: 40px;
-    height: 44px;
-    display: flex;
-    gap: 12px;
-}
-
-.account__products-top-content{
-    display: flex;
-    align-items: center;
-}
-
-.account__products-text{
-    color: rgba(59, 64, 48, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.account__products-button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    width: 187px;
-}
-
-.account__products-buttons{
-    display: flex;
-}
-
 .account__products-main{
     margin-top: 24px;
 }
@@ -499,65 +415,6 @@ li.header__account__list-item.active {
 .account__table-text-blue{
     color: #0E87DE;
     cursor: pointer;
-}
-
-.account__products-wrapper-middle{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.account__products-middle{
-    display: flex;
-    gap: 36px;
-}
-
-.account__products-page-title{
-    color: #333;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.account__products-middle-content{
-    display: flex;
-    gap: 245px;
-}
-
-.account__products-middle-content-wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.account__products-middle-content-left{
-    width: 70px;
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.account__products-middle-content-right{
-    color: #007FDB;
-    font-size: 16px;
-    font-weight: 500;
-}
-
-.account__products-wrapper-bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 36px;
-}
-
-.account__products-bottom-title{
-    color: #333;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.account__products-bottom-text{
-    color: #333;
-    font-size: 16px;
-    font-weight: 500;
 }
 
 .account__table-text-link{
@@ -701,27 +558,24 @@ li.header__account__list-item.active {
 
 }
 
-/* tenants */
-
-.account__tenants-wrapper{
+.account__wrapper{
     margin-top: 144px;
     margin-bottom: 410px;
 }
 
-.account__tenants-top-content{
+.account__top-content{
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
 }
 
-.account__tenants-left-content{
+.account__left-content{
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.account__tenants-top-left-button{
-    width: 232px;
+.account__top-left-button{
     height: 44px;
     display: flex;
     align-items: center;
@@ -730,24 +584,34 @@ li.header__account__list-item.active {
     cursor: pointer;
 }
 
-.account__tenants-top-text{
+.account__top-left-button-tenants{
+    width: 232px;
+}
+
+.account__top-left-button-product{
+    width: 187px;
+}
+
+.account__top-text{
     color: rgba(59, 64, 48, 0.50);
     font-size: 16px;
     font-weight: 400;
+    display: flex;
+    align-items: center;
 }
 
-.account__tenants-left-button-text{
+.account__left-button-text{
     color: #3B4030;
     font-size: 16px;
     font-weight: 500;
 }
 
-.account__tenants-right-content{
+.account__right-content{
     display: flex;
     gap: 28px;
 }
 
-.account__tenants-buttons{
+.account__buttons{
     border-radius: 36px;
     border: 1px solid rgba(59, 64, 48, 0.50);
     display: flex;
@@ -757,32 +621,69 @@ li.header__account__list-item.active {
     cursor: pointer;
 }
 
-.account__tenants-right-btn{
-    width: 104px;
-    height: 44px;
+.account__right-button-order{
+    border-radius: 36px;
+    border: 1px solid rgba(59, 64, 48, 0.50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 }
 
-.account__tenants-button-text{
+.account__buttons-order{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    background: #3F3F3E;
+}
+
+.account__buttons-order.unactive{
+    color: rgba(59, 64, 48, 0.50);
+    background: #fff;
+}
+
+.account__buttons-error{
     color: rgba(59, 64, 48, 0.50);
     font-size: 16px;
     font-weight: 500;
 }
 
-.account__tenants-right-button{
+.account__buttons-error.active{
+    color: #fff;
+    background: #3F3F3E;
+}
+
+.account__button-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.account__right-button-order{
+    width: 130px;
+}
+
+.account__right-btn{
+    width: 104px;
+    height: 44px;
+}
+
+.account__right-button{
     width: 85px;
     height: 44px;
 }
 
-.account__tenants-right-buttons-wrapper{
+.account__right-buttons-wrapper{
     display: flex;
     gap: 16px;
 }
 
-.account__tenants-main-content{
+.account__main-content{
     margin-top: 32px;
 }
 
-.accout__tenants-main-table{
+.account__tenants-main-table{
+    margin-top: 32px;
     text-align: left;
     border-radius: 15px;
     padding: 8px 32px;
@@ -813,3 +714,53 @@ li.header__account__list-item.active {
     color: #0E87DE;
 }
 
+.account__orders-wrapper{
+    margin-top: 144px;
+    margin-bottom: 410px;
+}
+
+.account__oreders-top-content{
+    margin-top: 40px;
+}
+
+/* orders */
+
+.account__top-left-button-order{
+    width: 160px;
+}
+
+.account__orders-main-content{
+    margin-top: 24px;
+}
+
+.account__orders-main-table{
+    margin-top: 32px;
+    text-align: left;
+    border-radius: 15px;
+    padding: 8px 32px;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+    border-spacing: 0 24px;
+    width: 100%;
+}
+
+.account__table-orders-title{
+    color: rgba(59, 64, 48, 0.80);
+    font-size: 16px;
+    font-weight: 700;
+    padding-right: 146px;
+}
+
+.account__table-orders-title:last-child{
+    padding-right: 0px;
+}
+
+.account__table-orders-red{
+    background: #FFD3D3;
+    height: 100%;
+    width: fit-content;
+}
+
+.account__orders-main-content-unactive{
+    display: none;
+}
