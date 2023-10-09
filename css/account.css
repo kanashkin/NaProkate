@@ -832,6 +832,12 @@ li.header__account__list-item.active {
     border: 1px solid rgba(59, 64, 48, 0.21);
     background: #FFFFFE;
 }
+.account__rental-title{
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 700;
+
+}
 
 .account__rental-exit-button{
     width: 86px;
@@ -848,4 +854,152 @@ li.header__account__list-item.active {
 .account__rental-top-text{
     display: flex;
     gap: 96px;
+}
+
+.account__rental-block-first{
+    width: 31%;
+}
+
+.account__rental-info-wrapper{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.account__rental-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account__rental-info-left{
+    width: 74px;
+    color: rgba(59, 64, 48, 0.60);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.account__rental-info-right{
+    color: #1990D2;
+    font-size: 16px;
+    font-weight: 500;
+    width: 165px;
+}
+
+.account__rental-block-second{
+    width: 36.69%;
+}
+
+.account__rental-info-text{
+    color: rgba(59, 64, 48, 0.80);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.account__rental-info-text-center{
+    color: rgba(59, 64, 48, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.account__rental-block-third{
+    width: 31%;
+}
+
+.account__rental-wrapper{
+    margin-bottom: 410px;
+}
+
+/* branch */
+
+.account__rental-main-branch{
+    margin-top: 108px;
+}
+
+.account__branch-top-content{
+    display: flex;
+}
+
+.account__branch-content{
+    margin-top: 32px;
+}
+
+.account__branch-title{
+    color: #3B4030;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.account__branch-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.account__branch-subtitle{
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account__branch-main-content{
+    width: 741px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.account__branch-items{
+    display: flex;
+    justify-content: space-between;
+}
+
+.account__branch-item{
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+    width: 335px;
+}
+
+.account__branch-item-content{
+    width: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.account__branch-item-content.active{
+    height: 50px;
+}
+
+.account__branch-add-text{
+    display: none;
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.account__branch-add-text.active{
+    display: block;
+}
+
+.account__branch-item-text{
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.account__branch-item-arrow{
+    cursor: pointer;
+}
+
+.account__branch-item-arrow.active{
+    rotate: 180deg;
+}
+
+.account__branch-item-main{
+    display: flex;
+    gap: 4px;
 }

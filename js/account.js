@@ -95,9 +95,15 @@ const openPageOrder = () => {
 openPageOrder()
 
 const tabs = () => {
-    const activeTabs = document.querySelectorAll('.account__tabs')
+    const activeTabs = document.querySelectorAll('.account__tabs'),
+        blockRental = document.querySelectorAll('.account__rental')
+
+    blockRental.forEach(actBlock => {
+        actBlock.style.display = 'none'
+    })
 
     activeTabs[0].classList.add('active')
+    blockRental[0].style.display = ''
 
     activeTabs.forEach(item => {
         item.addEventListener('click', () => {
@@ -106,9 +112,29 @@ const tabs = () => {
                 actTabs.classList.remove('active')
             })
 
+            blockRental.forEach(actBlock => {
+                actBlock.style.display = 'none'
+            })
+
+            const id = item.getAttribute('data-tab')
+            const currentBlock = document.querySelector(id)
+
+            currentBlock.style.display = ''
+
             item.classList.add('active')
         })
     })
 }
 
 tabs()
+
+const exitAccount = () => {
+    const exitBtn = document.querySelector('.account__rental-exit-button')
+
+    exitBtn.addEventListener('click', () => {
+        localStorage.setItem('logined', 'unlogin')
+        window.location.href = 'index.html'
+    })
+}
+
+exitAccount()

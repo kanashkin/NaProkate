@@ -1136,20 +1136,142 @@
                 <h2 class="account__title">Прокатчик</h2>
                 <div class="account-line"></div>
                 <ul class="account__rental-tabs">
-                    <li class="account__tabs">Администратор</li>
-                    <li class="account__tabs">Филиал</li>
-                    <li class="account__tabs">Условия проката</li>
-                    <li class="account__tabs">Сотрудники</li>
-                    <li class="account__tabs">Реквизиты</li>
+                    <li class="account__tabs" data-tab="#administrator">Администратор</li>
+                    <li class="account__tabs" data-tab="#branch">Филиал</li>
+                    <li class="account__tabs" data-tab="#conditions">Условия проката</li>
+                    <li class="account__tabs" data-tab="#staff">Сотрудники</li>
+                    <li class="account__tabs" data-tab="#requisites">Реквизиты</li>
                 </ul>
-                <div class="account__rental-main-content">
-                    <div class="account__rental-block">
+                <div class="account__rental account__rental-main-content" id="administrator">
+                    <div class="account__rental-block account__rental-block-first">
                         <div class="account__rental-top-text">
                             <h2 class="account__rental-title">Личные данные</h2>
                             <button class="account__rental-exit-button">Выйти</button>
                         </div>
+                        <ul class="account__rental-info-wrapper">
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-left">Логин</p>
+                                <p class="account__rental-info-right">testemail@proton.me</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-left">Пароль</p>
+                                <p class="account__rental-info-right">***********</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-left">Имя</p>
+                                <p class="account__rental-info-right">Иван</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-left">Фамилия</p>
+                                <p class="account__rental-info-right">Иванов</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-left">Телефон</p>
+                                <p class="account__rental-info-right">+7 999 000-00-00</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="account__rental-block account__rental-block-second">
+                        <div class="account__rental-top-text">
+                            <h2 class="account__rental-title">История движения <br> денежных средств</h2>
+                        </div>
+                        <ul class="account__rental-info-wrapper">
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text">01.02.2023</p>
+                                <p class="account__rental-info-text-center">Остаток на начало года</p>
+                                <p class="account__rental-info-text">2 260 ₽/ 73 ₽ ком.</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text">01.02.2023</p>
+                                <p class="account__rental-info-text-center">Остаток на начало года</p>
+                                <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text">01.02.2023</p>
+                                <p class="account__rental-info-text-center">Остаток на начало года</p>
+                                <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text">01.02.2023</p>
+                                <p class="account__rental-info-text-center">Остаток на начало года</p>
+                                <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="account__rental-block account__rental-block-third">
+                        <div class="account__rental-top-text">
+                            <h2 class="account__rental-title">Условия проката</h2>
+                        </div>
+                        <ul class="account__rental-info-wrapper">
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text-center">Абонентская плата</p>
+                                <p class="account__rental-info-text-center">0</p>
+                            </li>
+                            <li class="account__rental-info">
+                                <p class="account__rental-info-text-center">Привлечение одного заказа</p>
+                                <p class="account__rental-info-text-center">0</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                <div class="account__rental account__rental-main-branch" id="branch">
+                    <div class="account__branch-main">
+                        <div class="account__branch-top-content">
+                            <h2 class="account__branch-title">Москва</h2>
+                        </div>
+                        <div class="account__branch-content">
+                            <p class="account__branch-subtitle">Клиентская линия</p>
+                            <ul class="account__branch-main-content">
+                                <li class="account__branch-items">
+                                    <p class="account__branch-item">Инстаграм</p>
+                                    <p class="account__branch-item">https://www.instagram.com/glorioza_studio/</p>
+                                </li>
+                                <li class="account__branch-items">
+                                    <p class="account__branch-item">Вконтакте</p>
+                                    <p class="account__branch-item">https://vk.com/glorioza_studio</p>
+                                </li>
+                                <li class="account__branch-items">
+                                    <p class="account__branch-item">Фейсбук</p>
+                                    <p class="account__branch-item">https://www.facebook.com/</p>
+                                </li>
+                                <li class="account__branch-items">
+                                    <p class="account__branch-item">Время работы</p>
+                                    <div class="account__branch-item">
+                                        <div class="account__branch-item-content">
+                                            <div class="account__branch-item-main">
+                                                <p class="account__branch-item-text">c 11:00 до 18:00</p>
+                                                <img src="img/common/branch-arrow.svg" alt="arrow icon" class="account__branch-item-arrow">
+                                            </div>
+                                            <p class="account__branch-add-text">с 9:00 до 16:00</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="account__branch-items">
+                                    <p class="account__branch-item">Выходные дни</p>
+                                    <div class="account__branch-item">
+                                        <div class="account__branch-item-content">
+                                            <div class="account__branch-item-main">
+                                                <p class="account__branch-item-text">Без выходных</p>
+                                                <img src="img/common/branch-arrow.svg" alt="arrow icon" class="account__branch-item-arrow">
+                                            </div>
+                                            <p class="account__branch-add-text">Суббота, Воскресенье</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="account__rental account__rental-main-conditions" id="conditions"></div>
+                <div class="account__rental account__rental-main-staff" id="staff"></div>
+                <div class="account__rental account__rental-main-requisites" id="requisites"></div>
             </div>
         </div>
     </main>
