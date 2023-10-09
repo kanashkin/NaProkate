@@ -1002,4 +1002,5 @@ li.header__account__list-item.active {
 .account__branch-item-main{
     display: flex;
     gap: 4px;
+
 }
