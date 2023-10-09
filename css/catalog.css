@@ -107,24 +107,10 @@
     stroke: #FE584D;
 }
 
-.catalog__item-rating {
+.catalog__item .item__rating {
     position: absolute;
     bottom: 12px;
     left: 8px;
-    width: 80px;
-    height: 30px;
-    display: flex;
-    gap: 6px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    background: #F3F6ED;
-}
-
-.catalog__item-rating-number {
-    color: #3B4030;
-    font-size: 16px;
-    font-weight: 600;
 }
 
 .catalog__item__info {

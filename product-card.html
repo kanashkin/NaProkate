@@ -52,7 +52,7 @@
     <main class="main">
         <div class="product">
             <div class="container">
-                <div class="bread-crumbs">
+                <div class="bread-crumbs breadcrumbs-main">
                     <a href="catalog.html">
                         <img src="img/common/basket-arrow.svg" alt="arrow icon" class="basket-back-arrow">
                     </a>
@@ -155,17 +155,208 @@
                             <h2 class="product-title">Выберете дату проката</h2>
                             <div class="calendar__field">
                                 <img src="img/product/calendar.svg" alt="calendar icon">
+                                <p class="calendar__value"></p>
                             </div>
                         </div>
-                        <div class="product__block">
+                        <div class="product__block rental__block">
                             <h2 class="product-title">Прокатчик</h2>
                             <div class="rental__info">
                                 <div class="rental__parameter">
-                                    <a class="rental-parameter rental-name" href="">Имя прокатчика</a>
+                                    <a class="parameter-title rental-name" href="">Имя прокатчика</a>
+                                    <div class="parameter-value">
+                                        <div class="parameter__grade">
+                                            <img class="parameter__grade-star" src="img/product/star.svg" alt="star icon">
+                                            <p class="parameter__grade-value">4.9</p>
+                                        </div>
+                                        <a class="reviews-link" href="">отзывы</a>
+                                    </div>
+                                </div>
+                                <div class="rental__parameter">
+                                    <a class="parameter-title" href="">Пункт выдачи</a>
+                                    <div class="parameter-value">
+                                        <p class="parameter-value-item">Московский пр., 22Т</p>
+                                        <p class="parameter-value-item">каждый день, 10:00–22:00.</p>
+                                    </div>
+                                </div>
+                                <div class="rental__parameter">
+                                    <a class="parameter-title" href="">Доставка</a>
+                                    <div class="parameter-value">
+                                        <p class="parameter-value-item">2 600 ₽ — легковая</p>
+                                        <p class="parameter-value-item">6 500 ₽ — грузовая</p>
+                                    </div>
+                                </div>
+                                <div class="rental__parameter">
+                                    <a class="parameter-title" href="">Оплата</a>
+                                    <div class="parameter-value">
+                                        <p class="parameter-value-item">Картой онлайн</p>
+                                        <p class="parameter-value-item">Банковским переводом</p>
+                                    </div>
+                                </div>
+                                <div class="rental__parameter">
+                                    <a class="parameter-title" href="">Залог</a>
+                                    <div class="parameter-value">
+                                        <p class="parameter-value-item">Не берётся</p>
+                                    </div>
+                                </div>
+                                <div class="rental__parameter">
+                                    <a class="parameter-title" href="">Телефон</a>
+                                    <div class="parameter-value">
+                                        <a class="parameter-value-item rental-phone" href="tel:+7996925-18-25">+7 996 925-18-25</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                        <button class="rules-button">Правила</button>
                     </div>
+                </div>
+                <div class="product-review">
+                    <div class="bread-crumbs breadcrumbs-review">
+                        <a href="">
+                            <img src="img/common/basket-arrow.svg" alt="arrow icon" class="basket-back-arrow">
+                        </a>
+                        <p class="bread-crumbs-text">К карточке товара</p>
+                    </div>
+                    <div class="reviews__wrapper">
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review__content">
+                                <img class="review-avatar" src="img/product/review/ava.svg" alt="avatar icon">
+                                <div class="review__info">
+                                    <p class="review-name">Арина Михайлова</p>
+                                    <p class="review-text">
+                                        Советую прокатчика,  велосипед удобный и быстрый
+                                    </p>
+                                    <p class="review-date">Joined December 2021</p>
+                                </div> 
+                            </div>
+                            <div class="item__rating">
+                                <img class="item__rating-star" src="img/catalog/item/star.svg" alt="">
+                                <div class="item__rating-number">4.9</div>
+                            </div>
+                        </div>
+                    </div>
+                    <form class="review__form" action="">
+                        <h3 class="review__form-title">Оставить отзыв</h3>
+                        <textarea class="review__form-text" placeholder="Опишите что вам больше понравилось или что наоборот не понравилось"></textarea>
+                        <div class="form-block">
+                            <div class="review__rating">
+                                <div class="review__rating__stars">
+                                    <svg class="review__rating-star" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                        <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#A1B17E" fill-opacity="0.5"/>
+                                    </svg>
+                                    <svg class="review__rating-star" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                        <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#A1B17E" fill-opacity="0.5"/>
+                                    </svg>
+                                    <svg class="review__rating-star" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                        <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#A1B17E" fill-opacity="0.5"/>
+                                    </svg>
+                                    <svg class="review__rating-star" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                        <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#A1B17E" fill-opacity="0.5"/>
+                                    </svg>
+                                    <svg class="review__rating-star" xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+                                        <path d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z" fill="#A1B17E" fill-opacity="0.5"/>
+                                    </svg>
+                                </div>
+                                <p class="review__rating-title">Ваш отзыв увидят другие люди</p>
+                            </div>
+                            <button class="review__submit" type="submit">Отправить</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -235,6 +426,8 @@
     <script src="js/app.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/photoScale.js"></script>
+    <script src="js/addRating.js"></script>
+    <script src="js/product-card.js"></script>
     
 </body>
 </html>

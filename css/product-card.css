@@ -220,12 +220,11 @@
 }
 
 .calendar__field {
-    border-radius: 6px;
     background: #FFF;
     width: 362px;
     height: 46px;
-    border: 1px solid rgb(110, 115, 126);
-    box-shadow: 0px 0px 0px 4px rgba(156, 194, 255, 0.25);
+    border-radius: 6px;
+    border: 1px solid rgba(107, 114, 128, 0.50);
     cursor: pointer;
     transition: .2s all;
     display: flex;
@@ -239,6 +238,10 @@
     box-shadow: 0px 0px 0px 4px rgba(59, 130, 246, 0.25);
 }
 
+.rental__block {
+    max-width: 383px;
+}
+
 .rental__info {
     display: flex;
     flex-direction: column;
@@ -247,5 +250,210 @@
 
 .rental__parameter {
     display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.parameter-title,
+.parameter__grade-value,
+.reviews-link,
+.parameter-value-item {
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 175%;
+}
+
+.parameter-value {
+    max-width: 215px;
+    width: 100%;
+}
+
+.rental-name {
+    color: #A1B17E;
+    text-decoration-line: underline;
+}
+
+.parameter__grade {
+    display: flex;
     align-items: center;
+    gap: 8px;
+}
+
+.parameter-value {
+    display: flex;
+    flex-direction: column;
+}
+
+.rental__parameter:first-child .parameter-value {
+    flex-direction: row;
+    align-items: center;
+    gap: 16px;
+}
+
+.reviews-link {
+    color: rgba(15, 15, 15, 0.50);
+    text-decoration-line: underline;
+}
+
+.rental-phone {
+    color: #A1B17E;
+}
+
+.rules-button {
+    max-width: 383px;
+    height: 44px;
+    border-radius: 12px;
+    border: 1px solid #B5B8BF;
+    /* Button text */
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Rating */
+
+
+/* Review */
+
+.product-review {
+    padding-bottom: 170px;
+}
+
+.reviews__wrapper {
+    margin-top: 36px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.review {
+    padding: 17px;
+    max-width: 784px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid #BAC5A0;
+    box-shadow: 0px 4px 4px 0px rgba(174, 174, 174, 0.25);
+}
+
+.review__content {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.review__info {
+    max-width: 230px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.review-name,
+.review-text {
+    color: #3B4030;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 142%;
+}
+
+.review-text {
+    font-weight: 400;
+}
+
+.review-date {
+    color: #7E8375;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 133%;
+    position: relative;
+    margin-left: 20px;
+}
+
+.review-date::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    width: 16px;
+    height: 16px;
+    background: url('../img/product/review/calendar.svg')
+    center center / cover no-repeat;
+}
+
+/* Review form */
+.review__form {
+    max-width: 784px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.review__form-title {
+    color: #3B4030;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.review__form-text {
+    padding: 8px 12px;
+    margin-top: 7px;
+    width: 100%;
+    height: 80px;
+    border-radius: 6px;
+    border: 1px solid #BAC5A0;
+    resize: none;
+}
+
+.review__form-text,
+.review__rating-title {
+    color: #7E8375;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 142%;
+}
+
+.form-block {
+    margin-top: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review__rating__stars {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review__rating-star {
+    transition: .2s all;
+}
+
+.review__rating-star.active path {
+    fill: rgb(56, 82, 0)
+}
+
+.review__rating-star {
+    cursor: pointer;
+}
+
+.review__rating-title {
+    margin-top: 7px;
+}
+
+.review__submit {
+    width: 107px;
+    height: 40px;
+    border-radius: 6px;
+    background: #3B4030;
+    /* Button text */
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
 }
