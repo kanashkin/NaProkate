@@ -961,15 +961,15 @@ li.header__account__list-item.active {
     width: 335px;
 }
 
+.account__branch-item.active .account__branch-add-text {
+    display: block;
+}
+
 .account__branch-item-content{
     width: 145px;
     display: flex;
     flex-direction: column;
     gap: 4px;
-}
-
-.account__branch-item-content.active{
-    height: 50px;
 }
 
 .account__branch-add-text{
