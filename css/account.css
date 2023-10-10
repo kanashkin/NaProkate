@@ -61,13 +61,8 @@ li.header__account__list-item.active {
     background-color: rgba(0, 0, 0, 0.20);
 }
 
-.oreder__main-table{
-    padding: 8px 32px;
-    width: 58%;
-    border-spacing: 0 24px;
-    border-radius: 15px;
-    border: 1px solid rgba(15, 15, 15, 0.21);
-    background: #FDFEFB;
+.oreder__table{
+    padding-right: 95px;
 }
 
 .order__table-title{
@@ -381,8 +376,22 @@ li.header__account__list-item.active {
     justify-content: space-between;
 }
 
-.account__products-main{
-    margin-top: 24px;
+.account__content-wrapper{
+    margin-top: 32px;
+    display: flex;
+    gap: 32px;
+}
+
+.account__tenants-main-content{
+    margin-top: 32px;
+}
+
+.account__table{
+    width: 100%;
+}
+
+.account__table-order-title{
+    padding-right: 146px;
 }
 
 .account__table{
@@ -398,8 +407,19 @@ li.header__account__list-item.active {
     color: rgba(59, 64, 48, 0.80);
     font-size: 16px;
     font-weight: 700;
-    padding-right: 236px;
     white-space: nowrap;
+}
+
+.account__table-order-title{
+    padding-right: 95px;
+}
+
+.account__table-rental-title{
+    padding-right: 236px;
+}
+
+.account__table-tenants-title{
+    padding-right: 101px;
 }
 
 .account__table-title:last-child{
@@ -678,50 +698,11 @@ li.header__account__list-item.active {
     gap: 16px;
 }
 
-.account__main-content{
-    margin-top: 32px;
-}
-
-.account__tenants-main-table{
-    margin-top: 32px;
-    text-align: left;
-    border-radius: 15px;
-    padding: 8px 32px;
-    border: 1px solid rgba(59, 64, 48, 0.21);
-    background: #FDFEFB;
-    border-spacing: 0 24px;
-}
-
-.account__table-tenants-title{
-    padding-right: 101px;
-    white-space: nowrap;
-    color: rgba(59, 64, 48, 0.80);
-    font-size: 16px;
-    font-weight: 700;
-}
-
-.account__table-tenants-title:last-child{
-    padding-right: 0;
-}
-
-.account__table-tenants{
-    color: rgba(59, 64, 48, 0.80);
-    font-size: 16px;
-    font-weight: 400;
-}
-
-.account__table-tenants-blue{
-    color: #0E87DE;
-}
-
 .account__orders-wrapper{
     margin-top: 144px;
     margin-bottom: 410px;
 }
 
-.account__oreders-top-content{
-    margin-top: 40px;
-}
 
 /* orders */
 
@@ -733,29 +714,8 @@ li.header__account__list-item.active {
     margin-top: 24px;
 }
 
-.account__orders-main-table{
-    margin-top: 32px;
-    text-align: left;
-    border-radius: 15px;
-    padding: 8px 32px;
-    border: 1px solid rgba(59, 64, 48, 0.21);
-    background: #FDFEFB;
-    border-spacing: 0 24px;
-    width: 100%;
-}
 
-.account__table-orders-title{
-    color: rgba(59, 64, 48, 0.80);
-    font-size: 16px;
-    font-weight: 700;
-    padding-right: 146px;
-}
-
-.account__table-orders-title:last-child{
-    padding-right: 0px;
-}
-
-.account__table-orders-red{
+.account__table-text-red{
     background: #FFD3D3;
     height: 100%;
     width: fit-content;
