@@ -26,10 +26,6 @@ a {
     display: inline-flex;
 }
 
-table a {
-    display: table-cell;
-}
-
 li {
     display: inline-flex;
     list-style: none;
