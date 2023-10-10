@@ -122,8 +122,7 @@ const checkFooterLogin = () => {
     })
 }
 
-selectMoscow()
-selectCity()
+
 changeCity()
 writeCity()
 checkUserLocation()
