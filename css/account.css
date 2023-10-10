@@ -385,7 +385,7 @@ li.header__account__list-item.active {
     margin-top: 24px;
 }
 
-.account__main-table{
+.account__table{
     text-align: left;
     border-radius: 15px;
     padding: 8px 32px;
@@ -412,7 +412,7 @@ li.header__account__list-item.active {
     font-weight: 400;
 }
 
-.account__table-text-blue{
+.account__table-link{
     color: #0E87DE;
     cursor: pointer;
 }
@@ -766,6 +766,10 @@ li.header__account__list-item.active {
 }
 
 /* rental */
+
+.rental__table th{
+    padding-right: 101px;
+}
 
 .account__status-wrapper{
     margin-top: 32px;
