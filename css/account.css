@@ -968,3 +968,65 @@ li.header__account__list-item.active {
     gap: 4px;
 
 }
+
+/* staff */
+
+.table_staff{
+    margin-top: 55px;
+}
+
+.table_staff-header{
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    width: 180px;
+    height: 36px;
+    padding: 10px 12px;
+    text-align: left;
+    background: rgba(0, 0, 0, 0.06);
+    border-top: 1px solid #B9B9B9;
+    border-left: 1px solid #B9B9B9;
+}
+
+.table_staff-header:first-child{
+    border-radius: 5px 0 0 0;
+}
+
+.table_staff-header:last-child{
+    border-right: 1px solid #B9B9B9;
+    border-radius: 0 5px 0 0;
+}
+
+.table_staff-text{
+    width: 180px;
+    height: 36px;
+    padding: 10px 12px;
+    text-align: left;
+    align-items: center;
+    color: #000;
+    font-size: 12px;
+    font-weight: 400;
+    border-style: solid;
+    border-color: #B9B9B9;
+}
+
+.table_staff th, td {
+    border-width: 1px 0 0 1px;
+}
+
+.table_staff th:last-child,
+.table_staff td:last-child {
+    border-right-width: 1px;
+}
+
+.table_staff tr:last-child td {
+    border-bottom-width: 1px;
+}
+
+.table_staff-text-border:first-child{
+    border-radius: 0 0 0 5px;
+}
+
+.table_staff-text-border:last-child{
+    border-radius: 0 0 5px 0;
+}
