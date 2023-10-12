@@ -683,11 +683,6 @@ li.header__account__list-item.active {
     width: 130px;
 }
 
-.account__right-btn{
-    width: 104px;
-    height: 44px;
-}
-
 .account__right-button{
     width: 85px;
     height: 44px;
@@ -1029,4 +1024,68 @@ li.header__account__list-item.active {
 
 .table_staff-text-border:last-child{
     border-radius: 0 0 5px 0;
+}
+
+.city_list-dropdown{
+    border-radius: 36px;
+    width: 100%;
+    background: #fff;
+    border: 1px solid rgba(59, 64, 48, 0.50);
+}
+
+.city-dropdown-wrapper {
+    position: relative;
+    height: 40px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+}
+
+.city-dropdown-item,
+.city-dropdown-select{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.city-dropdown-item {
+    align-items: center;
+    white-space: nowrap;
+    display: none;
+    width: 100%;
+    gap: 8px;
+    height: 40px;
+    border-top: 1px solid #1437661f;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.city-dropdown-item.active{
+    display: flex;
+}
+
+.city-dropdown-item:first-child{
+    border: none;
+}
+
+.city_list-dropdown{
+    position: absolute;
+    z-index: 4;
+    overflow: hidden;
+    transition: .3s linear;
+}
+
+.city-dropdown.active {
+    max-height: fit-content;
+}
+
+.city-dropdown-trigger{
+    display: flex;
+    justify-content: center;
+}
+
+.city_list-dropdown.active {
+    max-height: 450px;
 }

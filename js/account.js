@@ -139,17 +139,4 @@ const exitAccount = () => {
 
 exitAccount()
 
-const dropdownBranch = () => {
-    const triggerBtns = document.querySelectorAll('.account__branch-item-arrow')
-
-    triggerBtns.forEach(item => {
-        item.addEventListener('click', () => {
-            item.classList.toggle('active')
-            item.closest('.account__branch-item').classList.toggle('active')
-        })
-    })
-}
-
-dropdownBranch()
-
 

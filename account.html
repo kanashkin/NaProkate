@@ -637,10 +637,20 @@
                             </div>
                         </div>
                         <div class="account__right-content">
-                            <div class="account__right-btn account__buttons">
-                                <p class="account__button-text">Город</p>
-                                <img src="img/common/arrow_down.svg" alt="arrow icon" class="account__button-img">
+                            <div class="city-dropdown-wrapper">
+                                <ul class="city_list-dropdown">
+                                    <li class="city-dropdown-item city-dropdown-trigger">
+                                        <p class="city-dropdown-select">Город</p>
+                                        <img class="city-dropdown-arrow" src="img/product/header/arrow.svg" alt="arrow icon">
+                                    </li>
+                                    <li class="city-dropdown-item">Москва</li>
+                                    <li class="city-dropdown-item">Санкт-Петербург</li>
+                                    <li class="city-dropdown-item">Нижний Новгород</li>
+                                    <li class="city-dropdown-item">Ростов</li>
+                                    <li class="city-dropdown-item">Екатиренбург</li>
+                                </ul>
                             </div>
+                            
                             <div class="account__right-buttons-wrapper">
                                 <div class="account__right-button account__buttons">
                                     <p class="account__button-text">с __</p>
@@ -1299,11 +1309,6 @@
                 </div>
 
 
-
-
-
-
-
                 <div class="account__rental account__rental-main-conditions" id="conditions"></div>
                 <div class="account__rental account__rental-main-staff" id="staff">
                     <table class="table_staff" cellspacing = "0">
@@ -1472,5 +1477,6 @@
 
     <script src="js/account.js"></script>
     <script src="js/checkLogin.js"></script>
+    <script src="js/dropdown.js"></script>
 </body>
 </html>
