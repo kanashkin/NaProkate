@@ -76,6 +76,17 @@ const addRating = () => {
     })
 }
 
+const openCalendar = () => {
+    const triggerField = document.querySelector('.calendar__field')
+    const productCalendar = document.querySelector('.product-calendar')
+
+    triggerField.addEventListener('click', () => {
+        triggerField.classList.toggle('active')
+        productCalendar.classList.toggle('active')
+    })
+}
+
+openCalendar()
 
 productLogic()
 photoScale()

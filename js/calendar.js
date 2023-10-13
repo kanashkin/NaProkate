@@ -1,8 +1,9 @@
-const calendar = () => {
-    const monthYear = document.querySelector('.calendar-month-year')
-    const prevBtn = document.querySelector('.calendar-prev')
-    const nextBtn = document.querySelector('.calendar-next')
-    const daysContainer = document.querySelector('.calendar__days')
+const calendar = (calendarSelector) => {
+    const calendarBlock = document.querySelector(calendarSelector)
+    const monthYear = calendarBlock.querySelector('.calendar-month-year')
+    const prevBtn = calendarBlock.querySelector('.calendar-prev')
+    const nextBtn = calendarBlock.querySelector('.calendar-next')
+    const daysContainer = calendarBlock.querySelector('.calendar__days')
 
     const currentDate = new Date();
     let selectedDate = currentDate;
@@ -75,4 +76,5 @@ const calendar = () => {
 
 }
 
-calendar()
+calendar('.calendar')
+calendar('.product-calendar')

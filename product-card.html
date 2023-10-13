@@ -153,9 +153,31 @@
                         </div>
                         <div class="product__block">
                             <h2 class="product-title">Выберете дату проката</h2>
-                            <div class="calendar__field">
-                                <img src="img/product/calendar.svg" alt="calendar icon">
-                                <p class="calendar__value"></p>
+                            <div class="calendar__product__block">
+                                <div class="calendar__field">
+                                    <img src="img/product/calendar.svg" alt="calendar icon">
+                                    <p class="calendar__value">__/__/____-__/__/____</p>
+                                </div>
+                                <div class="calendar product-calendar">
+                                    <div class="calendar__header">
+                                        <button class="calendar-prev"><img src="img/product/calendar/prev.svg" alt=""></button>
+                                        <p class="calendar-month-year"></p>
+                                        <button class="calendar-next"><img src="img/product/calendar/next.svg" alt=""></button>
+                                    </div>
+                                    <div class="calendar__body">
+                                        <ul class="calendar__weekdays">
+                                            <li class="calendar__weekdays-item">Su</li>
+                                            <li class="calendar__weekdays-item">Mo</li>
+                                            <li class="calendar__weekdays-item">Tu</li>
+                                            <li class="calendar__weekdays-item">We</li>
+                                            <li class="calendar__weekdays-item">Th</li>
+                                            <li class="calendar__weekdays-item">Fr</li>
+                                            <li class="calendar__weekdays-item">Sa</li>
+                                        </ul>
+                                    </div>
+                                    <div class="calendar__days">
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="product__block rental__block">
@@ -426,6 +448,7 @@
     <script src="js/common.js"></script>
     <script src="js/product-card.js"></script>
     <script src="js/dropdown.js"></script>
+    <script src="js/calendar.js"></script>
     
 </body>
 </html>

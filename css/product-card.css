@@ -219,25 +219,6 @@
     line-height: 175%;
 }
 
-.calendar__field {
-    background: #FFF;
-    width: 362px;
-    height: 46px;
-    border-radius: 6px;
-    border: 1px solid rgba(107, 114, 128, 0.50);
-    cursor: pointer;
-    transition: .2s all;
-    display: flex;
-    padding-left: 16px;
-    align-items: center;
-    gap: 12px;
-}
-
-.calendar__field.active {
-    border: 1px solid #3B82F6;
-    box-shadow: 0px 0px 0px 4px rgba(59, 130, 246, 0.25);
-}
-
 .rental__block {
     max-width: 383px;
 }
