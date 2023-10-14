@@ -7,6 +7,7 @@ const calendar = (calendarSelector) => {
 
     const currentDate = new Date();
     let selectedDate = currentDate;
+    let point
 
     const showCalendar = () => {
         let currentMonth = selectedDate.getMonth()
@@ -29,6 +30,7 @@ const calendar = (calendarSelector) => {
             daysContainer.appendChild(dayCell)
             dayCell.addEventListener('click', selectDate)
 
+            
             if (i === selectedDate.getDate() && currentMonth === selectedDate.getMonth() && currentYear === selectedDate.getFullYear()) {
                 dayCell.classList.add('active');
             }
@@ -39,9 +41,14 @@ const calendar = (calendarSelector) => {
         const selectedDay = e.target.textContent;
         const currentMonth = selectedDate.getMonth();
         const currentYear = selectedDate.getFullYear();
-    
         selectedDate = new Date(currentYear, currentMonth, selectedDay);
-        showCalendar();
+
+        let today = new Date()
+        today.setHours('0', '0', '0')
+
+        if (selectedDate >= today || selectedDate.toString() === today.toString()) {
+            showCalendar();
+        }
     }
 
     const goToPrev = () => {

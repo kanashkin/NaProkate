@@ -643,11 +643,46 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .product-calendar .calendar__days {
-    margin-top: 3px;
+    margin: 3px 0 20px;
     gap: 0;
 }
 
 .product-calendar .calendar__days-item {
     width: 46px;
     height: 46px;
+}
+
+.calendar__footer {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-top: 1px solid #E5E7EB;
+}
+
+.buttons__block {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons__block button {
+    width: 75px;
+    height: 38px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.075px;
+    }
+
+.cancel {
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+    color: #1F2937;
+}
+
+.apply {
+    border-radius: 6px;
+    background: #A1B17E;
+    color: #fff;
 }

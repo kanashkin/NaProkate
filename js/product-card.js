@@ -78,11 +78,20 @@ const addRating = () => {
 
 const openCalendar = () => {
     const triggerField = document.querySelector('.calendar__field')
+    const calendarBtns = document.querySelectorAll('.calendar__footer button')
+
     const productCalendar = document.querySelector('.product-calendar')
 
     triggerField.addEventListener('click', () => {
         triggerField.classList.toggle('active')
         productCalendar.classList.toggle('active')
+    })
+
+    calendarBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            triggerField.classList.remove('active')
+            productCalendar.classList.remove('active')
+        })
     })
 }
 
