@@ -80,10 +80,7 @@
     font-weight: 500;
     display: flex;
     margin: 0 auto;
-}
-
-.form-login-link{
-    cursor: pointer;
+    cursor: pointer
 }
 
 .prof-click-wrapper{

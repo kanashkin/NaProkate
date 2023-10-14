@@ -7,7 +7,7 @@ formLogin.classList.add('active')
 
 // нажатие на кнопку, изменяющую формы
 const replaceForms = () => {
-    const formLinks = document.querySelectorAll('.form-login-link')
+    const formLinks = document.querySelectorAll('.form-login-text')
     formLinks.forEach(item => {
         loginSwitch(item)
     })

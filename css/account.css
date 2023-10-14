@@ -762,6 +762,7 @@ li.header__account__list-item.active {
 .account__rental-tabs{
     display: flex;
     gap: 24px;
+    margin-top: -1px;
 }
 
 .account__tabs{
@@ -770,6 +771,8 @@ li.header__account__list-item.active {
     font-weight: 500;
     padding: 8px 0;
     line-height: 28px;
+    cursor: pointer;
+    border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 .account__tabs.active{
