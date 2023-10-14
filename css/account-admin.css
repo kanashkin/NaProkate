@@ -86,3 +86,153 @@
     justify-content: space-between;
     padding: 0px 16px;
 }
+
+.distributors__table{
+    width: 28.49%;
+}
+
+.account__distributors-content{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.account__table-distributors-title{
+    padding-right: 77px;
+}
+
+.account__table-link.active{
+    color: #3B4030;
+    text-decoration: underline;
+}
+
+.distributors__account{
+    border-radius: 15px;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+    padding: 32px;
+    width: 69.89%;
+    height: fit-content;
+    display: none;
+    flex-direction: column;
+    gap: 72px;
+}
+
+.distributors__account.active{
+    display: flex;
+}
+
+.distributors__account-name{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.distributors__account-title{
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.distributors__account-subtitle{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.distributors__account-top{
+    display: flex;
+    gap: 266px;
+}
+
+.distributors__account-button{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.distributors__account-buttons-title{
+    color: rgba(59, 64, 48, 0.50);
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.distributors__account-buttons{
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 12px;
+}
+
+.distributors__account-freeze{
+    color: #3068FF;
+    background: #E8EEFF;
+}
+
+.distributors__account-delete{
+    color: #FF2E2E;
+    background: #FFE9E9;
+}
+
+.distributors__account-main{
+    display: flex;
+    gap: 120px;
+}
+
+.distributors__account-main-items{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.distributors__account-main-item{
+    width: 245px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.distributors__main-title{
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.distributors__main-subtitle{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.distributors__main-subtitle-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.distributors__main-link{
+    white-space: nowrap;
+    color: #0E87DE;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.distributors__main-link-first{
+    font-size: 12px;
+}
+
+.account__distributors-wrapper{
+    margin-top: 144px;
+    margin-bottom: 410px;
+}
