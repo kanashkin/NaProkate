@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account-admin</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+    <link rel="stylesheet" href="css/account-admin.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="index.html">
+                    <img class="logo-image" src="img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item" data-content="#admin">Администратор</li>
+                    <li class="header__account__list-item" data-content="#distributors">Прокатчики</li>
+                    <li class="header__account__list-item" data-content="#clients">Клиенты</li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <button class="header__account-button header__account__list-item" data-content="#main">Иван И.</button>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="basket.html">
+                    <img class="basket-img" src="img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+                <div class="block-after-login">
+                    <div class="favorites-button">
+                        <img src="img/common/header/like.svg" alt="heart icon" class="favorites-img">
+                    </div>
+                    <div class="user-block-after-login">
+                        <p class="user-name">Иван И.</p>
+                        <a href="account.html"><img src="img/common/header/pp-after-login.png" alt="profile picture" class="user-pp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="account__admin-wrapper account-content" id="admin">
+                <h2 class="account__title">Администратор</h2>
+                <div class="account-line"></div>
+                <div class="account__admin-top-content">
+                    <button class="account__admin-top-btn" id="add-file">
+                        <p class="account__admin-btn-text">Загрузить через CSV / XL / PDF</p>
+                        <img src="img/common/arrow_down.svg" alt="arrow icon" class="account__admin-btn-arrow">
+                    </button>
+                    <button class="account__admin-top-btn" id="add-api">
+                        <p class="account__admin-btn-text">Подключить API</p>
+                    </button>
+                    <button class="account__admin-top-btn filter-city">
+                        <ul class="account__admin-dropdown">
+                            <li class="account__admin-btn-content">
+                                <p class="admin__dropdown-active">Фильтр по городам</p>
+                                <img src="img/common/arrow_down.svg" alt="arrow icon" class="account__admin-btn-arrow">
+                            </li>
+                            <li class="admin__dropdown-item">
+                                <p class="admin__dropdown-select">Москва</p>
+                                <p class="admin__dropdown-value">24</p>
+                            </li>
+                            <li class="admin__dropdown-item">
+                                <p class="admin__dropdown-select">Воронеж</p>
+                                <p class="admin__dropdown-value">8</p>
+                            </li>
+                            <li class="admin__dropdown-item">
+                                <p class="admin__dropdown-select">Саратов</p>
+                                <p class="admin__dropdown-value">4</p>
+                            </li>
+                            <li class="admin__dropdown-item">
+                                <p class="admin__dropdown-select">Мурманск</p>
+                                <p class="admin__dropdown-value">3</p>
+                            </li>
+
+                        </ul>
+                    </button>
+                </div>
+                <table class="account__table admin__table">
+                    <tr>
+                        <th class="account__table-title account__table-admin-title">Прокатчик</th>
+                        <th class="account__table-title account__table-admin-title">Стоимость</th>
+                        <th class="account__table-title account__table-admin-title">Город</th>
+                        <th class="account__table-title account__table-admin-title">Товар</th>
+                        <th class="account__table-title account__table-admin-title">Категория</th>
+                        <th class="account__table-title account__table-admin-title">Клиент</th>
+                        <th class="account__table-title account__table-admin-title">Дата оформ. заказа</th>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                    <tr>
+                        <td class="account__table-text">Comapny TM, @12</td>
+                        <td class="account__table-text">2 500 ₽</td>
+                        <td class="account__table-text">Москва</td>
+                        <td class="account__table-text account__table-link"><a href="product-card.html">Велосипед CRO.</a></td>
+                        <td class="account__table-text">Спорт и отдых</td>
+                        <td class="account__table-text">Артём Власов</td>
+                        <td class="account__table-text">30.07.2023</td>
+                    </tr>
+                </table>
+            </div>     
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/account-admin.js"></script>
+    <!-- <script src="js/account.js"></script> -->
+</body>
+</html>

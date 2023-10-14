@@ -1,0 +1,88 @@
+/* admin */
+
+.account__admin-wrapper{
+    margin-top: 144px;
+    margin-bottom: 410px;
+}
+
+.account__admin-top-content{
+    display: flex;
+    gap: 24px;
+    margin-top: 32px;
+    justify-content: end;
+}
+
+.account__admin-top-btn{
+    height: fit-content;
+    display: flex;
+    gap: 8px;
+    padding: 8px 16px;
+    border-radius: 11px;
+    border: 1px solid rgba(59, 64, 48, 0.50);
+    align-items: center;
+}
+
+.account__admin-btn-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.account__table-admin-title{
+    padding-right: 120px;
+}
+
+.admin__table{
+    margin-top: 24px;
+}
+
+/* dropdown */
+
+.filter-city{
+    position: relative;
+    width: 214px;
+    height: 46px !important;
+    border: none;
+}
+
+.account__admin-dropdown{
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    width: 214px;
+    top: 0;
+    left: 0;
+    border-radius: 11px;
+    border: 1px solid #9D9F97;
+    background: #fff;
+}
+
+.admin__dropdown-active,
+.admin__dropdown-select,
+.admin__dropdown-value{
+    color: #9D9F97;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.account__admin-btn-arrow.active{
+    transform: rotate(180deg);
+}
+
+.admin__dropdown-active{
+    padding: 8px 16px;
+}
+
+.admin__dropdown-item{
+    display: none;
+}
+
+.admin__dropdown-item.active{
+    display: flex;
+    width: 214px;
+    gap: 8px;
+    justify-content: space-between;
+    padding: 0px 16px;
+}
