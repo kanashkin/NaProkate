@@ -31,8 +31,9 @@ const dropDownAdmin = () => {
 dropDownAdmin()
 
 const accountAdminLink = () => {
-    const textLink = document.querySelectorAll('.account__table-link')
-    const blockActive = document.querySelectorAll('.distributors__account')
+    const parentBlock = document.getElementById('distributors')
+    const textLink = parentBlock.querySelectorAll('.account__table-link')
+    const blockActive = parentBlock.querySelectorAll('.distributors__account')
 
     textLink[0].classList.add('active')
     blockActive[0].classList.add('active')
@@ -40,11 +41,11 @@ const accountAdminLink = () => {
 
     textLink.forEach(item => {
         item.addEventListener('click', () => {
-            item.classList.add('active')
-
-            blockActive.forEach(item => {
-                item.classList.add('active')
+            textLink.forEach(item => {
+                item.classList.remove('active')
             })
+
+            item.classList.add('active')
         })
     })
 }
