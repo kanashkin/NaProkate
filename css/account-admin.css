@@ -302,5 +302,27 @@
     gap: 20px;
 }
 
+/* clients */
 
+.account__clients-wrapper{
+    margin-top: 144px;
+    margin-bottom: 440px;
+}
 
+.account__clients-content{
+    margin-top: 100px;
+}
+
+.account__clients-content{
+    display: flex;
+    gap: 24px;
+}
+
+.account__clients-content-wrapper{
+    border-radius: 15px;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
