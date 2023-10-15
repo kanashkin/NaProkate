@@ -111,7 +111,6 @@
     border: 1px solid rgba(59, 64, 48, 0.21);
     background: #FDFEFB;
     padding: 32px;
-    width: 69.89%;
     height: fit-content;
     display: none;
     flex-direction: column;
@@ -120,6 +119,7 @@
 
 .distributors__account.active{
     display: flex;
+    width: 100%;
 }
 
 .distributors__account-name{
@@ -235,4 +235,59 @@
 .account__distributors-wrapper{
     margin-top: 144px;
     margin-bottom: 410px;
+}
+
+.distributors__content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.distributors__add-item{
+    display: flex;
+    gap: 132px;
+    border-radius: 15px;
+    border: 1px solid rgba(59, 64, 48, 0.21);
+    background: #FDFEFB;
+    padding: 32px;
+}
+
+.distributors__add-content{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.distributors__add-title{
+    color: #3B4030;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.distributors__add-text{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.distributors__add-item-name{
+    width: 376px;
+}
+
+.distributors__add-text-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.distributors__add-item-value{
+    width: 421px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-content-table{
+    margin: 0;
+    width: 100%;
+    gap: 20px;
 }
