@@ -57,7 +57,12 @@ const showContent = () => {
     const showBlock = document.querySelector('.distributors__add-content')
     
     link.addEventListener('click', () => {
-        link.innerHTML = 'Скрыть'
+        link.classList.toggle('active')
+        if (link.classList.contains('active')) {
+            link.innerHTML = 'Скрыть'
+        } else {
+            link.innerHTML = 'Посмотреть'
+        }
         showBlock.classList.toggle('active')
     })
 }

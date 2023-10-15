@@ -30,32 +30,25 @@ const calendar = (calendarSelector) => {
             daysContainer.appendChild(dayCell)
             dayCell.addEventListener('click', selectDate)
 
-            
-            if (i === selectedDate.getDate() && currentMonth === selectedDate.getMonth() && currentYear === selectedDate.getFullYear()) {
-                dayCell.classList.add('active');
-            }
+            // if (i === selectedDate.getDate() && currentMonth === selectedDate.getMonth() && currentYear === selectedDate.getFullYear()) {
+            //     dayCell.classList.add('active');
+            // }
         }
     }
 
     const selectDate = (e) => {
         const selectedDay = e.target.textContent;
+        e.target.classList.add('active')
         const currentMonth = selectedDate.getMonth();
         const currentYear = selectedDate.getFullYear();
         selectedDate = new Date(currentYear, currentMonth, selectedDay);
-
-        let today = new Date()
-        today.setHours('0', '0', '0')
-
-        if (selectedDate >= today || selectedDate.toString() === today.toString()) {
-            showCalendar();
-        }
     }
 
     const goToPrev = () => {
         const currentMonth = selectedDate.getMonth();
         const currentYear = selectedDate.getFullYear();
     
-        selectedDate = new Date(currentYear, currentMonth - 1, 1);
+        selectedDate = new Date(currentYear, currentMonth - 1);
         showCalendar();
     }
     
@@ -63,7 +56,7 @@ const calendar = (calendarSelector) => {
         const currentMonth = selectedDate.getMonth();
         const currentYear = selectedDate.getFullYear();
     
-        selectedDate = new Date(currentYear, currentMonth + 1, 1);
+        selectedDate = new Date(currentYear, currentMonth + 1);
         showCalendar();
     }
 
