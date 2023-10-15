@@ -51,3 +51,15 @@ const accountAdminLink = () => {
 }
 
 accountAdminLink()
+
+const showContent = () => {
+    const link = document.querySelector('.distributors__link-content')
+    const showBlock = document.querySelector('.distributors__add-content')
+    
+    link.addEventListener('click', () => {
+        link.innerHTML = 'Скрыть'
+        showBlock.classList.toggle('active')
+    })
+}
+
+showContent()

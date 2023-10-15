@@ -89,6 +89,7 @@
 
 .distributors__table{
     width: 28.49%;
+    height: 685px;
 }
 
 .account__distributors-content{
@@ -245,6 +246,7 @@
 
 .distributors__add-item{
     display: flex;
+    align-items: center;
     gap: 132px;
     border-radius: 15px;
     border: 1px solid rgba(59, 64, 48, 0.21);
@@ -253,9 +255,13 @@
 }
 
 .distributors__add-content{
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 28px;
+}
+
+.distributors__add-content.active{
+    display: flex;
 }
 
 .distributors__add-title{
@@ -273,6 +279,9 @@
 
 .distributors__add-item-name{
     width: 376px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .distributors__add-text-wrapper{
@@ -284,6 +293,7 @@
     width: 421px;
     display: flex;
     justify-content: space-between;
+    height: fit-content;
 }
 
 .statistic-content-table{
@@ -291,3 +301,6 @@
     width: 100%;
     gap: 20px;
 }
+
+
+
