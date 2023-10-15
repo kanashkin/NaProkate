@@ -324,5 +324,66 @@
     background: #FDFEFB;
     padding: 32px;
     display: flex;
+    gap: 65px;
     flex-direction: column;
+}
+
+.clients__account-item{
+    display: flex;
+
+    gap: 88px;
+}
+
+.switch-wrapper{
+    display: inline-block;
+}
+
+.switch{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.switch-inner{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-inner::before{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -15px;
+    background: #fff;
+    width: 56px;
+    height: 32px;
+    border-radius: 20px;
+    border: 1px solid #6C7852;
+    transition: background .3s;
+}
+
+.switch-inner::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    top: -12px;
+    left: 2.5px;
+    background-color: #6C7852;
+    transition: background .3s, left .3s;
+}
+
+.switch:checked + .switch-inner::before{
+    background-color: #6C7852;
+}
+
+.switch:checked + .switch-inner::after{
+    background-color: #fff;
+    left: 27.5px;
 }
