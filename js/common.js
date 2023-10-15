@@ -122,9 +122,28 @@ const checkFooterLogin = () => {
     })
 }
 
+// Проверка пользователя перед переходом в аккаунт
+const checkUserType = () => {
+    const accountLink = document.querySelector('.user-block-after-login a')
+
+    accountLink.addEventListener('click', (e) => {
+        e.preventDefault()
+        let userType = localStorage.getItem('user-type')
+
+        if (userType === 'admin') {
+            window.location.href = '/account-admin.html'
+        } else if (userType === 'rental') {
+            window.location.href = '/account.html'
+        }
+    })
+}
+
 
 changeCity()
 writeCity()
 checkUserLocation()
 checkLogin()
 checkFooterLogin()
+checkUserType()
+
+// localStorage.clear()

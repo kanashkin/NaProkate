@@ -35,6 +35,13 @@ const login = () => {
     const formBtn = document.querySelector('.form-login-btn')
     formBtn.addEventListener('click', (e) => {
         e.preventDefault()
+
+        if (window.location.pathname === '/login-admin.html') {
+            localStorage.setItem('user-type', 'admin')
+        } else {
+            localStorage.setItem('user-type', 'rental')
+        }
+
         localStorage.setItem('logined', 'login')
         window.location.href = 'index.html';
     })

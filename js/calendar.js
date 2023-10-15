@@ -25,19 +25,20 @@ const calendar = (calendarSelector) => {
 
         for(let i = 1; i < totalDays; i++) {
             let dayCell = document.createElement('div')
+            dayCell.setAttribute('day', i)
+            dayCell.setAttribute('month', currentMonth)
+            dayCell.setAttribute('year', currentYear)
             dayCell.textContent = i
             dayCell.classList.add('calendar__days-item')
             daysContainer.appendChild(dayCell)
             dayCell.addEventListener('click', selectDate)
 
-            // if (i === selectedDate.getDate() && currentMonth === selectedDate.getMonth() && currentYear === selectedDate.getFullYear()) {
-            //     dayCell.classList.add('active');
-            // }
         }
     }
 
     const selectDate = (e) => {
         const selectedDay = e.target.textContent;
+        point = selectedDate
         e.target.classList.add('active')
         const currentMonth = selectedDate.getMonth();
         const currentYear = selectedDate.getFullYear();

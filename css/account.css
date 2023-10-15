@@ -1059,7 +1059,7 @@ li.header__account__list-item.active {
     display: none;
     width: 100%;
     gap: 8px;
-    height: 40px;
+    height: 44px;
     border-top: 1px solid #1437661f;
     cursor: pointer;
     transition: .3s linear;
