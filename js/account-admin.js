@@ -67,4 +67,19 @@ const showContent = () => {
     })
 }
 
+// Функция удаления аккаунта (сейчас работает декоративно)
+const deleteAccount = () => {
+    const deleteBtns = document.querySelectorAll('.distributors__account-delete')
+
+    deleteBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            localStorage.setItem('logined', 'unlogin')
+            localStorage.removeItem('user-type')
+            window.location.href = '/index.html'
+        })
+    })
+}
+
+
+deleteAccount()
 showContent()
