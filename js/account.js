@@ -139,4 +139,16 @@ const exitAccount = () => {
 
 exitAccount()
 
+const openCalendar = () => {
+    const triggerBtns = document.querySelectorAll('.calendar-block-wrapper')
+
+    triggerBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            let calendar = item.querySelector('.calendar')
+            calendar.classList.toggle('active')
+        })
+    })
+}
+
+openCalendar()
 

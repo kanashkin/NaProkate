@@ -641,6 +641,24 @@ li.header__account__list-item.active {
     cursor: pointer;
 }
 
+.calendar-block-wrapper {
+    position: relative;
+}
+
+.calendar-block-wrapper .calendar {
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.calendar-block-wrapper .calendar.active {
+    opacity: 1;
+    z-index: 5;
+}
+
 .account__right-button-order{
     border-radius: 36px;
     border: 1px solid rgba(59, 64, 48, 0.50);
@@ -1038,7 +1056,7 @@ li.header__account__list-item.active {
 
 .city-dropdown-wrapper {
     position: relative;
-    height: 40px;
+    height: 44px;
     width: 190px;
     display: flex;
     justify-content: center;
