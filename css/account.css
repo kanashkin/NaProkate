@@ -901,6 +901,7 @@ li.header__account__list-item.active {
 }
 
 .account__branch-content{
+    width: 100%;
     margin-top: 32px;
 }
 
@@ -920,6 +921,7 @@ li.header__account__list-item.active {
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
+    width: 208px;
 }
 
 .account__branch-main-content{
@@ -929,19 +931,68 @@ li.header__account__list-item.active {
     gap: 32px;
 }
 
+.account__branch-main-content-second{
+    width: 100%;
+}
+
 .account__branch-items{
+    margin-left: 60px;
     display: flex;
-    justify-content: space-between;
+    gap: 231px;
 }
 
 .account__branch-item{
+    white-space: nowrap;
+}
+
+.account__dropdown-item,
+.account__branch-item-name{
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
-    width: 335px;
+    width: 115px;
+    white-space: nowrap;
 }
 
-.account__branch-item.active .account__branch-add-text {
+.account__branch-item-wrapper{
+    display: flex;
+    gap: 8px;
+}
+
+.account__branch-block-text{
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.account__branch-block{
+    display: flex;
+    background: #9EB175;
+    padding: 4px 12px;
+    gap: 4px;
+}
+
+.account__branch-item-link{
+    color: rgba(59, 64, 48, 0.50);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.account__branch-subtitle-content{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.account__branch-subtitle-wrapper{
+    display: flex;
+    gap: 200px;
+}
+
+.account__dropdown-item.active .account__branch-add-text {
     display: block;
 }
 
@@ -965,21 +1016,22 @@ li.header__account__list-item.active {
     display: block;
 }
 
-.account__branch-item-text{
+.account__dropdown-item-text{
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
-.account__branch-item-arrow{
+.account__dropdown-item-arrow{
     cursor: pointer;
 }
 
-.account__branch-item-arrow.active{
+.account__dropdown-item-arrow.active{
     rotate: 180deg;
 }
 
-.account__branch-item-main{
+.account__dropdown-item-main{
     display: flex;
     gap: 4px;
 

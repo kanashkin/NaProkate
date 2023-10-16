@@ -47,15 +47,15 @@ const dropDownMenuCity = () => {
 
 dropDownMenuCity()
 
-const dropdownBranch = () => {
-    const triggerBtns = document.querySelectorAll('.account__branch-item-arrow')
+const dropdownAccount = () => {
+    const triggerBtns = document.querySelectorAll('.account__dropdown-item-arrow')
 
     triggerBtns.forEach(item => {
         item.addEventListener('click', () => {
             item.classList.toggle('active')
-            item.closest('.account__branch-item').classList.toggle('active')
+            item.closest('.account__dropdown-item').classList.toggle('active')
         })
     })
 }
 
-dropdownBranch()
+dropdownAccount()
