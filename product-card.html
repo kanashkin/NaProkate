@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Велосипед CROSS ElectroBike</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product-card.css">
 </head>
@@ -153,38 +154,7 @@
                         </div>
                         <div class="product__block">
                             <h2 class="product-title">Выберете дату проката</h2>
-                            <div class="calendar__product__block">
-                                <div class="calendar__field">
-                                    <img src="img/product/calendar.svg" alt="calendar icon">
-                                    <p class="calendar__value">__/__/____-__/__/____</p>
-                                </div>
-                                <div class="calendar product-calendar">
-                                    <div class="calendar__header">
-                                        <button class="calendar-prev"><img src="img/product/calendar/prev.svg" alt=""></button>
-                                        <p class="calendar-month-year"></p>
-                                        <button class="calendar-next"><img src="img/product/calendar/next.svg" alt=""></button>
-                                    </div>
-                                    <div class="calendar__body">
-                                        <ul class="calendar__weekdays">
-                                            <li class="calendar__weekdays-item">Su</li>
-                                            <li class="calendar__weekdays-item">Mo</li>
-                                            <li class="calendar__weekdays-item">Tu</li>
-                                            <li class="calendar__weekdays-item">We</li>
-                                            <li class="calendar__weekdays-item">Th</li>
-                                            <li class="calendar__weekdays-item">Fr</li>
-                                            <li class="calendar__weekdays-item">Sa</li>
-                                        </ul>
-                                    </div>
-                                    <div class="calendar__days">
-                                    </div>
-                                    <div class="calendar__footer">
-                                        <div class="buttons__block">
-                                            <button class="cancel">Cancel</button>
-                                            <button class="apply">Apply</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <input class="calendar__field" type="text" name="daterange"/>
                         </div>
                         <div class="product__block rental__block">
                             <h2 class="product-title">Прокатчик</h2>
@@ -451,6 +421,9 @@
         </div>
     </div>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/product-card.js"></script>
     <script src="js/dropdown.js"></script>
