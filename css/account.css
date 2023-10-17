@@ -955,6 +955,15 @@ li.header__account__list-item.active {
     white-space: nowrap;
 }
 
+.account__branch-item-name{
+    display: flex;
+    align-items: center;
+}
+
+.account__dropdown-item-name{
+    align-items: flex-start;
+}
+
 .account__branch-item-wrapper{
     display: flex;
     gap: 8px;
