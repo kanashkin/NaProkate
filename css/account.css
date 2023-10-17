@@ -1037,7 +1037,8 @@ li.header__account__list-item.active {
     white-space: nowrap;
 }
 
-.account__dropdown-item-arrow{
+.account__dropdown-item-arrow,
+.account__dropdown-arrow{
     cursor: pointer;
 }
 
