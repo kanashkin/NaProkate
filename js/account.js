@@ -147,16 +147,18 @@ const weekendCalendar = () => {
     const calendarItems = document.querySelectorAll('.weekend__days-item')
     const btns = document.querySelectorAll('.weekend__btns button')
 
+    let triggerIndex
+
     triggers.forEach(item => {
         item.addEventListener('click', () => {
-            let triggerIndex = Array.from(triggers).indexOf(item)
+            triggerIndex = Array.from(triggers).indexOf(item)
             calendars[triggerIndex].classList.toggle('active')
         })
     })
 
     calendarItems.forEach(item => {
         item.addEventListener('click', () => {
-            let withoutItem = document.querySelector('.weekend-without')
+            let withoutItem = document.querySelectorAll('.weekend-without')[triggerIndex]
             if (item.classList.contains('weekend-without')) {
                 calendarItems.forEach(item => {
                     item.classList.remove('active')
