@@ -955,6 +955,10 @@ li.header__account__list-item.active {
     white-space: nowrap;
 }
 
+.account__dropdown-arrow {
+    cursor: pointer;
+}
+
 .account__branch-item-name{
     display: flex;
     align-items: center;
