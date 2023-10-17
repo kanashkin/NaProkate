@@ -1044,7 +1044,12 @@ li.header__account__list-item.active {
 .account__dropdown-item-main{
     display: flex;
     gap: 4px;
+}
 
+.account__dropdown-content-wrapper{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 /* staff */
