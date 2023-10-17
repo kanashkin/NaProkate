@@ -139,16 +139,60 @@ const exitAccount = () => {
 
 exitAccount()
 
-const openCalendar = () => {
-    const triggerBtns = document.querySelectorAll('.calendar-block-wrapper')
 
-    triggerBtns.forEach(item => {
+
+const weekendCalendar = () => {
+    const triggers = document.querySelectorAll('.weekend-trigger')
+    const calendars = document.querySelectorAll('.weekend-calendar')
+    const calendarItems = document.querySelectorAll('.weekend__days-item')
+    const btns = document.querySelectorAll('.weekend__btns button')
+
+    triggers.forEach(item => {
         item.addEventListener('click', () => {
-            let calendar = item.querySelector('.calendar')
-            calendar.classList.toggle('active')
+            let triggerIndex = Array.from(triggers).indexOf(item)
+            calendars[triggerIndex].classList.toggle('active')
+        })
+    })
+
+    calendarItems.forEach(item => {
+        item.addEventListener('click', () => {
+            let withoutItem = document.querySelector('.weekend-without')
+            if (item.classList.contains('weekend-without')) {
+                calendarItems.forEach(item => {
+                    item.classList.remove('active')
+                })
+                withoutItem.classList.add('active')
+            } else {
+                item.classList.toggle('active')
+                withoutItem.classList.remove('active')
+            }
+        })
+    })
+
+    btns.forEach(item => {
+        item.addEventListener('click', () => {
+            let currentCalendar = item.closest('.weekend-calendar')
+            let parentWrapper = item.closest('.account__branch-item-content')
+
+            if (item.classList.contains('cancel')) {
+                currentCalendar.classList.remove('active')
+            } else if (item.classList.contains('apply')){
+                let activeItems = currentCalendar.querySelectorAll('.weekend__days-item.active')
+
+                if (activeItems.length > 0) {
+                    const itemsArr = []
+                    activeItems.forEach(item => {
+                        itemsArr.push(item.getAttribute('data-value'))
+                    })
+                    let field = parentWrapper.querySelector('.account__dropdown-item-text')
+                    field.textContent = itemsArr.join()
+                }
+
+                currentCalendar.classList.remove('active')
+            }
         })
     })
 }
 
-openCalendar()
+weekendCalendar()
 
