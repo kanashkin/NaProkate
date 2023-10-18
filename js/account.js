@@ -198,3 +198,7 @@ const weekendCalendar = () => {
 
 weekendCalendar()
 
+var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+

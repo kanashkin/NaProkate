@@ -964,10 +964,6 @@ li.header__account__list-item.active {
     align-items: center;
 }
 
-.account__dropdown-item-name{
-    align-items: flex-start;
-}
-
 .account__branch-item-wrapper{
     display: flex;
     gap: 8px;
@@ -1315,4 +1311,175 @@ li.header__account__list-item.active {
 .weekend__btns {
     border-top: 1px solid #E5E7EB;
     margin-top: 20px;
+}
+
+.account-requistes-content-wrapper{
+    margin-top: 110px;
+}
+
+.account-requistes-item{
+    margin-left: 60px;
+    display: flex;
+    /* align-items: center; */
+    gap: 61px;
+}
+
+.account-requistes-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.account-requistes-name{
+    width: 224px;
+    display: flex;
+    align-items: center;
+}
+
+.account-requistes-content-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.account-requistes-name,
+.account-requistes-value,
+.account-requistes-subtitle{
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.account-requistes-value{
+    display: flex;
+    align-items: center;
+}
+
+.account-requistes-value-text{
+    text-decoration: underline;
+}
+
+.account-requistes-item-content{
+    align-items: center;
+    display: flex;
+    gap: 20px;
+}
+
+.switch-wrapper{
+    display: inline-block;
+}
+
+.switch{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+}
+
+.switch-inner{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.switch-inner::before{
+    display: block;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -19px;
+    background: #fff;
+    width: 56px;
+    height: 28px;
+    border-radius: 20px;
+    border: 1px solid #6C7852;
+    transition: background .3s;
+}
+
+.switch-inner::after{
+    display: block;
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    top: -16.5px;
+    left: 2.5px;
+    background-color: #6C7852;
+    transition: background .3s, left .3s;
+}
+
+.switch:checked + .switch-inner::before{
+    background-color: #6C7852;
+}
+
+.switch:checked + .switch-inner::after{
+    background-color: #fff;
+    left: 31px;
+}
+
+.account-requistes-btn{
+    width: 94px;
+    height: 34px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(30, 41, 59, 0.25);
+/* button text */
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.account-requistes-color{
+    background: #BCBCBC;
+    width: 40px;
+    height: 20px;
+}
+
+.account__dropdown-item-name{
+    align-items: flex-start;
+}
+
+.account-requistes-text{
+    color: rgba(59, 64, 48, 0.70);
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.account-requistes-value-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.account-requistes-content-text{
+    color: rgba(59, 64, 48, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.account-requistes-item-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.account-requistes-item-content-wrapper{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.editor-wraapper{
+    display: flex;
+    flex-direction: column;
+}
+
+#editor{
+    width: 472px;
+    height: 167px;
 }
