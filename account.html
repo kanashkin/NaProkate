@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/account.css">
-    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 </head>
 <body>
 
@@ -1391,8 +1392,7 @@
                                     <div class="account__dropdown-item">
                                         <div class="account__branch-item-content">
                                             <div class="account__dropdown-item-main">
-                                                <p class="account__dropdown-item-text">c 11:00 до 18:00</p>
-                                                <img src="img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-arrow">
+                                                <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1403,9 +1403,9 @@
                                         <div class="account__branch-item-content">
                                             <div class="account__dropdown-item-main">
                                                 <p class="account__dropdown-item-text">Без выходных</p>
-                                                <img class="account__dropdown-arrow weekend-trigger" src="img/common/branch-arrow.svg" alt="arrow icon">
+                                                <img class="account__dropdown-arrow calendar-trigger" src="img/common/branch-arrow.svg" alt="arrow icon">
                                             </div>
-                                            <div class="weekend-calendar">
+                                            <div class="weekend-calendar account-calendar">
                                                 <ul class="weekend__days">
                                                     <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
                                                     <li class="weekend__days-item" data-value="Понедельник">Пн</li>
@@ -1416,7 +1416,7 @@
                                                     <li class="weekend__days-item" data-value="Суббота">Сб</li>
                                                 </ul>
                                                 <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
-                                                <div class="weekend__btns">
+                                                <div class="weekend__btns calendar__btns">
                                                     <button class="weekend-btn cancel">Отмена</button>
                                                     <button class="weekend-btn apply">Применить</button>
                                                 </div>
@@ -1438,8 +1438,7 @@
                                     <div class="account__dropdown-item">
                                         <div class="account__branch-item-content">
                                             <div class="account__dropdown-item-main">
-                                                <p class="account__dropdown-item-text">с 11:00 до 15:00</p>
-                                                <img src="img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-arrow">
+                                                <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
                                             </div>
                                         </div>
                                     </div>
@@ -1450,9 +1449,9 @@
                                         <div class="account__branch-item-content">
                                             <div class="account__dropdown-item-main">
                                                 <p class="account__dropdown-item-text">Без выходных</p>
-                                                <img class="account__dropdown-arrow weekend-trigger" src="img/common/branch-arrow.svg" alt="arrow icon">
+                                                <img class="account__dropdown-arrow calendar-trigger" src="img/common/branch-arrow.svg" alt="arrow icon">
                                             </div>
-                                            <div class="weekend-calendar">
+                                            <div class="weekend-calendar account-calendar">
                                                 <ul class="weekend__days">
                                                     <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
                                                     <li class="weekend__days-item" data-value="Понедельник">Пн</li>
@@ -1463,7 +1462,7 @@
                                                     <li class="weekend__days-item" data-value="Суббота">Сб</li>
                                                 </ul>
                                                 <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
-                                                <div class="weekend__btns">
+                                                <div class="weekend__btns calendar__btns">
                                                     <button class="weekend-btn cancel">Отмена</button>
                                                     <button class="weekend-btn apply">Применить</button>
                                                 </div>
@@ -1495,7 +1494,7 @@
                                         <div class="account__dropdown-item">
                                             <div class="account__branch-item-content">
                                                 <div class="account__dropdown-item-main">
-                                                    <p class="account__dropdown-item-text">с 11:00 до 15:00</p>
+                                                    <p class="account__dropdown-item-text">Без выходных</p>
                                                     <img src="img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-arrow">
                                                 </div>
                                             </div>
@@ -1713,7 +1712,7 @@
                                 </li>
                                 <li class="account-requistes-item">
                                     <p class="account-requistes-name">Свой HTML</p>
-                                    <div class="editor-wraapper">
+                                    <div class="editor-wrapper">
                                         <div id="editor">
                                             <p>Ваш код тут</p>
                                             <p><br></p>
@@ -2021,6 +2020,9 @@
     </div>
 
     <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/account.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/calendar.js"></script>

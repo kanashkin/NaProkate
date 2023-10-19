@@ -514,8 +514,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .daterangepicker {
-    margin-top: 24px;
     width: 362px !important;
+    margin-top: 24px;
     padding: 20px;
 
     border-radius: 12px;
@@ -524,8 +524,11 @@ input[type="number"]::-webkit-inner-spin-button {
     box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
 }
 
-.drp-calendar.right {
-    display: none !important;
+.daterangepicker.opensright:before,
+.daterangepicker.opensright:after,
+.daterangepicker.openscenter:before,
+.daterangepicker.openscenter:after {
+    content: none;
 }
 
 .drp-calendar.left {
@@ -614,7 +617,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .drp-buttons,
-.weekend__btns {
+.calendar__btns {
     display: flex !important;
     align-items: center;
     justify-content: flex-end;
@@ -628,7 +631,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .daterangepicker .btn,
-.weekend__btns button {
+.calendar__btns button {
     height: 38px;
     padding: 0 12px !important;
     display: flex;
@@ -640,7 +643,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .daterangepicker .cancelBtn,
-.weekend__btns .cancel {
+.calendar__btns  .cancel {
     color: #1F2937;
     font-size: 15px;
     font-weight: 600;
@@ -651,7 +654,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .daterangepicker .applyBtn,
-.weekend__btns .apply {
+.calendar__btns  .apply {
     color: #fff;
     font-size: 15px;
     font-weight: 600;

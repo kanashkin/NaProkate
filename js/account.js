@@ -142,8 +142,8 @@ exitAccount()
 
 
 const weekendCalendar = () => {
-    const triggers = document.querySelectorAll('.weekend-trigger')
-    const calendars = document.querySelectorAll('.weekend-calendar')
+    const triggers = document.querySelectorAll('.calendar-trigger')
+    const calendars = document.querySelectorAll('.account-calendar')
     const calendarItems = document.querySelectorAll('.weekend__days-item')
     const btns = document.querySelectorAll('.weekend__btns button')
 
@@ -198,7 +198,10 @@ const weekendCalendar = () => {
 
 weekendCalendar()
 
-var quill = new Quill('#editor', {
+
+
+
+let quill = new Quill('#editor', {
     theme: 'snow'
-  });
+});
 

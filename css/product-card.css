@@ -438,3 +438,10 @@
     font-size: 14px;
     font-weight: 500;
 }
+
+
+/* Calendar */
+
+.drp-calendar.right {
+    display: none !important;
+}

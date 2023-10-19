@@ -702,7 +702,7 @@ li.header__account__list-item.active {
 }
 
 .account__right-button{
-    width: 85px;
+    padding: 0 16px;
     height: 44px;
 }
 
@@ -1257,62 +1257,6 @@ li.header__account__list-item.active {
 }
 
 
-/* calendars styles */
-
-.weekend-calendar {
-    border-radius: 12px;
-    border: 1px solid #E5E7EB;
-    background: #FFF;
-    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
-    padding: 20px;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    opacity: 0;
-    z-index: -1;
-    transition: .3s ease;
-}
-
-.weekend-calendar.active {
-    opacity: 1;
-    z-index: 5;
-}
-
-.weekend__days {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-}
-
-.weekend__days li {
-    width: 46px;
-    display: flex;
-    justify-content: center;
-}
-
-.weekend__days-item {
-    cursor: pointer;
-    border: 1px solid transparent;
-}
-
-.weekend__days-item.active {
-    border: 1px solid #E5E7EB;
-    border-radius: 6px;
-}
-
-.weekend-without {
-    width: fit-content;
-    padding: 0 12px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-top: 15px;
-}
-
-.weekend__btns {
-    border-top: 1px solid #E5E7EB;
-    margin-top: 20px;
-}
-
 .account-requistes-content-wrapper{
     margin-top: 110px;
 }
@@ -1474,7 +1418,7 @@ li.header__account__list-item.active {
     gap: 32px;
 }
 
-.editor-wraapper{
+.editor-wrapper{
     display: flex;
     flex-direction: column;
 }
@@ -1482,4 +1426,103 @@ li.header__account__list-item.active {
 #editor{
     width: 472px;
     height: 167px;
+}
+
+
+/* calendars styles */
+
+.account-calendar {
+    border-radius: 12px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+    box-shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: .3s ease;
+}
+
+.account-calendar.active {
+    opacity: 1;
+    z-index: 5;
+}
+
+.weekend__days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.weekend__days li {
+    width: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+.weekend__days-item {
+    cursor: pointer;
+    border: 1px solid transparent;
+}
+
+.weekend__days-item.active {
+    border: 1px solid #E5E7EB;
+    border-radius: 6px;
+}
+
+.weekend-without {
+    width: fit-content;
+    padding: 0 12px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
+}
+
+.calendar__btns {
+    border-top: 1px solid #E5E7EB;
+    margin-top: 20px;
+}
+
+.daterangepicker:nth-child(1) .calendar-table {
+    display: none;
+}
+
+.daterangepicker:nth-child(2) .calendar-table {
+    display: none;
+}
+
+.time-field {
+    padding-right: 22px;
+    background-image: url('../img/common/branch-arrow.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+    max-width: 185px;
+}
+
+.calendar-time {
+    width: 100%;
+    text-align: center !important;
+    margin: 0 !important;
+    line-height: normal !important;
+}
+
+.drp-calendar.right {
+    margin: 15px 0 20px;
+    padding: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+.daterangepicker .calendar-time select,
+.daterangepicker .calendar-time select option {
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    background: #fff;
+    color: var(--gray-800, #1F2937);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 142%;
+    letter-spacing: 0.07px;
 }

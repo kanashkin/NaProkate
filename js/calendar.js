@@ -1,9 +1,23 @@
 $(function() {
-		$('input[name="daterange"]').daterangepicker({
-			opens: 'left',
-		}, function(start, end, label) {
-		})
+	$('input[name="daterange"]').daterangepicker({
+		opens: 'left',
+	}, function(start, end, label) {
+	})
+	$('input[name="datetimes"]').daterangepicker({
+		timePicker: true,
+		locale: {
+			format: ('hh:mm A')
+		}
+	});
+	$('.account__right-button').daterangepicker({
+		singleDatePicker: true,
+		opens: 'center',
+	}, function(start, end, label) {
+      	openedElement.textContent = start.format('YYYY-MM-DD');
+    }
+	)
 });
+
 
 function checkChangeOnDatepicker() {
 	const targetElement = document.querySelector('.daterangepicker');
