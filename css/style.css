@@ -13,7 +13,9 @@
 
 button,
 input,
-textarea {
+textarea,
+select,
+option {
     outline: none;
     border: none;
     cursor: pointer;

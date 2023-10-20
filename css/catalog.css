@@ -285,3 +285,13 @@
     font-size: 16px;
     font-weight: 600;
 }
+
+/* Calendar */
+.calendar__field {
+    margin-top: 24px;
+    max-width: 100%;
+}
+
+.drp-calendar.right {
+    display: none !important;
+}

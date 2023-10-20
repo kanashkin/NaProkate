@@ -966,6 +966,10 @@ li.header__account__list-item.active {
 
 .account__branch-item-wrapper{
     display: flex;
+    gap: 0;
+}
+
+.account__branch-item-wrapper.active {
     gap: 8px;
 }
 
@@ -1485,14 +1489,6 @@ li.header__account__list-item.active {
     margin-top: 20px;
 }
 
-.daterangepicker:nth-child(1) .calendar-table {
-    display: none;
-}
-
-.daterangepicker:nth-child(2) .calendar-table {
-    display: none;
-}
-
 .time-field {
     padding-right: 22px;
     background-image: url('../img/common/branch-arrow.svg');
@@ -1516,7 +1512,9 @@ li.header__account__list-item.active {
 }
 
 .daterangepicker .calendar-time select,
-.daterangepicker .calendar-time select option {
+.daterangepicker .calendar-time select option,
+.holiday-calendar select,
+.holiday-calendar select option {
     border-radius: 6px;
     border: 1px solid #E5E7EB;
     background: #fff;
@@ -1525,4 +1523,34 @@ li.header__account__list-item.active {
     font-weight: 500;
     line-height: 142%;
     letter-spacing: 0.07px;
+}
+
+.daterangepicker:first-of-type .calendar-table {
+    display: none;
+}
+
+.daterangepicker:nth-child(2) .calendar-table {
+    display: none;
+}
+
+.none-gap {
+    gap: 0;
+}
+
+.calendar-select-wraper {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.calendar-select-wraper select {
+    padding: 3px;
+}
+
+.none-gap.active {
+    gap: 20px;
+}
+
+.close-current-date {
+    cursor: pointer;
 }

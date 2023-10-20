@@ -13,11 +13,29 @@ $(function() {
 		singleDatePicker: true,
 		opens: 'center',
 	}, function(start, end, label) {
-      	openedElement.textContent = start.format('YYYY-MM-DD');
+		$(`.date-value[field-id="${valueFieldId}"]`).text(start.format('MM/DD/YYYY'));
     }
 	)
+	$('.weekend-input').daterangepicker({
+		singleDatePicker: true,
+	})
 });
 
+let valueFieldId
+
+function addIdToField() {
+	const fieldWrappers = document.querySelectorAll('.account__right-button')
+
+	fieldWrappers.forEach(item => {
+		item.addEventListener('click', () => {
+			valueFieldId = Math.round(Math.random()*100)
+			let field = item.querySelector('.date-value')
+			field.setAttribute('field-id', valueFieldId)
+		})
+	})
+}
+
+addIdToField()
 
 function checkChangeOnDatepicker() {
 	const targetElement = document.querySelector('.daterangepicker');
@@ -26,7 +44,6 @@ function checkChangeOnDatepicker() {
 		setTimeout(checkChangeOnDatepicker, 500)
 	} else {
 		const observer = new MutationObserver(function(mutationsList) {
-			console.log(mutationsList);
 			try {
 				let lastEl = targetElement.querySelector('.end-date')
 				let prevLastEl = lastEl.previousElementSibling
@@ -41,10 +58,26 @@ function checkChangeOnDatepicker() {
 				tableHeadItems[2].appendChild(spanChild)
 				observer.observe(targetElement, config);
 			} catch {}
+			try {
+				if (window.location.pathname === '/account.html') {
+					let targetElements = document.querySelectorAll('.daterangepicker')
+					targetElements.forEach(item => {
+						let targetIndex = Array.from(targetElements).indexOf(item)
+
+						if (targetIndex == 0 || targetIndex == 1) {
+							item.querySelectorAll('.calendar-table').forEach(item => {
+								item.style.display = 'none'
+							})
+						}
+					})
+				}
+			} catch {}
 		});
 
-		const config = { childList: true, subtree: true };
-		observer.observe(targetElement, config);
+		document.querySelectorAll('.daterangepicker').forEach(item => {
+			const config = { childList: true, subtree: true };
+			observer.observe(item, config);
+		})
 	}
 }
 

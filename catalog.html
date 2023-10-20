@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/catalog.css">
 </head>
@@ -596,27 +597,7 @@
                     <div class="catalog__right">
                         <div class="calendar__block">
                             <h3 class="calendar__block-title">Выбрать даты проката</h3>
-                            <div class="calendar">
-                                <div class="calendar__header">
-                                    <p class="calendar-month-year"></p>
-                                    <div class="calendar__nav">
-                                        <button class="calendar-prev"><img src="img/catalog/calendar/prev.svg" alt=""></button>
-                                        <button class="calendar-next"><img src="img/catalog/calendar/next.svg" alt=""></button>
-                                    </div>
-                                </div>
-                                <div class="calendar__body">
-                                    <ul class="calendar__weekdays">
-                                        <li class="calendar__weekdays-item">Mon</li>
-                                        <li class="calendar__weekdays-item">tue</li>
-                                        <li class="calendar__weekdays-item">wed</li>
-                                        <li class="calendar__weekdays-item">thu</li>
-                                        <li class="calendar__weekdays-item">fri</li>
-                                        <li class="calendar__weekdays-item">sat</li>
-                                        <li class="calendar__weekdays-item">sun</li>
-                                    </ul>
-                                </div>
-                                <div class="calendar__days"></div>
-                            </div> 
+                            <input class="calendar__field" type="text" name="daterange"/>
                         </div>
                         <div class="catalog__filters">
                             <h3 class="catalog__filters-title">Фильтры</h3>
@@ -768,6 +749,9 @@
         </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/common.js"></script>
     <script src="js/catalog.js"></script>
     <script src="js/calendar.js"></script>
