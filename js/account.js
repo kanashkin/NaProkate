@@ -222,11 +222,10 @@ const accountCalendars = () => {
 
                     let dateBlock = document.createElement('div')
                     dateBlock.innerHTML = `
-                        <div class="account__branch-block">
                             <p class="account__branch-block-text">${currentDate}</p>
                             <img src="img/common/X.svg" alt="x icon" class="account__branch-block-img close-current-date">
-                        </div>
                     `
+                    dateBlock.classList.add('account__branch-block')
 
                     currentDatesWrapper.appendChild(dateBlock)
                     currentDatesWrapper.classList.add('active')

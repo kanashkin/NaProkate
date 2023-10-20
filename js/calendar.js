@@ -16,9 +16,6 @@ $(function() {
 		$(`.date-value[field-id="${valueFieldId}"]`).text(start.format('MM/DD/YYYY'));
     }
 	)
-	$('.weekend-input').daterangepicker({
-		singleDatePicker: true,
-	})
 });
 
 let valueFieldId
