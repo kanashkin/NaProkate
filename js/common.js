@@ -145,5 +145,3 @@ checkUserLocation()
 checkLogin()
 checkFooterLogin()
 checkUserType()
-
-// localStorage.clear()

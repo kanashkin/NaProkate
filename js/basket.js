@@ -24,7 +24,7 @@ const calc = () => {
 
 }
 
-const showPopup = () => {
+const payPopup = () => {
     const openPopup = document.querySelectorAll('.basket-item-arrage'),
     overlay = document.querySelector('.overlay'),
     popupBasket = document.querySelector('.popup__basket'),
@@ -37,10 +37,7 @@ const showPopup = () => {
             main.classList.add('active')
         })
     })
-}
 
-
-const hidePopup = () => {
     const closePopup = document.querySelector('.popup__basket-close')
 
     closePopup.addEventListener('click', () => {
@@ -52,5 +49,4 @@ const hidePopup = () => {
 
 calc()
 removeItem()
-showPopup()
-hidePopup()
+payPopup()
