@@ -54,7 +54,7 @@ function checkChangeOnDatepicker() {
 				observer.disconnect()
 				tableHeadItems[2].appendChild(spanChild)
 				observer.observe(targetElement, config);
-			} catch {}
+			} catch(e) {console.log(e);}
 			try {
 				if (window.location.pathname === '/account.html') {
 					let targetElements = document.querySelectorAll('.daterangepicker')
@@ -71,8 +71,9 @@ function checkChangeOnDatepicker() {
 			} catch {}
 		});
 
+		const config = { childList: true, subtree: true };
+
 		document.querySelectorAll('.daterangepicker').forEach(item => {
-			const config = { childList: true, subtree: true };
 			observer.observe(item, config);
 		})
 	}
