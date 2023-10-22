@@ -334,8 +334,6 @@ span {
     padding: 24px 24px 31px 24px;
     position: absolute;
     z-index: 10;
-    width: 745px;
-    height: 578px;
     border-radius: 32px;
     background-color: #fff;
     top: 50%;
@@ -384,15 +382,24 @@ span {
     background-color: #404040;
 }
 
-.popup__city-map{
-    margin-top: 32px;
-    width: 697px;
-    height: 300px;
+.cities__list {
+    padding: 15px;
+    height: 200px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: scroll;
+    border: 1px solid #A4A4A4;
+    border-radius: 10px;
 }
 
-.popup-map {
-    width: inherit;
-    height: inherit;
+.cities__list-item {
+    width: fit-content;
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    cursor: pointer;
 }
 
 .popup__city-list{

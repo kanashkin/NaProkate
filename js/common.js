@@ -32,6 +32,7 @@ const selectCity = () => {
     const popUpCity = document.querySelector('.popup__city'),
         backToPopup = document.querySelector('.popup__city-back'),
         popupTabs = document.querySelectorAll('.popup__city-list-item'),
+        cityItems = document.querySelectorAll('.cities__list-item')
         blurBlock = document.querySelector('.main'),
         overlay = document.querySelector('.overlay')
 
@@ -44,8 +45,30 @@ const selectCity = () => {
         })
     }
 
-    const tabs = () => {
-        popupTabs.forEach(item => {
+    const searchCities = () => {
+        const input = document.querySelector('.popup-input')
+
+        input.addEventListener('input', () => {
+            let val = input.value.trim()
+            
+            if (val != '') {
+                cityItems.forEach(item => {
+                    if (item.innerText.indexOf(val) == -1) {
+                        item.style.display = 'none'
+                    } else {
+                        item.style.display = 'block'
+                    }
+                })
+            } else {
+                cityItems.forEach(item => {
+                    item.style.display = 'block'
+                })
+            }
+        })
+    }
+
+    const addCity = (items) => {
+        items.forEach(item => {
             item.addEventListener('click', () => {
                 const currentCity = item.textContent
                 localStorage.setItem('city', `${currentCity}`)
@@ -58,8 +81,10 @@ const selectCity = () => {
         })
     }
 
+    addCity(cityItems)
+    addCity(popupTabs)
     back()
-    tabs()
+    searchCities()
 }
 
 // Функция нажатия на триггер в поле с городом в хедере
