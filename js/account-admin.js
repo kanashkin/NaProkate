@@ -80,6 +80,32 @@ const deleteAccount = () => {
     })
 }
 
+const linksToOrders = () => {
+    const triggerBtns = document.querySelectorAll('.to-orders-link')
+    const blocks = document.querySelectorAll('.account-content')
+    const tabs = document.querySelectorAll('.header__account__list-item')
+
+    triggerBtns.forEach(item => {
+        item.addEventListener('click', () => {
+            blocks.forEach(item => {
+                item.style.display = 'none'
+            })
+
+            tabs.forEach(item => {
+                item.classList.remove('active')
+            })
+
+            let currentBlock = document.querySelector('#admin')
+            let currentTab = document.querySelector('li[data-content="#admin"]')
+
+            currentBlock.style.display = ''
+            currentTab.classList.add('active')
+            
+        })
+    })
+}
+
 
 deleteAccount()
 showContent()
+linksToOrders()

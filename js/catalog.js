@@ -43,8 +43,20 @@ const stopHref = () => {
     })
 }
 
+// Выбор цвета в фильтрах
+const selectColor = () => {
+    const colorsItems = document.querySelectorAll('.colors-block .catalog__filters__list-item')
+
+    colorsItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('active')
+        })
+    })
+}
+
 
 stopHref()
 addLikeItem()
 catalogCategories()
+selectColor()
 
