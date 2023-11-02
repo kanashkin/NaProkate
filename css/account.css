@@ -13,7 +13,8 @@
     transition: .2s all;
 }
 
-li.header__account__list-item.active {
+li.header__account__list-item.active,
+li.header__account__list-item:hover {
     color: #9EB175;
 }
 
@@ -1533,13 +1534,13 @@ li.header__account__list-item.active {
     letter-spacing: 0.07px;
 }
 
-.daterangepicker:first-of-type .calendar-table {
+/* .daterangepicker:first-of-type .calendar-table {
     display: none;
 }
 
 .daterangepicker:nth-child(2) .calendar-table {
     display: none;
-}
+} */
 
 .none-gap {
     gap: 0;

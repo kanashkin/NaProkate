@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Арендатор</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="/index.html">
+                    <img class="logo-image" src="/img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item active"><a href="tenats.html">Арендаторы</a></li>
+                    <li class="header__account__list-item"><a href="orders.html">Заказы</a></li>
+                    <li class="header__account__list-item"><a href="product.html">Товары</a></li>
+                    <li class="header__account__list-item"><a href="statistics.html">Статистика</a></li>
+                    <li class="header__account__list-item"><a href="rental.html">Прокатчик</a></li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="/index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <a href="main.html"><button class="header__account-button header__account__list-item">Иван И.</button></a>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="/img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="/basket.html">
+                    <img class="basket-img" src="/img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account__wrapper container">
+        <h2 class="account__title">Арендатор</h2>
+        <div class="account-line"></div>
+            <div class="account__top-content">
+                <div class="account__left-content">
+                    <p class="account__top-text">В списке 1 493 арендатора (из них 987 проффесионалов)</p>
+                    <div class="account__top-left-button account__top-left-button-tenants">
+                        <p class="account__left-button-text">Добавить арендатора</p>
+                        <img src="/img/common/basket-plus.svg" alt="+ icon" class="account__left-button-img">
+                    </div>
+                </div>
+                <div class="account__right-content">
+                    <div class="city-dropdown-wrapper">
+                        <ul class="city_list-dropdown">
+                            <li class="city-dropdown-item city-dropdown-trigger">
+                                <p class="city-dropdown-select">Город</p>
+                                <img class="city-dropdown-arrow" src="/img/product/header/arrow.svg" alt="arrow icon">
+                            </li>
+                            <li class="city-dropdown-item">Москва</li>
+                            <li class="city-dropdown-item">Санкт-Петербург</li>
+                            <li class="city-dropdown-item">Нижний Новгород</li>
+                            <li class="city-dropdown-item">Ростов-на-Дону</li>
+                            <li class="city-dropdown-item">Екатиренбург</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="account__right-buttons-wrapper">
+                        <div class="calendar-block-wrapper">
+                            <div class="account__right-button account__buttons">
+                                <p class="account__button-text">с</p>
+                                <p class="date-value account__button-text">__</p>
+                                <img src="/img/common/arrow_down.svg" alt="arrow icon" class="account__button-img">
+                            </div>
+                            <div class="calendar">
+                                <div class="calendar__header">
+                                    <p class="calendar-month-year"></p>
+                                    <div class="calendar__nav">
+                                        <button class="calendar-prev"><img src="/img/catalog/calendar/prev.svg" alt=""></button>
+                                        <button class="calendar-next"><img src="/img/catalog/calendar/next.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="calendar__body">
+                                    <ul class="calendar__weekdays">
+                                        <li class="calendar__weekdays-item">Mon</li>
+                                        <li class="calendar__weekdays-item">tue</li>
+                                        <li class="calendar__weekdays-item">wed</li>
+                                        <li class="calendar__weekdays-item">thu</li>
+                                        <li class="calendar__weekdays-item">fri</li>
+                                        <li class="calendar__weekdays-item">sat</li>
+                                        <li class="calendar__weekdays-item">sun</li>
+                                    </ul>
+                                </div>
+                                <div class="calendar__days"></div>
+                            </div> 
+                        </div>
+                        <div class="calendar-block-wrapper">
+                            <div class="account__right-button account__buttons">
+                                <p class="account__button-text">по</p>
+                                <p class="date-value account__button-text">__</p>
+                                <img src="/img/common/arrow_down.svg" alt="arrow icon" class="account__button-img">
+                            </div>
+                            <div class="calendar">
+                                <div class="calendar__header">
+                                    <p class="calendar-month-year"></p>
+                                    <div class="calendar__nav">
+                                        <button class="calendar-prev"><img src="/img/catalog/calendar/prev.svg" alt=""></button>
+                                        <button class="calendar-next"><img src="/img/catalog/calendar/next.svg" alt=""></button>
+                                    </div>
+                                </div>
+                                <div class="calendar__body">
+                                    <ul class="calendar__weekdays">
+                                        <li class="calendar__weekdays-item">Mon</li>
+                                        <li class="calendar__weekdays-item">tue</li>
+                                        <li class="calendar__weekdays-item">wed</li>
+                                        <li class="calendar__weekdays-item">thu</li>
+                                        <li class="calendar__weekdays-item">fri</li>
+                                        <li class="calendar__weekdays-item">sat</li>
+                                        <li class="calendar__weekdays-item">sun</li>
+                                    </ul>
+                                </div>
+                                <div class="calendar__days"></div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="account__tenants-main-content">
+            <table class="account__table account__rental-table">
+                <tr>
+                    <th class="account__table-title account__table-tenants-title">Фамилия и имя</th>
+                    <th class="account__table-title account__table-tenants-title">Прокатчик</th>
+                    <th class="account__table-title account__table-tenants-title">Выручка</th>
+                    <th class="account__table-title account__table-tenants-title">Город</th>
+                    <th class="account__table-title account__table-tenants-title">Телефон</th>
+                    <th class="account__table-title account__table-tenants-title">Баланс</th>
+                    <th class="account__table-title account__table-tenants-title">Просрочка</th>
+                    <th class="account__table-title account__table-tenants-title">Дата послед. заказа</th>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">43 дня</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">4 дня</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+                <tr>
+                    <td class="account__table-text">Виктор Вишнёв</td>
+                    <td class="account__table-text">Comapny TM, @12</td>
+                    <td class="account__table-text">620 000 ₽</td>
+                    <td class="account__table-text">Москва</td>
+                    <td class="account__table-text account__table-link"><a href="tel:+7 996 567-88-12">+7 996 567-88-12</a></td>
+                    <td class="account__table-text">1 400 ₽</td>
+                    <td class="account__table-text">-</td>
+                    <td class="account__table-text">30.07.2023</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="/login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="/login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/calendar.js"></script>
+
+</body>
+</html>

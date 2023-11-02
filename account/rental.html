@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокатчик</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"/>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="/index.html">
+                    <img class="logo-image" src="/img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item"><a href="tenats.html">Арендаторы</a></li>
+                    <li class="header__account__list-item"><a href="orders.html">Заказы</a></li>
+                    <li class="header__account__list-item"><a href="product.html">Товары</a></li>
+                    <li class="header__account__list-item"><a href="statistics.html">Статистика</a></li>
+                    <li class="header__account__list-item active"><a href="rental.html">Прокатчик</a></li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="/index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <a href="main.html"><button class="header__account-button header__account__list-item">Иван И.</button></a>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="/img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="/basket.html">
+                    <img class="basket-img" src="/img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account__rental-wrapper container">
+        <div class="account__status-wrapper">
+            <div class="account__status">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт проверен</p>
+            </div>
+            <div class="account__status account__status-unactive">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт на модерации</p>
+            </div>
+        </div>
+        <h2 class="account__title">Прокатчик</h2>
+        <div class="account-line"></div>
+        <ul class="account__rental-tabs">
+            <li class="account__tabs" data-tab="#administrator">Администратор</li>
+            <li class="account__tabs" data-tab="#branch">Филиал</li>
+            <li class="account__tabs" data-tab="#conditions">Условия проката</li>
+            <li class="account__tabs" data-tab="#staff">Сотрудники</li>
+            <li class="account__tabs" data-tab="#requisites">Реквизиты</li>
+        </ul>
+        <div class="account__rental account__rental-main-content" id="administrator">
+            <div class="account__rental-block account__rental-block-first">
+                <div class="account__rental-top-text">
+                    <h2 class="account__rental-title">Личные данные</h2>
+                    <button class="account__rental-exit-button">Выйти</button>
+                </div>
+                <ul class="account__rental-info-wrapper">
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-left">Логин</p>
+                        <p class="account__rental-info-right">testemail@proton.me</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-left">Пароль</p>
+                        <p class="account__rental-info-right">***********</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-left">Имя</p>
+                        <p class="account__rental-info-right">Иван</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-left">Фамилия</p>
+                        <p class="account__rental-info-right">Иванов</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-left">Телефон</p>
+                        <p class="account__rental-info-right">+7 999 000-00-00</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="account__rental-block account__rental-block-second">
+                <div class="account__rental-top-text">
+                    <h2 class="account__rental-title">История движения <br> денежных средств</h2>
+                </div>
+                <ul class="account__rental-info-wrapper">
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text">01.02.2023</p>
+                        <p class="account__rental-info-text-center">Остаток на начало года</p>
+                        <p class="account__rental-info-text">2 260 ₽/ 73 ₽ ком.</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text">01.02.2023</p>
+                        <p class="account__rental-info-text-center">Остаток на начало года</p>
+                        <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text">01.02.2023</p>
+                        <p class="account__rental-info-text-center">Остаток на начало года</p>
+                        <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text">01.02.2023</p>
+                        <p class="account__rental-info-text-center">Остаток на начало года</p>
+                        <p class="account__rental-info-text">226 ₽/ 73 ₽ ком.</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="account__rental-block account__rental-block-third">
+                <div class="account__rental-top-text">
+                    <h2 class="account__rental-title">Условия проката</h2>
+                </div>
+                <ul class="account__rental-info-wrapper">
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text-center">Абонентская плата</p>
+                        <p class="account__rental-info-text-center">0</p>
+                    </li>
+                    <li class="account__rental-info">
+                        <p class="account__rental-info-text-center">Привлечение одного заказа</p>
+                        <p class="account__rental-info-text-center">0</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="account__rental account__rental-main-branch" id="branch">
+            <div class="account__branch-main">
+                <div class="account__branch-top-content">
+                    <h2 class="account__branch-title">Москва</h2>
+                </div>
+                <div class="account__branch-content">
+                    <p class="account__branch-subtitle">Клиентская линия</p>
+                    <ul class="account__branch-main-content">
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Инстаграм</p>
+                            <a href="https://www.instagram.com/glorioza_studio/"><p class="account__branch-item">https://www.instagram.com/glorioza_studio/</p></a>
+                        </li>
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Вконтакте</p>
+                            <a href="https://vk.com/glorioza_studio"><p class="account__branch-item">https://vk.com/glorioza_studio</p></a>
+                        </li>
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Фейсбук</p>
+                            <a href="https://www.facebook.com/"><p class="account__branch-item">https://www.facebook.com/</p></a>
+                        </li>
+                        <li class="account__branch-items account__dropdown-content">
+                            <p class="account__branch-item-name account__dropdown-item-name">Время работы</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__branch-items account__dropdown-content">
+                            <p class="account__branch-item-name account__dropdown-item-name">Выходные дни</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <p class="account__dropdown-item-text">Без выходных</p>
+                                        <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
+                                    </div>
+                                    <div class="weekend-calendar account-calendar">
+                                        <ul class="weekend__days">
+                                            <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
+                                            <li class="weekend__days-item" data-value="Понедельник">Пн</li>
+                                            <li class="weekend__days-item" data-value="Вторник">Вт</li>
+                                            <li class="weekend__days-item" data-value="Среда">Ср</li>
+                                            <li class="weekend__days-item" data-value="Четверг">Чт</li>
+                                            <li class="weekend__days-item" data-value="Пятница">Пт</li>
+                                            <li class="weekend__days-item" data-value="Суббота">Сб</li>
+                                        </ul>
+                                        <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
+                                        <div class="weekend__btns calendar__btns">
+                                            <button class="weekend-btn cancel">Отмена</button>
+                                            <button class="weekend-btn apply">Применить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="account__branch-content">
+                    <p class="account__branch-subtitle">Пункт выдачи</p>
+                    <ul class="account__branch-main-content account__branch-main-content-second">
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Адрес</p>
+                            <p class="account__branch-item">СПб ул. Двинская д8 к3 (вход с правой стороны дома). В навигаторе забивайте Глориоза</p>
+                        </li>
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Время работы</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Выходные дни</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <p class="account__dropdown-item-text">Без выходных</p>
+                                        <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
+                                    </div>
+                                    <div class="weekend-calendar account-calendar">
+                                        <ul class="weekend__days">
+                                            <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
+                                            <li class="weekend__days-item" data-value="Понедельник">Пн</li>
+                                            <li class="weekend__days-item" data-value="Вторник">Вт</li>
+                                            <li class="weekend__days-item" data-value="Среда">Ср</li>
+                                            <li class="weekend__days-item" data-value="Четверг">Чт</li>
+                                            <li class="weekend__days-item" data-value="Пятница">Пт</li>
+                                            <li class="weekend__days-item" data-value="Суббота">Сб</li>
+                                        </ul>
+                                        <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
+                                        <div class="weekend__btns calendar__btns">
+                                            <button class="weekend-btn cancel">Отмена</button>
+                                            <button class="weekend-btn apply">Применить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__branch-items account__dropdown-content">
+                            <p class="account__branch-item-name">Праздничные дни</p>
+                            <div class="account__dropdown-content-wrapper none-gap">
+                                <div class="account__branch-item-wrapper">
+                                </div>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Без праздников</p>
+                                            <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
+                                        </div>
+                                        <div class="account-calendar holiday-calendar">
+                                            <div class="calendar-select-wraper">
+                                                <select class="select-date">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</ option>
+                                                    <option value="12">12</option>
+                                                    <option value="13">13</option>
+                                                    <option value="14">14</option>
+                                                    <option value="15">15</option>
+                                                    <option value="16">16</option>
+                                                    <option value="17">17</option>
+                                                    <option value="18">18</option>
+                                                    <option value="19">19</option>
+                                                    <option value="20">20</option>
+                                                    <option value="21">21</option>
+                                                    <option value="22">22</option>
+                                                    <option value="23">23</option>
+                                                    <option value="24">24</option>
+                                                    <option value="25">25</option>
+                                                    <option value="26">26</option>
+                                                    <option value="27">27</option>
+                                                    <option value="28">28</option>
+                                                    <option value="29">29</option>
+                                                    <option value="30">30</option>
+                                                    <option value="31">31</option>
+                                                </select>
+                                                <select class="select-month">
+                                                    <option value="янв">янв</option>
+                                                    <option value="фев">фев</option>
+                                                    <option value="март">март</option>
+                                                    <option value="апр">апр</option>
+                                                    <option value="май">май</option>
+                                                    <option value="июнь">июнь</option>
+                                                    <option value="июль">июль</option>
+                                                    <option value="авг">авг</option>
+                                                    <option value="сен">сен</option>
+                                                    <option value="окт">окт</option>
+                                                    <option value="нояб">нояб</option>
+                                                    <option value="дек">дек</option>
+                                                </select>
+                                            </div>
+                                            <div class="calendar__btns holiday__btns">
+                                                <button class="cancel">Отмена</button>
+                                                <button class="apply">Применить</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__branch-items account__dropdown-content">
+                            <p class="account__branch-item-name account__dropdown-item-name">Демонстрация товара</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <p class="account__dropdown-item-text">Доступна</p>
+                                        <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                    </div>
+                                    <p class="account__branch-add-text">Не доступна</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__branch-items">
+                            <p class="account__branch-item-name">Ссылку на карту</p>
+                            <p class="account__branch-item account__branch-item-link"><a href="https://www.maps.yandex.ru/">https://www.maps.yandex.ru/</a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="account__branch-subtitle-content">
+                    <div class="account__branch-subtitle-wrapper">
+                        <p class="account__branch-subtitle">Почта клиентской службы</p>
+                        <p class="account__branch-subtitle"><a href="mailto:natanik02@mail.ru">natanik02@mail.ru</a></p>
+                    </div>
+                    <div class="account__branch-subtitle-wrapper">
+                        <p class="account__branch-subtitle">Телефон для клиентов</p>
+                        <p class="account__branch-subtitle">+7 921 781-20-70</p>
+                    </div>
+                    <div class="account__branch-subtitle-wrapper">
+                        <p class="account__branch-subtitle">Почта склада</p>
+                        <p class="account__branch-subtitle"><a href="mailto:natanik02@mail.ru">natanik02@mail.ru</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="account__rental account__rental-main-conditions" id="conditions">
+            <div class="account__rental-top-content">
+                <div class="account__rental-content">
+                    <p class="account__rental-content-name">Скидка на аренду</p>
+                    <div class="account__rental-content-value">
+                        <p class="account__rental-content-name">20%</p>
+                        <div class="account__rental-content-wrapper">
+                            <p class="account__rental-content-text">Добавить накопительную скидку</p>
+                            <img src="/img/common/+ icon.svg" alt="+ icon" class="account__rental-content-img">
+                        </div>    
+                    </div>
+                </div>
+                <div class="account__rental-content">
+                    <p class="account__rental-content-name">Скидка на доставку и сетап</p>
+                    <p class="account__rental-content-name">20%</p>  
+                </div>
+            </div>
+            <ul class="account__branch-main-content account__conditions-main-content">
+                <p class="account__branch-subtitle">Аренда</p>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name">Базовый период аренды</p>
+                    <p class="account__conditions-item">3 дня</p>
+                </li>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name account__conditions-item-name-add">Надбавка за дополнительные дни</p>
+                    <div class="account__conditions-item-wrapper">
+                        <p class="account__conditions-item">20%</p>
+                        <p class="account__conditions-item-text">от стоимости аренды за каждый день сверх базового периода аренды</p>
+                    </div>
+                </li>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name">Минимальный заказ при самовывозе</p>
+                    <p class="account__conditions-item account__conditions-item-name-add">0 ₽</p>
+                </li>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name">Минимальный заказ при доставке</p>
+                    <p class="account__conditions-item account__conditions-item-name-add">0 ₽</p>
+                </li>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name account__conditions-item-name-add">Надбавка за срочный заказ</p>
+                    <div class="account__conditions-item-wrapper">
+                        <p class="account__conditions-item">0 ₽</p>
+                        <p class="account__conditions-item-text">от стоимости аренды</p>
+                    </div>
+                </li>
+                <p class="account__branch-subtitle">Условия оплаты</p>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name">Срок внесения преоплаты</p>
+                    <p class="account__conditions-item">3 дня</p>
+                </li>
+                <li class="account__conditions-items account__dropdown-content">
+                    <p class="account__branch-item-name account__conditions-item-name account__dropdown-item-name">Продление срока</p>
+                    <div class="account__dropdown-item">
+                        <div class="account__branch-item-content">
+                            <div class="account__dropdown-item-main">
+                                <p class="account__dropdown-item-text">Без ограничений</p>
+                                <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                            </div>
+                            <p class="account__branch-add-text">С ограничением</p>
+                        </div>
+                    </div>
+                </li>
+                <p class="account__branch-subtitle">Компенсации от Глориозы</p>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name account__conditions-item-name-add">Брак</p>
+                    <div class="account__conditions-item-wrapper">
+                        <p class="account__conditions-item">200%</p>
+                        <p class="account__conditions-item-text">от стоимости аренды бракованных товаров</p>
+                    </div>
+                </li>
+                <li class="account__conditions-items">
+                    <p class="account__conditions-item-name account__conditions-item-name-add">Недокомплект</p>
+                    <div class="account__conditions-item-wrapper">
+                        <p class="account__conditions-item">200%</p>
+                        <p class="account__conditions-item-text">от стоимости аренды недостающих товаров</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+
+        <div class="account__rental account__rental-main-staff" id="staff">
+            <table class="table_staff" cellspacing = "0">
+                <tr>
+                    <th class="table_staff-header">Имя</th>
+                    <th class="table_staff-header">Город</th>
+                    <th class="table_staff-header">Опыт</th>
+                    <th class="table_staff-header">Пунктуальность</th>
+                    <th class="table_staff-header">Телефон</th>
+                    <th class="table_staff-header">Машина</th>
+                    <th class="table_staff-header">Статус</th>
+                </tr>
+                <tr>
+                    <td class="table_staff-text">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text">Отключён</td>
+                </tr>
+                <tr>
+                    <td class="table_staff-text">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text">Отключён</td>
+                </tr>
+                <tr>
+                    <td class="table_staff-text table_staff-text-border">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text table_staff-text-border">Отключён</td>
+                </tr>
+            </table>
+        </div>
+        <div class="account__rental account__rental-main-requisites" id="requisites">
+            <div class="account-requistes-content-wrapper">
+                <ul class="account-requistes-content">
+                    <p class="account-requistes-subtitle">Идентификация</p>
+                    <div class="account-requistes-content-inner">
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Полное коммерческое <br> название</p>
+                            <p class="account-requistes-value">Студия проката декора Глориоза</p>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Короткое коммерческое <br> название</p>
+                            <p class="account-requistes-value">Глориоза</p>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Объект аренды</p>
+                            <p class="account-requistes-value">Предметы декора</p>
+                        </li>
+                    </div>
+                    <p class="account-requistes-subtitle">Сайт</p>
+                    <div class="account-requistes-content-inner">
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Адрес</p>
+                            <p class="account-requistes-value"><a href="glorioza.naprokate.ru">glorioza.naprokate.ru</a></p>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Статус</p>
+                            <div class="account-requistes-item-content">
+                                <p class="account-requistes-value account-requistes-value-text">Как профессионал для сферы декора</p>
+                                <label class="switch-wrapper" for="switch">
+                                    <input class="switch" type="checkbox" id="switch">
+                                    <span class="switch-inner"></span>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Логотип</p>
+                            <div class="account-requistes-item-content">
+                                <img class="account-requistes-img" src="/img/common/account-avatar.png" alt="avatar icon">
+                                <button class="account-requistes-btn">Заменить</button>
+                            </div>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Цвет</p>
+                            <div class="account-requistes-item-content">
+                                <div class="account-requistes-color"></div>
+                                <p class="account-requistes-value">bcbcbc</p>
+                            </div>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Номер счетчика <br> Яндекс.Метрики</p>
+                            <p class="account-requistes-value">31551273</p>
+                        </li>
+                        <li class="account-requistes-item">
+                            <p class="account-requistes-name">Свой HTML</p>
+                            <div class="editor-wrapper">
+                                <div id="editor">
+                                    <p>Ваш код тут</p>
+                                    <p><br></p>
+                                </div>
+                            </div>
+                        </li>
+                        <p class="account-requistes-subtitle">Супермаркет</p>
+                        <div class="account-requistes-content-inner">
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Показывать изделия на <br> naprokate.ru</p>
+                                <div class="account-requistes-value-wrapper">
+                                    <div class="account__dropdown-item">
+                                        <div class="account__branch-item-content">
+                                            <div class="account__dropdown-item-main">
+                                                <p class="account__dropdown-item-text">Да</p>
+                                                <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                            </div>
+                                            <p class="account__branch-add-text">Нет</p>
+                                        </div>
+                                    </div>
+                                    <p class="account-requistes-text">Комиссия с аренды: 10%</p>
+                                    <p class="account-requistes-text">Комиссия с доставки и сетапа: 5%</p>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name">Фото склада</p>
+                                <div class="account-requistes-item-content">
+                                    <img class="account-requistes-img" src="/img/common/warehouse.png" alt="photo icon">
+                                    <button class="account-requistes-btn">Заменить</button>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name">Кто на фото</p>
+                                <p class="account-requistes-value">Руководитель Наталия Легкова</p>
+                            </li>
+                            <p class="account-requistes-subtitle">Отправка чеков</p>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Через Модулькассу</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Не отправлять</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Отправлять</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <p class="account-requistes-subtitle">Отправка чеков</p>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Через Робокассу</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Принимать</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Не принимать</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Система налогообложения</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">УСН (доходы)</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">ОСНО</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <div class="account-requistes-item-wrapper">
+                                    <p class="account-requistes-content-text">Подключитесь к платежной системе «Робокасса», чтобы принимать <br> оплату от клиентов с банковских карт, электронных кошельков и <br> терминалов.</p>
+                                    <p class="account-requistes-content-text">*Показать инструкцию по подключению</p>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Через Модульбанк</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Не принимать</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Принимать</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">На банковскую карту</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Не принимать</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Принимать</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">По счету банковским переводом</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Принимать</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Не принимать</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul class="account-requistes-item account-requistes-item-content-wrapper">
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name account__dropdown-item-name">Форма собственности</p>
+                                    <div class="account__dropdown-item">
+                                        <div class="account__branch-item-content">
+                                            <div class="account__dropdown-item-main">
+                                                <p class="account__dropdown-item-text">ИП</p>
+                                                <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                            </div>
+                                            <p class="account__branch-add-text">ООО</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">Имя и фамилия</p>
+                                    <p class="account-requistes-value">Легкова Наталия Сергеевна</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">ИНН</p>
+                                    <p class="account-requistes-value">782505809887</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">Расчетный счет</p>
+                                    <p class="account-requistes-value">40802810200000468762</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">Название банка</p>
+                                    <p class="account-requistes-value">ОА "Тинькофф банк"</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">БИК</p>
+                                    <p class="account-requistes-value">044525974</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">Корреспондентский счет</p>
+                                    <p class="account-requistes-value">30101810145250000974</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">Юридический адрес</p>
+                                    <p class="account-requistes-value">123060, Москва 1-й Волоколамский проезд, д. 10, стр. 1</p>
+                                </li>
+                                <li class="account-requistes-item">
+                                    <p class="account-requistes-name">БИК</p>
+                                    <p class="account-requistes-value">123060, Москва 1-й Волоколамский проезд, д. 10, стр. 1</p>
+                                </li>
+                            </ul>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name account__dropdown-item-name">Наличными</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Не принимать</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Принимать</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <p class="account-requistes-subtitle">Документы</p>
+                            <li class="account-requistes-item">
+                                <p class="account-requistes-name">Текст для акта передачи</p>
+                            </li>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="/login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="/login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/calendar.js"></script>
+    <script src="/js/rental.js"></script>
+
+</body>
+</html>

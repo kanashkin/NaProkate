@@ -139,7 +139,7 @@ const checkFooterLogin = () => {
             const itemHref = item.querySelector('a').getAttribute('href')
 
             if (localStorage.getItem('logined') === 'login') {
-                window.location.href = 'account.html'
+                window.location.href = 'account/main.html'
             } else if (localStorage.getItem('logined') === 'unlogin') {
                 window.location.href = itemHref
             }
@@ -158,7 +158,7 @@ const checkUserType = () => {
         if (userType === 'admin') {
             window.location.href = '/account-admin.html'
         } else if (userType === 'rental') {
-            window.location.href = '/account.html'
+            window.location.href = '/account/main.html'
         }
     })
 }
