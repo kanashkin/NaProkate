@@ -327,6 +327,7 @@ li.header__account__list-item.active {
 }
 
 .graphic-img{
+    max-width: 100%;
     position: absolute;
     bottom: 0;
     left: -2px;
@@ -579,6 +580,7 @@ li.header__account__list-item.active {
 }
 
 .account__wrapper{
+    overflow-x: auto;
     margin-top: 144px;
     margin-bottom: 410px;
 }
@@ -850,6 +852,7 @@ li.header__account__list-item.active {
 .account__rental-info{
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .account__rental-info-left{

@@ -1,17 +1,31 @@
 $(function() {
+	const baseLocal = {
+		applyLabel: 'Применить',
+		cancelLabel: 'Отмена',
+		fromLabel: 'От',
+		toLabel: 'До',
+		daysOfWeek: ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб'],
+		monthNames: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+	}
 	$('input[name="daterange"]').daterangepicker({
 		opens: 'left',
+		locale: baseLocal
 	}, function(start, end, label) {
 	})
+
 	$('input[name="datetimes"]').daterangepicker({
 		timePicker: true,
 		locale: {
-			format: ('hh:mm A')
+			applyLabel: 'Применить',
+			cancelLabel: 'Отмена',
+			format: ('hh:mm A'),
 		}
 	});
+
 	$('.account__right-button').daterangepicker({
 		singleDatePicker: true,
 		opens: 'center',
+		locale: baseLocal
 	}, function(start, end, label) {
 		$(`.date-value[field-id="${valueFieldId}"]`).text(start.format('MM/DD/YYYY'));
     }
@@ -54,7 +68,7 @@ function checkChangeOnDatepicker() {
 				observer.disconnect()
 				tableHeadItems[2].appendChild(spanChild)
 				observer.observe(targetElement, config);
-			} catch(e) {console.log(e);}
+			} catch {}
 			try {
 				if (window.location.pathname === '/account.html') {
 					let targetElements = document.querySelectorAll('.daterangepicker')
