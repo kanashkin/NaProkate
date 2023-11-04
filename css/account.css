@@ -611,10 +611,6 @@ li.header__account__list-item:hover {
     width: 232px;
 }
 
-.account__top-left-button-product{
-    width: 187px;
-}
-
 .account__top-text{
     color: rgba(59, 64, 48, 0.50);
     font-size: 16px;
@@ -804,7 +800,7 @@ li.header__account__list-item:hover {
     margin-top: 63px;
 }
 
-.account__rental-main-content{
+.account-rental-main-wrapper{
     display: flex;
     gap: 32px; 
 }
@@ -836,7 +832,8 @@ li.header__account__list-item:hover {
 
 .account__rental-top-text{
     display: flex;
-    gap: 96px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .account__rental-block-first{
@@ -925,12 +922,15 @@ li.header__account__list-item:hover {
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
-    width: 208px;
     white-space: nowrap;
 }
 
+.account__branch-subtitle-content p.account__branch-subtitle {
+    max-width: 208px;
+    width: 100%;
+}
+
 .account__branch-main-content{
-    width: 741px;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -943,7 +943,7 @@ li.header__account__list-item:hover {
 .account__branch-items{
     margin-left: 60px;
     display: flex;
-    gap: 231px;
+    gap: 170px;
 }
 
 .account__dropdown-item,
@@ -952,7 +952,6 @@ li.header__account__list-item:hover {
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
-    width: 115px;
     white-space: nowrap;
 }
 
@@ -961,8 +960,8 @@ li.header__account__list-item:hover {
 }
 
 .account__branch-item-name{
-    display: flex;
-    align-items: center;
+    max-width: 180px;
+    width: 100%;
 }
 
 .account__branch-item-wrapper{
@@ -1012,7 +1011,6 @@ li.header__account__list-item:hover {
 }
 
 .account__branch-item-content{
-    width: 145px;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -1057,6 +1055,24 @@ li.header__account__list-item:hover {
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.account-save {
+    margin-top: 50px;
+    background: #A1B17E;
+    height: 55px;
+    padding: 0 20px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .3s all;
+    max-width: 234px;
+}
+
+.account-save:hover {
+    box-shadow: 0px 6px 23px 0px #A1B17E;
+    transform: translateY(-5px);
 }
 
 /* staff */
@@ -1193,11 +1209,15 @@ li.header__account__list-item:hover {
 }
 
 .account__rental-content-name{
-    width: 220px;
     color: #3B4030;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+}
+
+p.account__rental-content-name {
+    max-width: 220px;
+    width: 100%;
 }
 
 .account__rental-content-text{
@@ -1237,14 +1257,15 @@ li.header__account__list-item:hover {
     line-height: 20px;
 }
 
-.account__conditions-item-name{
-    width: 210px !important;
+.account__conditions-item-name {
+    max-width: 224px;
+    width: 100%;
 }
 
 .account__conditions-items{
     display: flex;
     margin-left: 60px;
-    gap: 77px;
+    gap: 61px;
 }
 
 .account__conditions-item-name-add{
@@ -1288,7 +1309,8 @@ li.header__account__list-item:hover {
 }
 
 .account-requistes-name{
-    width: 224px;
+    max-width: 224px;
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -1314,7 +1336,7 @@ li.header__account__list-item:hover {
 }
 
 .account-requistes-value-text{
-    text-decoration: underline;
+    border-bottom: 1px solid #3B4030;
 }
 
 .account-requistes-item-content{
@@ -1377,20 +1399,31 @@ li.header__account__list-item:hover {
     left: 31px;
 }
 
-.account-requistes-btn{
+.input-file {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.input-file + label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 94px;
     height: 34px;
     border-radius: 6px;
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(30, 41, 59, 0.25);
-/* button text */
+    /* button text */
     color: #000;
     font-size: 14px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .account-requistes-color{
-    background: #BCBCBC;
     width: 40px;
     height: 20px;
 }

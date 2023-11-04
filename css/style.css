@@ -11,6 +11,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+input {
+    width: 100%;
+}
+
 button,
 input,
 textarea,

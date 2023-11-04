@@ -112,7 +112,7 @@ const accountCalendars = () => {
                     let dateBlock = document.createElement('div')
                     dateBlock.innerHTML = `
                             <p class="account__branch-block-text">${currentDate}</p>
-                            <img src="img/common/X.svg" alt="x icon" class="account__branch-block-img close-current-date">
+                            <img src="/img/common/X.svg" alt="x icon" class="account__branch-block-img close-current-date">
                     `
                     dateBlock.classList.add('account__branch-block')
 
@@ -154,10 +154,21 @@ const exitAccount = () => {
     })
 }
 
+const selectColor = () => {
+    const colorInput = document.querySelector('.account-requistes-color')
+    const colorField = document.querySelector('.color-value')
+
+    colorInput.addEventListener('input', () => {
+        let currentColor = colorInput.value
+        colorField.textContent = currentColor.slice(1)
+    })
+}
+
 
 tabs()
 accountCalendars()
 exitAccount()
+selectColor()
 
 let quill = new Quill('#editor', {
     theme: 'snow'

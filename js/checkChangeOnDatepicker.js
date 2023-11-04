@@ -20,16 +20,16 @@ function checkChangeOnDatepicker() {
 				observer.observe(targetElement, config);
 			} catch {}
 			try {
-				let targetElements = document.querySelectorAll('.daterangepicker')
-				targetElements.forEach(item => {
-					let targetIndex = Array.from(targetElements).indexOf(item)
+				if (window.location.pathname == '/account/rental.html') {
+					let targetElements = document.querySelectorAll('.daterangepicker')
+					targetElements.forEach(item => {
+						let targetIndex = Array.from(targetElements).indexOf(item)
 
-					if (targetIndex == 0 || targetIndex == 1) {
 						item.querySelectorAll('.calendar-table').forEach(item => {
 							item.style.display = 'none'
 						})
-					}
-				})
+					})
+				}
 			} catch {}
 		});
 

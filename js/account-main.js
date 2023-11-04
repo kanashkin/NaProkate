@@ -3,7 +3,8 @@ const openLink = () => {
 
     transition.forEach(item => {
         item.addEventListener('click', () => {
-            window.location.href = '/account-card.html';
+            let page = item.getAttribute('data-order')
+            window.location.href = `/${page}`;
         })
     })
 }
