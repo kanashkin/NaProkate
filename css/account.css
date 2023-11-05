@@ -1596,3 +1596,12 @@ p.account__rental-content-name {
 .close-current-date {
     cursor: pointer;
 }
+
+table tr {
+    cursor: pointer;
+    transition: .3s all ;
+}
+
+table tr:hover {
+    background-color: rgba(158, 177, 117, .3);
+}

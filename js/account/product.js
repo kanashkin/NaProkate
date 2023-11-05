@@ -1,8 +1,8 @@
 const accountPopup = () => {
-    const openPopup = document.querySelectorAll('.account__table-text-link'),
+    const openPopup = document.querySelectorAll('.product-item'),
     accPopup = document.querySelector('.account__popup'),
     closePopup = document.querySelector('.account__close-popup'),
-    blurBlock = document.querySelector('.main__account'),
+    blurBlock = document.querySelector('.account__wrapper'),
     accOverlay = document.querySelector('.overlay__account')
 
     openPopup.forEach(item => {

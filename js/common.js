@@ -156,7 +156,7 @@ const checkUserType = () => {
         let userType = localStorage.getItem('user-type')
 
         if (userType === 'admin') {
-            window.location.href = '/account-admin.html'
+            window.location.href = '/account-admin/admin.html'
         } else if (userType === 'rental') {
             window.location.href = '/account/main.html'
         }
