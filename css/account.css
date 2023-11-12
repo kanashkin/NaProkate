@@ -737,7 +737,49 @@ li.header__account__list-item:hover {
     display: none;
 }
 
-/* rental */
+/* RENTAL TABS */
+
+.account__item-title,
+.account__item-value,
+.account__block-title {
+    color: #3B4030;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+
+.account__item-title {
+    width: 100%;
+}
+.account__item-value::placeholder {
+    color: rgba(59, 64, 48, 0.50);
+}
+
+.account__block {
+    margin-top: 40px;
+}
+
+.account__items {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.subitems {
+    margin-left: 60px;
+}
+
+.account__item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.account__item.start{
+    align-items: flex-start;
+}
 
 .rental__table th{
     padding-right: 101px;
@@ -817,7 +859,6 @@ li.header__account__list-item:hover {
     font-weight: 700;
 
 }
-
 .account__rental-exit-button{
     width: 86px;
     height: 29px;
@@ -893,17 +934,17 @@ li.header__account__list-item:hover {
 
 /* branch */
 
+.client-line__block .account__item-title,
+.pvz__block .account__item-title {
+    max-width: 326px;
+}
+
+.branch__block .account__item-title {
+    max-width: 386px;
+}
+
 .account__rental-main-branch{
     margin-top: 108px;
-}
-
-.account__branch-top-content{
-    display: flex;
-}
-
-.account__branch-content{
-    width: 100%;
-    margin-top: 32px;
 }
 
 .account__branch-title{
@@ -912,56 +953,8 @@ li.header__account__list-item:hover {
     font-weight: 400;
 }
 
-.account__branch-content{
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
-
-.account__branch-subtitle{
-    color: #3B4030;
-    font-size: 16px;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
-.account__branch-subtitle-content p.account__branch-subtitle {
-    max-width: 208px;
-    width: 100%;
-}
-
-.account__branch-main-content{
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.account__branch-main-content-second{
-    width: 100%;
-}
-
-.account__branch-items{
-    margin-left: 60px;
-    display: flex;
-    gap: 170px;
-}
-
-.account__dropdown-item,
-.account__branch-item-name,
-.account__branch-item{
-    color: #3B4030;
-    font-size: 16px;
-    font-weight: 400;
-    white-space: nowrap;
-}
-
 .account__dropdown-arrow {
     cursor: pointer;
-}
-
-.account__branch-item-name{
-    max-width: 180px;
-    width: 100%;
 }
 
 .account__branch-item-wrapper{
@@ -971,39 +964,6 @@ li.header__account__list-item:hover {
 
 .account__branch-item-wrapper.active {
     gap: 8px;
-}
-
-.account__branch-block-text{
-    color: #FFF;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.account__branch-block{
-    display: flex;
-    background: #9EB175;
-    padding: 4px 12px;
-    gap: 4px;
-}
-
-.account__branch-item-link{
-    color: rgba(59, 64, 48, 0.50);
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.account__branch-subtitle-content{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
-
-.account__branch-subtitle-wrapper{
-    display: flex;
-    gap: 200px;
 }
 
 .account__dropdown-item.active .account__branch-add-text {
@@ -1201,11 +1161,27 @@ li.header__account__list-item:hover {
     max-height: 450px;
 }
 
-.account__rental-main-conditions{
+/* CONDITIONS TAB */
+#conditions .account__block:first-child,
+#requisites .account__block:first-child {
+    margin-top: 0;
+}
+
+#conditions .account__block:first-child .account__item-title {
+    max-width: 325px;
+}
+
+#conditions .account__block:first-child .account__items {
+    margin-top: 0;
+}
+
+#requisites .account__item-title {
+    max-width: 265px;
+}
+
+.account__rental-main-conditions,
+.account__rental-main-requisites {
     margin-top: 108px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 }
 
 .account__rental-content-name{
@@ -1220,11 +1196,28 @@ p.account__rental-content-name {
     width: 100%;
 }
 
-.account__rental-content-text{
+.account__item-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.account__item-sale {
     color: #3B4030;
     font-size: 13px;
     font-weight: 400;
     line-height: 16px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.account__item-sale::after {
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 16px;
+    background: url(../img/common/+\ icon.svg) center center / cover no-repeat;
 }
 
 .account__rental-content{
@@ -1249,19 +1242,6 @@ p.account__rental-content-name {
     gap: 32px;
 }
 
-.account__conditions-item-name,
-.account__conditions-item{
-    color: #3B4030;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.account__conditions-item-name {
-    max-width: 224px;
-    width: 100%;
-}
-
 .account__conditions-items{
     display: flex;
     margin-left: 60px;
@@ -1273,11 +1253,31 @@ p.account__rental-content-name {
     align-items: center;
 }
 
-.account__conditions-item-text{
+.account__item-clarification {
     white-space: nowrap;
     color: rgba(59, 64, 48, 0.70);
     font-size: 13px;
     font-weight: 400;
+}
+
+.rent .account__item-title,
+.payment-cond .account__item-title,
+.compensation .account__item-title {
+    max-width: 265px;
+}
+
+.account__item-info {
+    display: flex;
+    flex-direction: column;
+    max-width: 558px;
+    gap: 24px;
+}
+
+.info-text {
+    color: rgba(59, 64, 48, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
 }
 
 .account__conditions-item-wrapper{
@@ -1285,11 +1285,6 @@ p.account__rental-content-name {
     flex-direction: column;
     gap: 20px;
 }
-
-.account__conditions-main-content{
-    width: 100%;
-}
-
 
 .account-requistes-content-wrapper{
     margin-top: 110px;
@@ -1384,7 +1379,7 @@ p.account__rental-content-name {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    top: -16.5px;
+    top: -15.5px;
     left: 2.5px;
     background-color: #6C7852;
     transition: background .3s, left .3s;
@@ -1566,14 +1561,6 @@ p.account__rental-content-name {
     line-height: 142%;
     letter-spacing: 0.07px;
 }
-
-/* .daterangepicker:first-of-type .calendar-table {
-    display: none;
-}
-
-.daterangepicker:nth-child(2) .calendar-table {
-    display: none;
-} */
 
 .none-gap {
     gap: 0;

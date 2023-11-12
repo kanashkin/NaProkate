@@ -97,7 +97,7 @@ const accountCalendars = () => {
                 if (item.classList.contains('cancel')) {
                     currentCalendar.classList.remove('active')
                 } else if (item.classList.contains('apply')) {
-                    let currentParentBlock = item.closest('.account__branch-items')
+                    let currentParentBlock = item.closest('.account__item')
                     let fieldTextItem = currentParentBlock.querySelector('.account__dropdown-item-text')
                     let currentDatesWrapper = currentParentBlock.querySelector('.account__branch-item-wrapper')
                     let wrapper = currentParentBlock.querySelector('.none-gap')
