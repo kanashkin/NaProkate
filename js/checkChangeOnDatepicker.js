@@ -20,7 +20,7 @@ function checkChangeOnDatepicker() {
 				observer.observe(targetElement, config);
 			} catch {}
 			try {
-				if (window.location.pathname == '/account/rental.html') {
+				if (window.location.pathname == '/account/rental-branch.html') {
 					let targetElements = document.querySelectorAll('.daterangepicker')
 					targetElements.forEach(item => {
 						let targetIndex = Array.from(targetElements).indexOf(item)

@@ -828,14 +828,21 @@ li.header__account__list-item:hover {
     color: #3B4030;
     font-size: 16px;
     font-weight: 500;
-    padding: 8px 0;
-    line-height: 28px;
+    height: 44px;
     cursor: pointer;
     border-top: 1px solid rgba(0, 0, 0, 0);
 }
 
 .account__tabs.active{
     border-top: 1px solid #3B4030;
+}
+
+.account__tabs a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .account__rental-main-content{
@@ -947,10 +954,52 @@ li.header__account__list-item:hover {
     margin-top: 108px;
 }
 
+.account__branch-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .account__branch-title{
     color: #3B4030;
     font-size: 36px;
     font-weight: 400;
+}
+
+.add-branch {
+    display: flex;
+    padding-left: 26px;
+    cursor: pointer;
+    position: relative;
+}
+
+.add-branch::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 18px;
+    height: 18px;
+    background: url(../img/common/basket-plus.svg);
+}
+
+.remove-branch {
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.remove-branch::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 20px;
+    background: url(../img/common/X-black.svg) no-repeat;
+    background-position: center center;
+    background-size: contain;
 }
 
 .account__dropdown-arrow {
@@ -960,6 +1009,20 @@ li.header__account__list-item:hover {
 .account__branch-item-wrapper{
     display: flex;
     gap: 0;
+}
+
+.account__branch-block {
+    padding: 4px 12px;
+    background: #9EB175;
+    display: flex;
+    gap: 4px;
+}
+
+.account__branch-block-text {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 125%;
 }
 
 .account__branch-item-wrapper.active {
@@ -1210,6 +1273,7 @@ p.account__rental-content-name {
     display: flex;
     align-items: center;
     gap: 4px;
+    cursor: pointer;
 }
 
 .account__item-sale::after {

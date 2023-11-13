@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокатчик</title>
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="/index.html">
+                    <img class="logo-image" src="/img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item"><a href="tenats.html">Арендаторы</a></li>
+                    <li class="header__account__list-item"><a href="orders.html">Заказы</a></li>
+                    <li class="header__account__list-item"><a href="product.html">Товары</a></li>
+                    <li class="header__account__list-item"><a href="statistics.html">Статистика</a></li>
+                    <li class="header__account__list-item active"><a href="rental.html">Прокатчик</a></li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="/index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <a href="main.html"><button class="header__account-button header__account__list-item">Иван И.</button></a>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="/img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="/basket.html">
+                    <img class="basket-img" src="/img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account__rental-wrapper container">
+        <div class="account__status-wrapper">
+            <div class="account__status">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт проверен</p>
+            </div>
+            <div class="account__status account__status-unactive">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт на модерации</p>
+            </div>
+        </div>
+        <h2 class="account__title">Прокатчик</h2>
+        <div class="account-line"></div>
+        <ul class="account__rental-tabs">
+            <li class="account__tabs"><a href="rental-administrator.html">Администратор</a></li>
+            <li class="account__tabs"><a href="rental-branch.html">Филиал</a></li>
+            <li class="account__tabs"><a href="rental-conditions.html">Условия проката</a></li>
+            <li class="account__tabs"><a href="rental-staff.html">Сотрудники</a></li>
+            <li class="account__tabs active"><a href="rental-requisites.html">Реквизиты</a></li>
+        </ul>
+
+        <div class="account__rental account__rental-main-requisites" id="requisites">
+
+            <div class="account__block">
+                <p class="account__block-title">Идентификация</p>
+                <ul class="account__items subitems">
+                    <li class="account__item start">
+                        <p class="account__item-title">Полное коммерческое <br> название</p>
+                        <input class="account__item-value" type="text" value="Студия проката декора Глориоза" placeholder="Сутдия проката Название">
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Короткое коммерческое <br> название</p>
+                        <input class="account__item-value" type="text" value="Глориоза" placeholder="Название компании">
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Объект аренды</p>
+                        <input class="account__item-value" type="text" value="Предметы декора" placeholder="Велосипеды">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account__block">
+                <p class="account__block-title">Сайт</p>
+                <ul class="account__items subitems">
+                    <li class="account__item">
+                        <p class="account__item-title">Адрес</p>
+                        <input class="account__item-value" type="text" value="glorioza.naprokate.ru" placeholder="site.ru">
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Статус</p>
+                        <div class="account-requistes-item-content">
+                            <p class="account__item-value account-requistes-value-text">Как профессионал для сферы декора</p>
+                            <label class="switch-wrapper" for="switch">
+                                <input class="switch" type="checkbox" id="switch">
+                                <span class="switch-inner"></span>
+                            </label>
+                        </div>
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Логотип</p>
+                        <div class="account-requistes-item-content">
+                            <img class="account-requistes-img" src="/img/common/account-avatar.png" alt="avatar icon">
+                            <input type="file" id="logo-input" class="input-file">
+                            <label for="logo-input"><span>Заменить</span></label>
+                        </div>
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Цвет</p>
+                        <div class="account-requistes-item-content">
+                            <input type="color" class="account-requistes-color" value="#bcbcbc">
+                            <p class="account__item-value color-value">bcbcbc</p>
+                        </div>
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Номер счетчика <br> Яндекс.Метрики</p>
+                        <input class="account__item-value" type="text" value="31551273" placeholder="11111111">
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Свой HTML</p>
+                        <div class="editor-wrapper">
+                            <div id="editor">
+                                <p>Ваш код тут</p>
+                                <p><br></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account__block">
+                <p class="account__block-title">Супермаркет</p>
+                <ul class="account__items subitems">
+                    <li class="account__item start">
+                        <p class="account__item-title">Показывать изделия на <br> naprokate.ru</p>
+                        <div class="account__item-right">
+                            <div class="account-requistes-value-wrapper">
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Да</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Нет</p>
+                                    </div>
+                                </div>
+                                <p class="account-requistes-text">Комиссия с аренды: 10%</p>
+                                <p class="account-requistes-text">Комиссия с доставки и сетапа: 5%</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Фото склада</p>
+                        <div class="account-requistes-item-content">
+                            <img class="account-requistes-img" src="/img/common/warehouse.png" alt="photo icon">
+                            <input type="file" id="storage-photo-input" class="input-file">
+                            <label for="storage-photo-input"><span>Заменить</span></label>
+                        </div>
+                    </li>
+                    <li class="account__item">
+                        <p class="account__item-title">Кто на фото</p>
+                        <input class="account__item-value" type="text" value="Руководитель Наталия Легкова" placeholder="Руководитель Иван Иванович">
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account__block">
+                <p class="account__block-title">Отправка чеков</p>
+                <ul class="account__items subitems">
+                    <li class="account__item start">
+                        <p class="account__item-title">Через Модулькассу</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account__block">
+                <p class="account__block-title">Способы оплаты</p>
+                <ul class="account__items subitems">
+                    <li class="account__item start">
+                        <p class="account__item-title">Через Робокассу</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account__item start">
+                        <p class="account__item-title">Система <br> налогообложения</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">УСН (доходы</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">ОСНО</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account__item-info">
+                        <p class="payment-info info-text">
+                            Подключитесь к платежной системе «Робокасса», чтобы принимать оплату от клиентов с банковских карт, электронных кошельков и терминалов.
+                        </p>
+                        <a class="paymeny-instruction info-text" href="">*Показать инструкцию по подключению</a>
+                    </li>
+                    <li class="account__item start">
+                        <p class="account__item-title">Через Модульбанк</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account__item start">
+                        <p class="account__item-title">На банковскую карту</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="account__item start">
+                        <p class="account__item-title">По счету банковским <br> переводом</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                    <ul class="account__items subitems" style="margin-top: 0;">
+                        <li class="account__item">
+                            <p class="account__item-title account__dropdown-item-name">Форма собственности</p>
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <p class="account__dropdown-item-text">ИП</p>
+                                        <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                    </div>
+                                    <p class="account__branch-add-text">ООО</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">Имя и фамилия</p>
+                            <input class="account__item-value" type="text" value="Легкова Наталия Сергеевна" placeholder="Иванов Иван Иванович">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">ИНН</p>
+                            <input class="account__item-value" type="text" value="782505809887" placeholder="111111111111">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">Расчетный счет</p>
+                            <input class="account__item-value" type="text" value="40802810200000468762" placeholder="111111111111111111111">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">Название банка</p>
+                            <input class="account__item-value" type="text" value='ОА "Тинькофф банк"' placeholder='ОА "Банк"'>
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">БИК</p>
+                            <input class="account__item-value" type="text" value="044525974" placeholder="111111111">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">Корреспондентский счет</p>
+                            <input class="account__item-value" type="text" value="30101810145250000974" placeholder="11111111111111111111">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">Юридический адрес</p>
+                            <input class="account__item-value" type="text" value="123060, Москва 1-й Волоколамский проезд, д. 10, стр. 1" placeholder="111111, Москва, ул. Никольская, 6">
+                        </li>
+                        <li class="account__item start">
+                            <p class="account__item-title">БИК</p>
+                            <input class="account__item-value" type="text" value="123060, Москва 1-й Волоколамский проезд, д. 10, стр. 1" placeholder="111111, Москва, ул. Никольская, 6">
+                        </li>
+                    </ul>
+                    <li class="account__item start">
+                        <p class="account__item-title">Наличными</p>
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text">Принимать</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text">Не принимать</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="account__block">
+                <p class="account__block-title">Документы</p>
+                <ul class="account__items subitems">
+                    <li class="account__item">
+                        <a href="" download="text.docx" class="account-requistes-name">Текст для акта передачи</a>
+                    </li>
+                </ul>
+            </div>
+
+
+
+
+
+
+            
+                        
+
+            <button class="account-save">Сохранить измененения</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="/login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="/login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/account/rental-requisites.js"></script>
+
+</body>

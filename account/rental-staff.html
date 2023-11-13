@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Прокатчик</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="/index.html">
+                    <img class="logo-image" src="/img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item"><a href="tenats.html">Арендаторы</a></li>
+                    <li class="header__account__list-item"><a href="orders.html">Заказы</a></li>
+                    <li class="header__account__list-item"><a href="product.html">Товары</a></li>
+                    <li class="header__account__list-item"><a href="statistics.html">Статистика</a></li>
+                    <li class="header__account__list-item active"><a href="rental.html">Прокатчик</a></li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="/index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <a href="main.html"><button class="header__account-button header__account__list-item">Иван И.</button></a>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="/img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="/basket.html">
+                    <img class="basket-img" src="/img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account__rental-wrapper container">
+        <div class="account__status-wrapper">
+            <div class="account__status">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт проверен</p>
+            </div>
+            <div class="account__status account__status-unactive">
+                <h2 class="account__status-title">Статус</h2>
+                <p class="account__status-text">Ваш аккаунт на модерации</p>
+            </div>
+        </div>
+        <h2 class="account__title">Прокатчик</h2>
+        <div class="account-line"></div>
+        <ul class="account__rental-tabs">
+            <li class="account__tabs"><a href="rental-administrator.html">Администратор</a></li>
+            <li class="account__tabs"><a href="rental-branch.html">Филиал</a></li>
+            <li class="account__tabs"><a href="rental-conditions.html">Условия проката</a></li>
+            <li class="account__tabs active"><a href="rental-staff.html">Сотрудники</a></li>
+            <li class="account__tabs"><a href="rental-requisites.html">Реквизиты</a></li>
+        </ul>
+
+        <div class="account__rental account__rental-main-staff" id="staff">
+            <div class="account__top-content">
+                <div class="account__left-content">
+                    <p class="account__top-text">В списке 3 сотрудника</p>
+                    <div class="account__top-left-button account__top-left-button-product">
+                        <p class="account__left-button-text">Добавить сотрудника</p>
+                        <img src="/img/common/basket-plus.svg" alt="+ icon" class="account__left-button-img">
+                    </div>
+                </div>
+            </div>
+            <table class="table_staff" cellspacing = "0">
+                <tr>
+                    <th class="table_staff-header">Имя</th>
+                    <th class="table_staff-header">Город</th>
+                    <th class="table_staff-header">Опыт</th>
+                    <th class="table_staff-header">Пунктуальность</th>
+                    <th class="table_staff-header">Телефон</th>
+                    <th class="table_staff-header">Машина</th>
+                    <th class="table_staff-header">Статус</th>
+                </tr>
+                <tr>
+                    <td class="table_staff-text">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text">Отключён</td>
+                </tr>
+                <tr>
+                    <td class="table_staff-text">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text">Отключён</td>
+                </tr>
+                <tr>
+                    <td class="table_staff-text table_staff-text-border">Иван Иванов</td>
+                    <td class="table_staff-text">Москва</td>
+                    <td class="table_staff-text">0</td>
+                    <td class="table_staff-text">-</td>
+                    <td class="table_staff-text">+7 999 999-99-99</td>
+                    <td class="table_staff-text">Porsche</td>
+                    <td class="table_staff-text table_staff-text-border">Отключён</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="/login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="/login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
