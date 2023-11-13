@@ -73,9 +73,36 @@
 
         <div class="account__rental account__rental-main-branch" id="branch">
             <div class="account__branch-main">
-                <div class="account__branch-top-content">
-                    <h2 class="account__branch-title">Москва</h2>
+                <div class="add-branch__wrapper">
                     <p class="add-branch account__left-button-text">Добавить представительство</p>
+                    <ul class="city__list">
+                        <li class="city__list-item">Москва</li>
+                        <li class="city__list-item">Санкт-Петербург</li>
+                        <li class="city__list-item">Нижний Новгород</li>
+                        <li class="city__list-item">Екатеринбург</li>
+                        <li class="city__list-item">Казань</li>
+                        <li class="city__list-item">Тюмень</li>
+                        <li class="city__list-item">Челябинск</li>
+                        <li class="city__list-item">Уфа</li>
+                        <li class="city__list-item">Волгоград</li>
+                        <li class="city__list-item">Пермь</li>
+                        <li class="city__list-item">Саратов</li>
+                        <li class="city__list-item">Самара</li>
+                        <li class="city__list-item">Оренбург</li>
+                        <li class="city__list-item">Иркутск</li>
+                        <li class="city__list-item">Новосибирск</li>
+                        <li class="city__list-item">Красноярск</li>
+                        <li class="city__list-item">Омск</li>
+                        <li class="city__list-item">Воронеж</li>
+                        <li class="city__list-item">Ростов-на-Дону</li>
+                        <li class="city__list-item">Краснодар</li>
+                        <li class="city__list-item">Анапа</li>
+                        <li class="city__list-item">Сочи</li>
+                        <li class="city__list-item">Ставрополь</li>
+                    </ul>
+                </div>
+                <div class="account__branch-city-title common">
+                    <h2 class="account__branch-title">Санкт-Петербург</h2>
                 </div>
 
                 <div class="account__block client-line__block">
@@ -133,159 +160,166 @@
                     </ul>
                 </div>
 
-                <div class="account__block pvz__block">
-                    <p class="account__block-title">Пункт выдачи</p>
-                    <ul class="account__items subitems">
-                        <li class="account__item">
-                            <p class="account__item-title">Адрес</p>
-                            <input class="account__item-value" type="text" value="СПб ул. Двинская д8 к3 (вход с правой стороны дома). В навигаторе забивайте Глориоза" placeholder="Москва, ул. Никольская, 6">
-                        </li>
-                        <li class="account__item">
-                            <p class="account__item-title">Время работы</p>
-                            <div class="account__dropdown-item">
-                                <div class="account__branch-item-content">
-                                    <div class="account__dropdown-item-main">
-                                        <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="account__item">
-                            <p class="account__item-title">Выходные дни</p>
-                            <div class="account__dropdown-item">
-                                <div class="account__branch-item-content">
-                                    <div class="account__dropdown-item-main">
-                                        <p class="account__dropdown-item-text">Без выходных</p>
-                                        <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
-                                    </div>
-                                    <div class="weekend-calendar account-calendar">
-                                        <ul class="weekend__days">
-                                            <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
-                                            <li class="weekend__days-item" data-value="Понедельник">Пн</li>
-                                            <li class="weekend__days-item" data-value="Вторник">Вт</li>
-                                            <li class="weekend__days-item" data-value="Среда">Ср</li>
-                                            <li class="weekend__days-item" data-value="Четверг">Чт</li>
-                                            <li class="weekend__days-item" data-value="Пятница">Пт</li>
-                                            <li class="weekend__days-item" data-value="Суббота">Сб</li>
-                                        </ul>
-                                        <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
-                                        <div class="weekend__btns calendar__btns">
-                                            <button class="weekend-btn cancel">Отмена</button>
-                                            <button class="weekend-btn apply">Применить</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="account__item account__dropdown-content">
-                            <p class="account__item-title">Праздничные дни</p>
-                            <div class="account__dropdown-content-wrapper none-gap">
-                                <div class="account__branch-item-wrapper">
-                                </div>
+                <div class="branch-city">
+                    <div class="account__branch-city-title">
+                        <h2 class="account__branch-title">Санкт-Петербург</h2>
+                    </div>
+
+                    <div class="account__block pvz__block">
+                        <p class="account__block-title">Пункт выдачи</p>
+                        <ul class="account__items subitems">
+                            <li class="account__item">
+                                <p class="account__item-title">Адрес</p>
+                                <input class="account__item-value" type="text" value="СПб ул. Двинская д8 к3 (вход с правой стороны дома). В навигаторе забивайте Глориоза" placeholder="Москва, ул. Никольская, 6">
+                            </li>
+                            <li class="account__item">
+                                <p class="account__item-title">Время работы</p>
                                 <div class="account__dropdown-item">
                                     <div class="account__branch-item-content">
                                         <div class="account__dropdown-item-main">
-                                            <p class="account__dropdown-item-text">Без праздников</p>
+                                            <input class="time-field account__dropdown-item-text" type="text" name="datetimes"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__item">
+                                <p class="account__item-title">Выходные дни</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Без выходных</p>
                                             <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
                                         </div>
-                                        <div class="account-calendar holiday-calendar">
-                                            <div class="calendar-select-wraper">
-                                                <select class="select-date">
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="4">4</option>
-                                                    <option value="5">5</option>
-                                                    <option value="6">6</option>
-                                                    <option value="7">7</option>
-                                                    <option value="8">8</option>
-                                                    <option value="9">9</option>
-                                                    <option value="10">10</option>
-                                                    <option value="11">11</ option>
-                                                    <option value="12">12</option>
-                                                    <option value="13">13</option>
-                                                    <option value="14">14</option>
-                                                    <option value="15">15</option>
-                                                    <option value="16">16</option>
-                                                    <option value="17">17</option>
-                                                    <option value="18">18</option>
-                                                    <option value="19">19</option>
-                                                    <option value="20">20</option>
-                                                    <option value="21">21</option>
-                                                    <option value="22">22</option>
-                                                    <option value="23">23</option>
-                                                    <option value="24">24</option>
-                                                    <option value="25">25</option>
-                                                    <option value="26">26</option>
-                                                    <option value="27">27</option>
-                                                    <option value="28">28</option>
-                                                    <option value="29">29</option>
-                                                    <option value="30">30</option>
-                                                    <option value="31">31</option>
-                                                </select>
-                                                <select class="select-month">
-                                                    <option value="янв">янв</option>
-                                                    <option value="фев">фев</option>
-                                                    <option value="март">март</option>
-                                                    <option value="апр">апр</option>
-                                                    <option value="май">май</option>
-                                                    <option value="июнь">июнь</option>
-                                                    <option value="июль">июль</option>
-                                                    <option value="авг">авг</option>
-                                                    <option value="сен">сен</option>
-                                                    <option value="окт">окт</option>
-                                                    <option value="нояб">нояб</option>
-                                                    <option value="дек">дек</option>
-                                                </select>
-                                            </div>
-                                            <div class="calendar__btns holiday__btns">
-                                                <button class="cancel">Отмена</button>
-                                                <button class="apply">Применить</button>
+                                        <div class="weekend-calendar account-calendar">
+                                            <ul class="weekend__days">
+                                                <li class="weekend__days-item" data-value="Воскресенье">Вс</li>
+                                                <li class="weekend__days-item" data-value="Понедельник">Пн</li>
+                                                <li class="weekend__days-item" data-value="Вторник">Вт</li>
+                                                <li class="weekend__days-item" data-value="Среда">Ср</li>
+                                                <li class="weekend__days-item" data-value="Четверг">Чт</li>
+                                                <li class="weekend__days-item" data-value="Пятница">Пт</li>
+                                                <li class="weekend__days-item" data-value="Суббота">Сб</li>
+                                            </ul>
+                                            <p class="weekend__days-item weekend-without" data-value="Без выходных">Без выходных</p>
+                                            <div class="weekend__btns calendar__btns">
+                                                <button class="weekend-btn cancel">Отмена</button>
+                                                <button class="weekend-btn apply">Применить</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="account__item account__dropdown-content start">
-                            <p class="account__item-title account__dropdown-item-name">Демонстрация товара</p>
-                            <div class="account__dropdown-item">
-                                <div class="account__branch-item-content">
-                                    <div class="account__dropdown-item-main">
-                                        <p class="account__dropdown-item-text">Доступна</p>
-                                        <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                            </li>
+                            <li class="account__item account__dropdown-content">
+                                <p class="account__item-title">Праздничные дни</p>
+                                <div class="account__dropdown-content-wrapper none-gap">
+                                    <div class="account__branch-item-wrapper">
                                     </div>
-                                    <p class="account__branch-add-text">Не доступна</p>
+                                    <div class="account__dropdown-item">
+                                        <div class="account__branch-item-content">
+                                            <div class="account__dropdown-item-main">
+                                                <p class="account__dropdown-item-text">Без праздников</p>
+                                                <img class="account__dropdown-arrow calendar-trigger" src="/img/common/branch-arrow.svg" alt="arrow icon">
+                                            </div>
+                                            <div class="account-calendar holiday-calendar">
+                                                <div class="calendar-select-wraper">
+                                                    <select class="select-date">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</ option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                    <select class="select-month">
+                                                        <option value="янв">янв</option>
+                                                        <option value="фев">фев</option>
+                                                        <option value="март">март</option>
+                                                        <option value="апр">апр</option>
+                                                        <option value="май">май</option>
+                                                        <option value="июнь">июнь</option>
+                                                        <option value="июль">июль</option>
+                                                        <option value="авг">авг</option>
+                                                        <option value="сен">сен</option>
+                                                        <option value="окт">окт</option>
+                                                        <option value="нояб">нояб</option>
+                                                        <option value="дек">дек</option>
+                                                    </select>
+                                                </div>
+                                                <div class="calendar__btns holiday__btns">
+                                                    <button class="cancel">Отмена</button>
+                                                    <button class="apply">Применить</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                        <li class="account__item">
-                            <p class="account__item-title">Ссылку на карту</p>
-                            <input class="account__item-value" type="text" value="" placeholder="https://www.maps.yandex.ru/">
-                        </li>
-                    </ul>
-                </div>
+                            </li>
+                            <li class="account__item account__dropdown-content start">
+                                <p class="account__item-title account__dropdown-item-name">Демонстрация товара</p>
+                                <div class="account__dropdown-item">
+                                    <div class="account__branch-item-content">
+                                        <div class="account__dropdown-item-main">
+                                            <p class="account__dropdown-item-text">Доступна</p>
+                                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                        </div>
+                                        <p class="account__branch-add-text">Не доступна</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="account__item">
+                                <p class="account__item-title">Ссылку на карту</p>
+                                <input class="account__item-value" type="text" value="" placeholder="https://www.maps.yandex.ru/">
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="account__block branch__block">
+                        <ul class="account__items">
+                            <li class="account__item">
+                                <p class="account__item-title">Почта клиентской службы</p>
+                                <input class="account__item-value" type="text" value="natanik02@mail.ru" placeholder="example@mail.ru">
+                            </li>
+                            <li class="account__item">
+                                <p class="account__item-title">Телефон для клиентов</p>
+                                <input class="account__item-value" type="text" value="+7 921 781-20-70" placeholder="+7 000 000-00-00">
+                            </li>
+                            <li class="account__item">
+                                <p class="account__item-title">Почта склада</p>
+                                <input class="account__item-value" type="text" value="natanik02@mail.ru" placeholder="example@mail.ru">
+                            </li>
+                        </ul>
+                    </div>
 
-                <div class="account__block branch__block">
-                    <ul class="account__items">
-                        <li class="account__item">
-                            <p class="account__item-title">Почта клиентской службы</p>
-                            <input class="account__item-value" type="text" value="natanik02@mail.ru" placeholder="example@mail.ru">
-                        </li>
-                        <li class="account__item">
-                            <p class="account__item-title">Телефон для клиентов</p>
-                            <input class="account__item-value" type="text" value="+7 921 781-20-70" placeholder="+7 000 000-00-00">
-                        </li>
-                        <li class="account__item">
-                            <p class="account__item-title">Почта склада</p>
-                            <input class="account__item-value" type="text" value="natanik02@mail.ru" placeholder="example@mail.ru">
-                        </li>
-                    </ul>
+                    <p class="remove-branch account__left-button-text">Закрыть предсавительство в Санкт-Петербурге</p>
                 </div>
 
             </div>
 
-            <p class="remove-branch account__left-button-text">Закрыть предсавительство в Москве</p>
 
             <button class="account-save">Сохранить измененения</button>
         </div>
@@ -318,6 +352,16 @@
             </div>
         </div>
     </footer>
+
+    <div class="branch-overlay">
+        <div class="popup__branch">
+            <img class="popup__branch-close close" src="/img/common/X-black.svg" alt="">
+            <p class="popup__branch-warning">В текущий момент в Санкт-Петербурге размещено 17 невыполненных заказов</p>
+            <p class="popup__branch-accept">Вы уверены, что хотите закрыть представительство?</p>
+            <button class="popup__branch-remove">Да, я хочу закрыть представительство в Санкт-Петербурге</button>
+            <button class="popup__branch-cancel close">Отменить действие</button>
+        </div>
+    </div>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>

@@ -113,4 +113,48 @@ const accountCalendars = () => {
     holidaysCalendar()
 }
 
+const openCityMenu = () => {
+    const trigger = document.querySelector('.add-branch')
+    const menu = document.querySelector('.city__list')
+    const menuItems = menu.querySelectorAll('.city__list-item')
+
+    trigger.addEventListener('click', () => {
+        menu.classList.toggle('active')
+    })
+
+    menuItems.forEach(item => {
+        item.addEventListener('click', () => {
+            let currentCity = item.textContent
+            // добавление нового филиала на бэкэнд
+            location.reload()
+        })
+    })
+}
+
+const branchPopup = () => {
+    const triggerBtn = document.querySelector('.remove-branch')
+    const overlay = document.querySelector('.branch-overlay')
+    const popup = document.querySelector('.popup__branch')
+    const popupClose = popup.querySelectorAll('.close')
+
+    triggerBtn.addEventListener('click', () => {
+        overlay.classList.add('active')
+    })
+
+    popupClose.forEach(item => {
+        item.addEventListener('click', () => {
+            overlay.classList.remove('active')
+        })
+    })
+
+    overlay.addEventListener('click', (e) => {
+        if (e.target.classList.contains('branch-overlay')) {
+            overlay.classList.remove('active')
+        }
+    })
+
+}
+
+branchPopup()
+openCityMenu()
 accountCalendars()

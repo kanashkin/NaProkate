@@ -954,10 +954,13 @@ li.header__account__list-item:hover {
     margin-top: 108px;
 }
 
-.account__branch-top-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.account__branch-city-title {
+    margin-top: 48px;
+    display: none;
+}
+
+.account__branch-city-title.common {
+    display: block;
 }
 
 .account__branch-title{
@@ -966,19 +969,54 @@ li.header__account__list-item:hover {
     font-weight: 400;
 }
 
-.add-branch {
+.add-branch__wrapper {
     display: flex;
-    padding-left: 26px;
-    cursor: pointer;
+    justify-content: flex-end;
     position: relative;
+}
+
+.city__list {
+    position: absolute;
+    right: 0;
+    top: 90px;
+    height: 350px;
+    width: 263px;
+    flex-direction: column;
+    border: 1px solid #d4d9e0;
+    overflow-y: scroll;
+    border-radius: 10px;
+    display: none;
+}
+
+.city__list.active {
+    display: flex;
+}
+
+.city__list-item {
+    font-weight: 400;
+    font-size: 16px;
+    color: #3B4030;
+    padding: 8px 0;
+    border-top: 1px solid #d4d9e0;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+.city__list-item:first-child {
+    border-top: none;
+}
+
+.add-branch {
+    margin-top: 40px;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    gap: 8px;
 }
 
 .add-branch::before {
     content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
+    display: block;
     width: 18px;
     height: 18px;
     background: url(../img/common/basket-plus.svg);
@@ -992,7 +1030,7 @@ li.header__account__list-item:hover {
     cursor: pointer;
 }
 
-.remove-branch::after {
+.remove-branch::before {
     content: "";
     display: block;
     width: 16px;
@@ -1000,6 +1038,78 @@ li.header__account__list-item:hover {
     background: url(../img/common/X-black.svg) no-repeat;
     background-position: center center;
     background-size: contain;
+}
+
+.branch-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    z-index: -1;
+    transition: .3s all;
+}
+
+.branch-overlay.active {
+    opacity: 1;
+    z-index: 100;
+}
+
+.popup__branch {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 35%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.popup__branch-close {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.popup__branch-warning {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125%;
+    color: #4A4A4A;
+}
+
+.popup__branch-accept {
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 125%;
+    color: #4A4A4A;
+}
+
+.popup__branch-remove {
+    width: fit-content;
+    padding: 0 20px;
+    height: 40px;
+    background: #D0021B;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+}
+
+.popup__branch-cancel {
+    color: #828282;
+    font-weight: 400;
+    font-size: 13px;
 }
 
 .account__dropdown-arrow {
