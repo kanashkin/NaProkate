@@ -1013,6 +1013,7 @@ input[maxlength="8"] {
 
 .add-branch__wrapper .account__menu-list {
     right: 0;
+    left: auto;
     top: 90px;
 }
 
