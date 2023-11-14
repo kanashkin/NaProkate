@@ -76,13 +76,19 @@
                     <li class="account__item start">
                         <p class="account__item-title">Скидка на аренду</p>
                         <div class="account__item-right">
-                            <input class="account__item-value" type="text" value="20%" placeholder="20%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="20" placeholder="20" maxlength="2">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-sale">Добавить накопительную скидку</p>
                         </div>
                     </li>
                     <li class="account__item">
                         <p class="account__item-title">Скидка на доставку и сетап</p>
-                        <input class="account__item-value" type="text" value="20%" placeholder="20%">
+                        <div class="input-value__block">
+                            <input class="account__item-value auto-width" type="text" value="20" placeholder="20" maxlength="2">
+                            <div class="account__item-value">%</div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -92,34 +98,52 @@
                 <ul class="account__items subitems">
                     <li class="account__item">
                         <p class="account__item-title">Базовый период аренды</p>
-                        <input class="account__item-value" type="text" value="3 дня" placeholder="3 дня">
+                        <div class="input-value__block">
+                            <input class="account__item-value auto-width" type="text" value="3" placeholder="3" maxlength="2">
+                            <div class="account__item-value">дня</div>
+                        </div>
                     </li>
                     <li class="account__item">
                         <p class="account__item-title">Надбавка <br> за дополнительные дни</p>
                         <div class="account__item-right">
-                            <input class="account__item-value" type="text" value="20%" placeholder="20%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="20" placeholder="20" maxlength="2">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-clarification">от стоимости аренды за каждый день сверх базового периода аренды</p>
                         </div>
                     </li>
                     <li class="account__item">
                         <p class="account__item-title">Минимальный заказ <br> при самовывозе</p>
-                        <input class="account__item-value" type="text" value="0 ₽" placeholder="0 ₽">
+                        <div class="input-value__block">
+                            <input class="account__item-value auto-width" type="text" value="0" placeholder="0" maxlength="8">
+                            <div class="account__item-value">₽</div>
+                        </div>
                     </li>
                     <li class="account__item">
                         <p class="account__item-title">Минимальный заказ <br> при доставке</p>
-                        <input class="account__item-value" type="text" value="0 ₽" placeholder="0 ₽">
+                        <div class="input-value__block">
+                            <input class="account__item-value auto-width" type="text" value="0" placeholder="0" maxlength="8">
+                            <div class="account__item-value">₽</div>
+                        </div>
                     </li>
                     <li class="account__item center">
                         <p class="account__item-title">Надбавка за срочный <br> заказ</p>
                         <div class="account__item-right center">
-                            <input class="account__item-value" type="text" value="0%" placeholder="0%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="0" placeholder="0" maxlength="2">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-clarification">от стоимости аренды</p>
                         </div>
                     </li>
                     <li class="account__item center">
                         <p class="account__item-title">Компенсация <br> за задержку возврата</p>
                         <div class="account__item-right center">
-                            <input class="account__item-value" type="text" value="50%" placeholder="50%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="50" placeholder="50" maxlength="2">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-clarification">от стоимости аренды за каждый день просрочки</p>
                         </div>
                     </li>
@@ -131,7 +155,10 @@
                 <ul class="account__items subitems">
                     <li class="account__item">
                         <p class="account__item-title">Срок внесения преоплаты</p>
-                        <input class="account__item-value" type="text" value="3 дня" placeholder="3 дня">
+                        <div class="input-value__block">
+                            <input class="account__item-value auto-width" type="text" value="3" placeholder="3" maxlength="2">
+                            <div class="account__item-value">дня</div>
+                        </div>
                     </li>
                     <li class="account__item account__dropdown-content start">
                         <p class="account__item-title account__conditions-item-name account__dropdown-item-name">Продление срока</p>
@@ -154,94 +181,26 @@
                     <li class="account__item start">
                         <p class="account__item-title">Брак</p>
                         <div class="account__item-right">
-                            <input class="account__item-value" type="text" value="200%" placeholder="200%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="200" placeholder="200" maxlength="4">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-clarification">от стоимости аренды бракованных товаров</p>
                         </div>
                     </li>
                     <li class="account__item">
                         <p class="account__item-title">Недокомплект</p>
                         <div class="account__item-right">
-                            <input class="account__item-value" type="text" value="200%" placeholder="200%">
+                            <div class="input-value__block">
+                                <input class="account__item-value auto-width" type="text" value="200" placeholder="200" maxlength="4">
+                                <div class="account__item-value">%</div>
+                            </div>
                             <p class="account__item-clarification">от стоимости аренды недостающих товаров</p>
                         </div>
                     </li>
                 </ul>
             </div>
 
-
-
-
-
-
-
-            <!-- <ul class="account__branch-main-content account__conditions-main-content">
-                <p class="account__branch-subtitle">Аренда</p>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name">Базовый период аренды</p>
-                    <input type="text" class="account__conditions-item" value="3 дня">
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name account__conditions-item-name-add">Надбавка за дополнительные дни</p>
-                    <div class="account__conditions-item-wrapper">
-                        <input type="text" class="account__conditions-ite" value="20%">
-                        <p class="account__conditions-item-text">от стоимости аренды за каждый день сверх базового периода аренды</p>
-                    </div>
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name">Минимальный заказ при самовывозе</p>
-                    <input type="text" class="account__conditions-item account__conditions-item-name-add" value="0 ₽">
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name">Минимальный заказ при доставке</p>
-                    <input type="text" class="account__conditions-item account__conditions-item-name-add" value="0 ₽">
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name account__conditions-item-name-add">Надбавка за срочный заказ</p>
-                    <div class="account__conditions-item-wrapper">
-                        <input type="text" class="account__conditions-item" value="0 ₽">
-                        <p class="account__conditions-item-text">от стоимости аренды</p>
-                    </div>
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name account__conditions-item-name-add">Компенсация за задержку возврата</p>
-                    <div class="account__conditions-item-wrapper">
-                        <input type="text" class="account__conditions-item" value="50%">
-                        <p class="account__conditions-item-text">от стоимости аренды за каждый день просрочки</p>
-                    </div>
-                </li>
-                <p class="account__branch-subtitle">Условия оплаты</p>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name">Срок внесения преоплаты</p>
-                    <input type="text" class="account__conditions-item" value="3 дня">
-                </li>
-                <li class="account__conditions-items account__dropdown-content">
-                    <p class="account__item-title account__conditions-item-name account__dropdown-item-name">Продление срока</p>
-                    <div class="account__dropdown-item">
-                        <div class="account__branch-item-content">
-                            <div class="account__dropdown-item-main">
-                                <p class="account__dropdown-item-text">Без ограничений</p>
-                                <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
-                            </div>
-                            <p class="account__branch-add-text">С ограничением</p>
-                        </div>
-                    </div>
-                </li>
-                <p class="account__branch-subtitle">Компенсации от Глориозы</p>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name account__conditions-item-name-add">Брак</p>
-                    <div class="account__conditions-item-wrapper">
-                        <input type="text" class="account__conditions-item" value="200%">
-                        <p class="account__conditions-item-text">от стоимости аренды бракованных товаров</p>
-                    </div>
-                </li>
-                <li class="account__conditions-items">
-                    <p class="account__conditions-item-name account__conditions-item-name-add">Недокомплект</p>
-                    <div class="account__conditions-item-wrapper">
-                        <input type="text" class="account__conditions-item" value="200%">
-                        <p class="account__conditions-item-text">от стоимости аренды недостающих товаров</p>
-                    </div>
-                </li>
-            </ul> -->
 
             <button class="account-save">Сохранить измененения</button>
         </div>
@@ -275,6 +234,7 @@
     </footer>
 
     <script src="/js/dropdown.js"></script>
+    <script src="/js/account/autoInputWidth.js"></script>
 
 </body>
 </html>

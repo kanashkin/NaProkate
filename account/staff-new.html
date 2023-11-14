@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Прокатчик-сотрудники</title>
+    <title>Новый сотрудник</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/account.css">
 </head>
@@ -48,7 +48,7 @@
         </div>
     </header>
 
-    <main class="account__rental-wrapper container">
+    <main class="account__rental-wrapper container" id="staff-new">
         <div class="account__status-wrapper">
             <div class="account__status">
                 <h2 class="account__status-title">Статус</h2>
@@ -65,59 +65,75 @@
             <li class="account__tabs"><a href="rental-administrator.html">Администратор</a></li>
             <li class="account__tabs"><a href="rental-branch.html">Филиал</a></li>
             <li class="account__tabs"><a href="rental-conditions.html">Условия проката</a></li>
-            <li class="account__tabs active"><a href="rental-staff.html">Сотрудники</a></li>
+            <li class="account__tabs"><a href="rental-staff.html">Сотрудники</a></li>
             <li class="account__tabs"><a href="rental-requisites.html">Реквизиты</a></li>
         </ul>
 
-        <div class="account__rental account__rental-main-staff" id="staff">
-            <div class="account__top-content">
-                <div class="account__left-content">
-                    <p class="account__top-text">В списке 3 сотрудника</p>
-                    <a class="account__top-left-button account__top-left-button-product" target="_blank" href="staff-new.html">
-                        <p class="account__left-button-text">Добавить сотрудника</p>
-                        <img src="/img/common/basket-plus.svg" alt="+ icon" class="account__left-button-img">
-                    </a>
-                </div>
-            </div>
-            <table class="table_staff" cellspacing = "0">
-                <tr>
-                    <th class="table_staff-header">Имя</th>
-                    <th class="table_staff-header">Город</th>
-                    <th class="table_staff-header">Опыт</th>
-                    <th class="table_staff-header">Пунктуальность</th>
-                    <th class="table_staff-header">Телефон</th>
-                    <th class="table_staff-header">Машина</th>
-                    <th class="table_staff-header">Статус</th>
-                </tr>
-                <tr>
-                    <td class="table_staff-text">Иван Иванов</td>
-                    <td class="table_staff-text">Москва</td>
-                    <td class="table_staff-text">0</td>
-                    <td class="table_staff-text">-</td>
-                    <td class="table_staff-text">+7 999 999-99-99</td>
-                    <td class="table_staff-text">Porsche</td>
-                    <td class="table_staff-text">Отключён</td>
-                </tr>
-                <tr>
-                    <td class="table_staff-text">Иван Иванов</td>
-                    <td class="table_staff-text">Москва</td>
-                    <td class="table_staff-text">0</td>
-                    <td class="table_staff-text">-</td>
-                    <td class="table_staff-text">+7 999 999-99-99</td>
-                    <td class="table_staff-text">Porsche</td>
-                    <td class="table_staff-text">Отключён</td>
-                </tr>
-                <tr>
-                    <td class="table_staff-text table_staff-text-border">Иван Иванов</td>
-                    <td class="table_staff-text">Москва</td>
-                    <td class="table_staff-text">0</td>
-                    <td class="table_staff-text">-</td>
-                    <td class="table_staff-text">+7 999 999-99-99</td>
-                    <td class="table_staff-text">Porsche</td>
-                    <td class="table_staff-text table_staff-text-border">Отключён</td>
-                </tr>
-            </table>
+        <h2 class="new-staff-title">Новый сотрудник</h2>
+
+        <div class="account__block">
+            <ul class="account__items">
+                <li class="account__item">
+                    <p class="account__item-title">Имя</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Имя">
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Фамилия</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Фамилия">
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Паспорт</p>
+                    <input class="account__item-value" type="text" value="" placeholder="1234 123456" maxlength="10">
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Почта</p>
+                    <input class="account__item-value" type="text" value="" placeholder="example@mail.ru">
+                </li>
+                <li class="account__top-left-button add-comment active">
+                    <img src="/img/common/basket-plus.svg" alt="+ icon" class="account__left-button-img">
+                    <p class="account__left-button-text">Добавить комментарий</p>
+                </li>
+                <li class="account__item comment-item">
+                    <p class="account__item-title">Комментарий</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Аккуратно монтирует белье, не работает с тяжелыми изделиями">
+                </li>
+            </ul>
         </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Машина</p>
+            <ul class="account__items subitems">
+                <li class="account__item account__dropdown-content start">
+                    <p class="account__item-title account__dropdown-item-name">Тип</p>
+                    <div class="account__dropdown-item">
+                        <div class="account__branch-item-content">
+                            <div class="account__dropdown-item-main">
+                                <p class="account__dropdown-item-text">Легковой</p>
+                                <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                            </div>
+                            <p class="account__branch-add-text">Грузовой</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Вместимость</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="3">
+                        <div class="account__item-value">м³</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Марка и модель</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Форд Фокус">
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Госномер</p>
+                    <input class="account__item-value" type="text" value="" placeholder="А123БВ 123" maxlength="9">
+                </li>
+            </ul>
+        </div>
+
+        <button class="account-save staff-new-save">Зарегистрировать работника</button>
     </main>
 
     <footer class="footer">
@@ -146,6 +162,10 @@
             </div>
         </div>
     </footer>
+
+    <script src="/js/account/autoInputWidth.js"></script>
+    <script src="/js/account/staff-new.js"></script>
+    <script src="/js/dropdown.js"></script>
 
 </body>
 </html>

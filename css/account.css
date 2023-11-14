@@ -781,6 +781,28 @@ li.header__account__list-item:hover {
     align-items: flex-start;
 }
 
+.input-value__block {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+input[maxlength="2"] {
+    max-width: 22px;
+}
+
+input[maxlength="3"] {
+    max-width: 33px;
+}
+
+input[maxlength="4"] {
+    max-width: 44px;
+}
+
+input[maxlength="8"] {
+    max-width: 88px;
+}
+
 .rental__table th{
     padding-right: 101px;
 }
@@ -1200,7 +1222,7 @@ li.header__account__list-item:hover {
     font-size: 16px;
     font-weight: 500;
     transition: .3s all;
-    max-width: 234px;
+    max-width: fit-content;
 }
 
 .account-save:hover {
@@ -1765,4 +1787,38 @@ table tr {
 
 table tr:hover {
     background-color: rgba(158, 177, 117, .3);
+}
+
+/* New staff */
+
+.new-staff-title {
+    margin-top: 60px;
+    color: #3B4030;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 111%;
+}
+
+.add-comment {
+    justify-content: flex-start;
+    height: fit-content;
+    opacity: .8;
+    display: none;
+}
+
+.comment-item {
+    display: none;
+}
+
+.add-comment.active,
+.comment-item.active {
+    display: flex;
+}
+
+#staff-new .account__item-title {
+    max-width: 265px;
+}
+
+.staff-new-save {
+    float: right;
 }
