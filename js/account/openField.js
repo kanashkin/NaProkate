@@ -1,6 +1,6 @@
 const addComment = () => {
-    const triggerBtn = document.querySelector('.add-comment')
-    const commentItem = document.querySelector('.comment-item')
+    const triggerBtn = document.querySelector('.open-field')
+    const commentItem = document.querySelector('.hide-field')
 
     triggerBtn.addEventListener('click', () => {
         triggerBtn.classList.remove('active')

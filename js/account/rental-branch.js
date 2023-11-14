@@ -115,8 +115,8 @@ const accountCalendars = () => {
 
 const openCityMenu = () => {
     const trigger = document.querySelector('.add-branch')
-    const menu = document.querySelector('.city__list')
-    const menuItems = menu.querySelectorAll('.city__list-item')
+    const menu = document.querySelector('.account__menu-list')
+    const menuItems = menu.querySelectorAll('.account__menu-list')
 
     trigger.addEventListener('click', () => {
         menu.classList.toggle('active')

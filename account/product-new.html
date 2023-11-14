@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новый товар</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/account.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__wrapper">
+            <div class="header__block">
+                <a class="logo" href="/index.html">
+                    <img class="logo-image" src="/img/common/header/logo.svg" alt="logo icon">
+                    <p class="logo-title">напрокате</p>
+                </a>
+            </div>
+            <div class="header__block">
+                <ul class="header__account__list">
+                    <li class="header__account__list-item"><a href="tenats.html">Арендаторы</a></li>
+                    <li class="header__account__list-item"><a href="orders.html">Заказы</a></li>
+                    <li class="header__account__list-item active"><a href="product.html">Товары</a></li>
+                    <li class="header__account__list-item"><a href="statistics.html">Статистика</a></li>
+                    <li class="header__account__list-item"><a href="rental-administrator.html">Прокатчик</a></li>
+                </ul>
+                <div class="header__account-buttons">
+                    <a href="/index.html"><button class="header__account-button header__account-btn">Сайт</button></a>
+                    <a href="main.html"><button class="header__account-button header__account__list-item">Иван И.</button></a>
+                </div>
+            </div>
+            <div class="header__block header__block-hide">
+                <div class="search__block">
+                    <div class="input__block">
+                        <img class="search-icon" src="/img/common/header/search.svg" alt="search icon">
+                        <input class="search-input" type="text" placeholder="Хочу арендовать.">
+                    </div>
+                    <button class="search-button">Поиск</button>
+                </div>
+                <a class="basket" href="/basket.html">
+                    <img class="basket-img" src="/img/common/header/basket.svg" alt="basket icon">
+                </a>
+                <a class="sign-in-link" href="login.html">
+                    <button class="sign-in">Войти</button>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="account__wrapper container" id="product-new">
+        <h2 class="account__title">Товары</h2>
+        <div class="account-line"></div>
+
+        <h2 class="new-item-title">Новый товар</h2>
+
+        <div class="account__block">
+            <ul class="account__items">
+                <li class="account__item start">
+                    <p class="account__item-title">Название</p>
+                    <div class="account__item-right">
+                        <input class="account__item-value" type="text" value="" placeholder="Например, ваза «Мозер»">
+                        <p class="account__item-peculiarities open-field active">указать особенности</p>
+                    </div>
+                </li>
+                <li class="account__item hide-field">
+                    <p class="account__item-title">Особенности</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Указать">
+                </li>
+                <li class="account__item account__dropdown-content start">
+                    <p class="account__item-title">Категория</p>
+                   <div class="account__menu__wrapper menu-trigger">
+                        <div class="account__menu-current">
+                            <p class="account__item-value">Выбрать</p>
+                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="">
+                        </div>
+                        <ul class="account__menu-list">
+                            <li class="account__menu-list-item">Стойки</li>
+                            <li class="account__menu-list-item">Ёмкости</li>
+                            <li class="account__menu-list-item">Подсвечники</li>
+                            <li class="account__menu-list-item">Архитектурные элементы</li>
+                            <li class="account__menu-list-item">Навигация</li>
+                            <li class="account__menu-list-item">Посуда</li>
+                            <li class="account__menu-list-item">Кольца для салфеток</li>
+                            <li class="account__menu-list-item">Аксессуары</li>
+                            <li class="account__menu-list-item">Освещение</li>
+                            <li class="account__menu-list-item">Мебель</li>
+                            <li class="account__menu-list-item">Цветы</li>
+                            <li class="account__menu-list-item">Текстиль</li>
+                            <li class="account__menu-list-item">Новогодний декор</li>
+                            <li class="account__menu-list-item">Оборудование для монтажа</li>
+                        </ul>
+                   </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Стоиомсть</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="8">
+                        <div class="account__item-value">₽</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Компенсация за потерю</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="8">
+                        <div class="account__item-value">₽</div>
+                    </div>
+                </li>
+                <li class="account__item account__dropdown-content start">
+                    <p class="account__item-title">Цвет</p>
+                   <div class="account__menu__wrapper menu-trigger">
+                        <div class="account__menu-current">
+                            <p class="account__item-value">Выбрать</p>
+                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="">
+                        </div>
+                        <ul class="account__menu-list color-menu">
+                            <li class="account__menu-list-item" data-color="white">
+                                <div class="color-circle"></div>
+                                Белый
+                            </li>
+                            <li class="account__menu-list-item" data-color="grey">
+                                <div class="color-circle"></div>
+                                Серый
+                            </li>
+                            <li class="account__menu-list-item" data-color="black">
+                                <div class="color-circle"></div>
+                                Черный
+                            </li>
+                            <li class="account__menu-list-item" data-color="red">
+                                <div class="color-circle"></div>
+                                Красный
+                            </li>
+                            <li class="account__menu-list-item" data-color="orange">
+                                <div class="color-circle"></div>
+                                Оранжевый
+                            </li>
+                            <li class="account__menu-list-item" data-color="brown">
+                                <div class="color-circle"></div>
+                                Коричневый
+                            </li>
+                            <li class="account__menu-list-item" data-color="yellow">
+                                <div class="color-circle"></div>
+                                Желтый
+                            </li>
+                            <li class="account__menu-list-item" data-color="green">
+                                <div class="color-circle"></div>
+                                Зеленый
+                            </li>
+                            <li class="account__menu-list-item" data-color="turquoise">
+                                <div class="color-circle"></div>
+                                Бирюзовый
+                            </li>
+                            <li class="account__menu-list-item" data-color="blue">
+                                <div class="color-circle"></div>
+                                Синий
+                            </li>
+                            <li class="account__menu-list-item" data-color="purple">
+                                <div class="color-circle"></div>
+                                Фиолетовый
+                            </li>
+                            <li class="account__menu-list-item" data-color="pink">
+                                <div class="color-circle"></div>
+                                Розовый
+                            </li>
+                            <li class="account__menu-list-item" data-color="multicolor">
+                                <div class="color-circle"></div>
+                                Многоцветный
+                            </li>
+                            <li class="account__menu-list-item" data-color="gold">
+                                <div class="color-circle"></div>
+                                Золотой
+                            </li>
+                            <li class="account__menu-list-item" data-color="silver">
+                                <div class="color-circle"></div>
+                                Серебряный
+                            </li>
+                            <li class="account__menu-list-item" data-color="transparent">
+                                <div class="color-circle"></div>
+                                Прозрачный
+                            </li>
+                            <li class="account__menu-list-item" data-color="none">
+                                <div class="color-circle"></div>
+                                Не важен
+                            </li>
+                        </ul>
+                   </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Размеры</p>
+            <ul class="account__items subitems">
+                <li class="account__item">
+                    <p class="account__item-title">Высота</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="3">
+                        <div class="account__item-value">см</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Ширина</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="3">
+                        <div class="account__item-value">см</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Глубина</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="3">
+                        <div class="account__item-value">см</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Диаметр</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="3">
+                        <div class="account__item-value">см</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Размеры</p>
+            <ul class="account__items subitems">
+                <li class="account__item-info">
+                    <p class="info-text">
+                        Загрузите фотографию изделия без посторонних предметов. Фотографии с посторонними предметами мы не выводим на Напрокате.
+                    </p>
+                    <p class="info-text" href="">Подойдут фото, сделанные на смартфон. Но клиентам больше нравятся профессиональные снимки. Качественные фотографии на белом фоне мы выводим вверху каталога.</з>
+                </li>
+                <div class="account-requistes-item-content">
+                    <input type="file" id="product-photo" class="photo-input">
+                    <label for="product-photo"><p class="account__item-peculiarities">добавить фотографии</p></label>
+                </div>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Для расчета занятости</p>
+            <ul class="account__items subitems">
+                <li class="account__item">
+                    <p class="account__item-title">Чистка</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="1" placeholder="1" maxlength="8">
+                        <div class="account__item-value">день</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Страховочный резерв</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="0" placeholder="0" maxlength="2">
+                        <div class="account__item-value">%</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Для расчета доставки</p>
+            <ul class="account__items subitems">
+                <li class="account__item">
+                    <p class="account__item-title">Объем</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="8">
+                        <div class="account__item-value">см³</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Масса</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="0" maxlength="8">
+                        <div class="account__item-value">кг</div>
+                    </div>
+                </li>
+                <li class="account__item account__dropdown-content start">
+                    <p class="account__item-title">Категория</p>
+                   <div class="account__menu__wrapper menu-trigger">
+                        <div class="account__menu-current">
+                            <p class="account__item-value">Любой</p>
+                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="">
+                        </div>
+                        <ul class="account__menu-list">
+                            <li class="account__menu-list-item">Только грузовой</li>
+                            <li class="account__menu-list-item">Только большегрузный</li>
+                            <li class="account__menu-list-item">Любой</li>
+                        </ul>
+                   </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Для расчета сетапа</p>
+            <ul class="account__items subitems">
+                <li class="account__item">
+                    <p class="account__item-title">Монтаж</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="2">
+                        <div class="account__item-value">мин</div>
+                    </div>
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Число сетаперов</p>
+                    <div class="input-value__block">
+                        <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="2">
+                        <div class="account__item-value">мин</div>
+                    </div>
+                </li>
+                <li class="account__item account__dropdown-content start">
+                    <p class="account__item-title">Категория</p>
+                   <div class="account__menu__wrapper menu-trigger">
+                        <div class="account__menu-current">
+                            <p class="account__item-value">Достаточно одного</p>
+                            <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="">
+                        </div>
+                        <ul class="account__menu-list">
+                            <li class="account__menu-list-item">Достаточно одного</li>
+                            <li class="account__menu-list-item">Достаточно двух</li>
+                            <li class="account__menu-list-item">Достаточно трех</li>
+                            <li class="account__menu-list-item">Достаточно четырех</li>
+                        </ul>
+                   </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Для расчета стоимости аренды</p>
+            <ul class="account__items subitems">
+                <li class="account__item start">
+                    <p class="account__item-title">Базовый период аренды</p>
+                    <div class="account__item-right">
+                        <div class="account-requistes-value-wrapper">
+                            <div class="account__dropdown-item">
+                                <div class="account__branch-item-content">
+                                    <div class="account__dropdown-item-main">
+                                        <p class="account__dropdown-item-text rental-period">Стандартный</p>
+                                        <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                    </div>
+                                    <p class="account__branch-add-text rental-period-item">Особый</p>
+                                </div>
+                            </div>
+                            <div class="input-value__block special-field">
+                                <input class="account__item-value auto-width" type="text" value="" placeholder="X" maxlength="2">
+                                <div class="account__item-value">дня</div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="account__block">
+            <p class="account__block-title">Другие настройки</p>
+            <ul class="account__items subitems">
+                <li class="account__item start">
+                    <p class="account__item-title">Бронирование</p>
+                    <div class="account-requistes-value-wrapper">
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text rental-period">Самостоятельное клиентом</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text rental-period-item">Только через оператора</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="account__item start">
+                    <p class="account__item-title">Показывать на naprokate.ru</p>
+                    <div class="account-requistes-value-wrapper">
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text rental-period">Да</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text rental-period-item">Нет</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="account__item start">
+                    <p class="account__item-title">Показывать на сайте</p>
+                    <div class="account-requistes-value-wrapper">
+                        <div class="account__dropdown-item">
+                            <div class="account__branch-item-content">
+                                <div class="account__dropdown-item-main">
+                                    <p class="account__dropdown-item-text rental-period">Да</p>
+                                    <img src="/img/common/branch-arrow.svg" alt="arrow icon" class="account__dropdown-item-arrow">
+                                </div>
+                                <p class="account__branch-add-text rental-period-item">Нет</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <p class="account__item-peculiarities seo-title">настройки поисковой оптимизации</p>
+
+        <div class="account__block hide-seo">
+            <p class="account__block-title">Поисковая оптимизация</p>
+            <ul class="account__items subitems">
+                <li class="account__item">
+                    <p class="account__item-title">Заголовок страницы</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Например, ваза «Мозер»">
+                </li>
+                <li class="account__item">
+                    <p class="account__item-title">Описание страницы</p>
+                    <input class="account__item-value" type="text" value="" placeholder="Указать">
+                </li>
+            </ul>
+        </div>
+
+        <button class="account-save item-new-save">Создать товар</button>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__wrapper">
+            <div class="footer__block">
+                <a href="#" class="footer-logo">напрокате 2023</a>
+                <ul class="connection__list">
+                    <li class="connection__list-item"><a href="mailto:business@naprokate.com">business@naprokate.com</a></li>
+                    <li class="connection__list-item"><a href="https://t.me/naprokate">Telegram: @naprokate</a></li>
+                </ul>
+            </div>
+            <div class="footer__block">
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/catalog.html">Каталог</a></li>
+                    <li class="footer__list-item"><a href="#">Поддержка</a></li>
+                    <li class="footer__list-item"><a href="#">Контакты</a></li>
+                    <li class="footer__list-item"><a href="#">О нас</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item footer-login"><a href="/login.html">Для прокатчика</a></li>
+                    <li class="footer__list-item footer-login"><a href="/login-admin.html">Для администратора</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li class="footer__list-item"><a href="/offer.html">Оферта</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/dropdown.js"></script>
+    <script src="/js/account/openField.js"></script>
+    <script src="/js/account/accountDropMenu.js"></script>
+    <script src="/js/account/autoInputWidth.js"></script>
+    <script src="/js/account/checkRentalPeriod.js"></script>
+    <script src="/js/account/showSeo.js"></script>
+
+</body>
+</html>

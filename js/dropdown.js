@@ -66,6 +66,8 @@ const dropdownAccount = () => {
 
             item.textContent = activeElText
             activeEl.textContent = itemText
+
+            item.closest('.account__dropdown-item').classList.remove('active')
         })
     })
 }

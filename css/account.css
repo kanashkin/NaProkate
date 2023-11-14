@@ -581,7 +581,6 @@ li.header__account__list-item:hover {
 }
 
 .account__wrapper{
-    overflow-x: auto;
     margin-top: 144px;
     margin-bottom: 410px;
 }
@@ -803,6 +802,10 @@ input[maxlength="8"] {
     max-width: 88px;
 }
 
+.rental__table {
+    margin-top: 24px;
+}
+
 .rental__table th{
     padding-right: 101px;
 }
@@ -997,24 +1000,44 @@ input[maxlength="8"] {
     position: relative;
 }
 
-.city__list {
-    position: absolute;
+.account__menu__wrapper {
+    position: relative;
+}
+
+.account__menu-current {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.add-branch__wrapper .account__menu-list {
     right: 0;
     top: 90px;
-    height: 350px;
-    width: 263px;
+}
+
+.account__menu-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    height: fit-content;
+    max-height: 350px;
+    width: 300px;
     flex-direction: column;
     border: 1px solid #d4d9e0;
     overflow-y: scroll;
     border-radius: 10px;
     display: none;
+    padding: 10px;
+    background-color: #fff;
 }
 
-.city__list.active {
+.account__menu-list.active {
     display: flex;
+    z-index: 10;
 }
 
-.city__list-item {
+.account__menu-list-item {
     font-weight: 400;
     font-size: 16px;
     color: #3B4030;
@@ -1024,8 +1047,75 @@ input[maxlength="8"] {
     padding-left: 10px;
 }
 
-.city__list-item:first-child {
+.account__menu-list-item:first-child {
     border-top: none;
+}
+
+.color-menu .account__menu-list-item  {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.color-circle {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+[data-color="white"] .color-circle {
+    background-color: #EBEBEB;
+}
+[data-color="grey"] .color-circle {
+    background-color: #808281;
+}
+[data-color="black"] .color-circle {
+    background-color: #303133;
+}
+[data-color="red"] .color-circle {
+    background-color: #c51512;
+}
+[data-color="orange"] .color-circle {
+    background-color: #f58b00;
+}
+[data-color="brown"] .color-circle {
+    background-color: #ab6c3f;
+}
+[data-color="yellow"] .color-circle {
+    background-color: #f5dc00;
+}
+[data-color="green"] .color-circle {
+    background-color: #319451;
+}
+[data-color="turquoise"] .color-circle {
+    background-color: #5bb3a8;
+}
+[data-color="blue"] .color-circle {
+    background-color: #2f73c6;
+}
+[data-color="purple"] .color-circle {
+    background-color: #974eb7;
+}
+[data-color="pink"] .color-circle {
+    background-color: #f282b8;
+}
+[data-color="multicolor"] .color-circle {
+    background: url(../img/common/multicolor.png) center center;
+}
+[data-color="gold"] .color-circle {
+    background-color: #bda559;
+}
+[data-color="silver"] .color-circle {
+    background-color: #c5c5c5;
+}
+[data-color="transparent"] .color-circle {
+    background: url(../img/common/transparent.png) center center;
+    background-size: cover;
+}
+[data-color="none"] .color-circle {
+    background: url(../img/common/none-color.png) center center;
+    background-size: cover;
+    border: 1px solid #dbdbdb;
 }
 
 .add-branch {
@@ -1195,10 +1285,6 @@ input[maxlength="8"] {
 .account__dropdown-item-arrow,
 .account__dropdown-arrow{
     cursor: pointer;
-}
-
-.account__dropdown-item-arrow.active{
-    rotate: 180deg;
 }
 
 .account__dropdown-item-main{
@@ -1397,7 +1483,8 @@ p.account__rental-content-name {
     gap: 20px;
 }
 
-.account__item-sale {
+.account__item-sale,
+.account__item-peculiarities {
     color: #3B4030;
     font-size: 13px;
     font-weight: 400;
@@ -1408,7 +1495,8 @@ p.account__rental-content-name {
     cursor: pointer;
 }
 
-.account__item-sale::after {
+.account__item-sale::before,
+.account__item-peculiarities::before {
     content: "";
     display: flex;
     width: 15px;
@@ -1590,7 +1678,8 @@ p.account__rental-content-name {
     left: 31px;
 }
 
-.input-file {
+.input-file,
+.photo-input {
     width: 0.1px;
     height: 0.1px;
     opacity: 0;
@@ -1791,7 +1880,7 @@ table tr:hover {
 
 /* New staff */
 
-.new-staff-title {
+.new-item-title {
     margin-top: 60px;
     color: #3B4030;
     font-size: 26px;
@@ -1799,26 +1888,46 @@ table tr:hover {
     line-height: 111%;
 }
 
-.add-comment {
+.open-field {
     justify-content: flex-start;
     height: fit-content;
     opacity: .8;
     display: none;
 }
 
-.comment-item {
+.hide-field {
     display: none;
 }
 
-.add-comment.active,
-.comment-item.active {
+.open-field.active,
+.hide-field.active {
     display: flex;
 }
 
-#staff-new .account__item-title {
+#staff-new .account__item-title,
+#product-new .account__item-title {
     max-width: 265px;
 }
 
-.staff-new-save {
+.item-new-save {
     float: right;
+}
+
+.special-field {
+    display: none;
+}
+
+.special-field.active {
+    display: flex;
+}
+
+.seo-title {
+    margin-top: 40px;
+}
+
+.hide-seo {
+    display: none;
+}
+.hide-seo.active {
+    display: block;
 }
